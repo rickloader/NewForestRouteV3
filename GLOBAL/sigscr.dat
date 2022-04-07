@@ -1,0 +1,284 @@
+///////////////////////////////////////////////////////////////////////////////
+// Signal Type Logic Scripts
+//
+
+///////////////////////////////////////////////////////////////////////////////
+REM SCRIPT FibbTest
+
+	extern float debug_header();
+	extern float debug_out();
+	float	n;
+	float	n1;
+	float	n2;
+	float	i;
+
+	n1 = n2 = 1;
+
+	debug_header();
+	debug_out (n1);
+	debug_out (n2);
+
+	for (i = 0; i < 8; i++)
+	{
+		n = n1 + n2;
+		debug_out (n);
+		n1 = n2;
+		n2 = n;
+	}
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT BNSF3Light
+
+// BNSF 3 light signal head
+
+	// Use SIG_EXTERNS 'macro' instead?..
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	next_sig_lr ();
+	extern float	sig_feature ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	float			has_number_plate;
+	float			has_gradient_plate;
+	float			next_state;
+
+	has_number_plate	= sig_feature (SIGFEAT_NUMBER_PLATE);
+	has_gradient_plate	= sig_feature (SIGFEAT_GRADIENT_PLATE);
+
+// If required, show the appropriate 'stop' indication.
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		if (has_gradient_plate)
+			state = SIGASP_RESTRICTING;
+		else if (has_number_plate)
+			state = SIGASP_STOP_AND_PROCEED;
+		else
+			state = SIGASP_STOP;
+	}
+// Signal head is enabled and the block ahead is clear - update based on state of
+// next signal head.
+	else
+	{
+		next_state = next_sig_lr (SIGFN_NORMAL);
+
+		if (next_state ==# SIGASP_STOP ||
+			next_state ==# SIGASP_STOP_AND_PROCEED ||
+			next_state ==# SIGASP_RESTRICTING)
+		{
+			state = SIGASP_APPROACH_1;
+		}
+		else if (next_state ==# SIGASP_APPROACH_1)
+		{
+			state = SIGASP_APPROACH_2;
+		}
+		else //if (next_state ==# SIGASP_APPROACH_2 ||
+			//	next_state ==# SIGASP_CLEAR_2)
+		{
+			state = SIGASP_CLEAR_2;
+		}
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+// Show the restricting indication with flashing red light if this signal has
+// no number plate.
+	if (state ==# SIGASP_RESTRICTING &&
+		!has_number_plate)
+	{
+		draw_state = 1;					// (Draw state index from signal config)
+	}
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT BNSF3LightA
+
+// BNSF 3 light signal head (ABS/Interval)
+
+	// Use SIG_EXTERNS 'macro' instead?..
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	next_sig_lr ();
+	extern float	sig_feature ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	float			has_number_plate;
+	float			has_gradient_plate;
+	float			next_state;
+
+	has_number_plate	= sig_feature (SIGFEAT_NUMBER_PLATE);
+	has_gradient_plate	= sig_feature (SIGFEAT_GRADIENT_PLATE);
+
+// If required, show the appropriate 'stop' indication.
+	if ( // !enabled ||							// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		if (has_gradient_plate)
+			state = SIGASP_RESTRICTING;
+		else //if (has_number_plate)
+			state = SIGASP_STOP_AND_PROCEED;
+		//else
+		//	state = SIGASP_STOP;
+	}
+// Signal head is enabled and the block ahead is clear - update based on state of
+// next signal head.
+	else
+	{
+		next_state = next_sig_lr (SIGFN_NORMAL);
+
+		if (next_state ==# SIGASP_STOP ||
+			next_state ==# SIGASP_STOP_AND_PROCEED ||
+			next_state ==# SIGASP_RESTRICTING)
+		{
+			state = SIGASP_APPROACH_1;
+		}
+		else if (next_state ==# SIGASP_APPROACH_1)
+		{
+			state = SIGASP_APPROACH_2;
+		}
+		else //if (next_state ==# SIGASP_APPROACH_2 ||
+			//	next_state ==# SIGASP_CLEAR_2)
+		{
+			state = SIGASP_CLEAR_2;
+		}
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+// Show the restricting indication with flashing red light if this signal has
+// no number plate.
+	if (state ==# SIGASP_RESTRICTING &&
+		!has_number_plate)
+	{
+		draw_state = 1;					// (Draw state index from signal config)
+	}
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT BNSF2Light
+
+// BNSF 2 light signal head
+
+	// Use SIG_EXTERNS 'macro' instead?..
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	next_sig_lr ();
+	extern float	sig_feature ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	float			has_number_plate;
+	float			has_gradient_plate;
+	float			next_state;
+
+	has_number_plate	= sig_feature (SIGFEAT_NUMBER_PLATE);
+	has_gradient_plate	= sig_feature (SIGFEAT_GRADIENT_PLATE);
+
+// If required, show the appropriate 'stop' indication.
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		if (has_gradient_plate)
+			state = SIGASP_RESTRICTING;
+		else if (has_number_plate)
+			state = SIGASP_STOP_AND_PROCEED;
+		else
+			state = SIGASP_STOP;
+	}
+// Signal head is enabled and the block ahead is clear - update based on state of
+// next signal head.
+	else
+	{
+		next_state = next_sig_lr (SIGFN_NORMAL);
+
+		if (next_state ==# SIGASP_STOP ||
+			next_state ==# SIGASP_STOP_AND_PROCEED ||
+			next_state ==# SIGASP_RESTRICTING)
+		{
+			state = SIGASP_APPROACH_1;
+		}
+		else //if (next_state ==# SIGASP_APPROACH_1) ||
+			//	next_state ==# SIGASP_APPROACH_2 ||
+			//	next_state ==# SIGASP_CLEAR_2)
+		{
+			state = SIGASP_APPROACH_2;
+		}
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+// Show the restricting indication with flashing red light if this signal has
+// no number plate.
+	if (state ==# SIGASP_RESTRICTING &&
+		!has_number_plate)
+	{
+		draw_state = 1;					// (Draw state index from signal config)
+	}
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT TestSem_BNSF3Light
+
+// Old UK/Europe Home signal head (based on a BNSF signal shape for testing purposes)
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT TestSem_BNSF2Light
+
+// Old UK/Europe Distance signal head (based on a BNSF signal shape for testing purposes)
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	dist_multi_sig_mr ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		!route_set() ||							// Switch not set as per link?
+		dist_multi_sig_mr (SIGFN_NORMAL, SIGFN_DISTANCE) !=# SIGASP_CLEAR_2)
+	{
+		state = SIGASP_APPROACH_2;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+
+// End of File

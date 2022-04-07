@@ -1,0 +1,12 @@
+British Rail by Buckeye.
+
+Wednesday, February 13, 2008
+Tuesday, September 29, 2009
+
+A British ‘Rail’ Modeling Project by Joseph Pearson (buckeye).  The new rail project was started to create a more varied look to the track work and ballast available for myself and to the route builders of MSTS.  
+Intended as individual track pieces the BR_Project would complement Tim Booth’s UKFS track system, although full track layout’s would be possible if enough track pieces where available.
+At present there is 83MB of track shapes available to download, but it must be emphasized that the tsection.dat file must be tsection.dat 40 or above (included).
+
+Textures: two main texture files of 1024 and 128 size are used for the track system with a DXT1 compression and based around the 18 meter (36 foot) length of track for the bullhead rail, flatbottom rail will follow at a similar length to suite the texture files. 
+Ballast of differing sorts will exist together with no loss of frame rate ensuring continuation of the train sim.
+Joseph Pearson
