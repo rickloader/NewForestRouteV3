@@ -1,0 +1,60 @@
+Ironclad - all B&C unless otherwise stated
+CK 5136 Mala
+
+SR Saloon 7983 B&C
+
+SR Thanet
+CK 5541 / 5552 Mala [?SET 274 b&c]
+
+LSWR CC
+BSK 3144 Mala
+BSK 3169 Mala
+CK 5120 Mala
+
+
+===bck 6517 / bsk 3100 / Sk 666 694 701 === Mala
+
+
+LSWR NC
+BCK 6540 Mala
+BSL 2618 Mala
+
+BCL 6401 Crim
+BSL 2636 Crim
+
+CL 4749 Mala
+BSL 3070 Mala
+
+BCL 6495 Mala
+BSL 2621 Mala
+
+BSL 3018 Mala
+CL 4643 Mala =4654
+BSL 3019 Mala
+
+BSL 3034 Mala
+CL 4687 Mala =4654
+BSL 3035 Mala
+
+CL 4664 Mala =4654
+CL 4730 Mala =4654
+CL 4752 Mala
+
+Loose ** check interior texture errors for all Mala SL **
+SL 11 (d32) Crim
+188 (d31) Mala
+194 (d31) Mala
+313 (d31) Mala
+CL 4754 d286 Crim?
+
+
+SR NPCS?
+
+Yes please for Roof boards they should say “Newspaper Traffic Waterloo – Bournemouth”  corr bogie pmv 2486 working 86  02:50 wloo 
+GBL/COR PMV 51ft 3in
+D3096 modified 1945 - ex D3098 with droplights - repaint 2333 add droplights.
+
+Newspaper Traffic Waterloo – Weymouth”    van B bogie 277 278  working 84 85 01:15 wloo weymouth via Salisbury . - copy+repaint 365 + roof boards.
+
+
+Also BY 4 wheel 943 966 working  87 88  01:15 wloo (van C) -repaint 660

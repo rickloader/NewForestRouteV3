@@ -1,0 +1,148 @@
+1957 Bristol
+
+Weymouth
+0545 to Castle Cary (B set)
+0600 SX to Dorchester Goods Brake Van (staff train)
+0600 S0 to Dorchester BC, S, goods brake van
+BC, S form 1318 SO Dorchester to Melcombe Regis
+0717 to Chippenham BSK, SK, CK, SK, BSK (SO plus 2x SK)
+0815 Bristol BSK, SK, CK, SK, BSK, Slip (forms 1625 Bristol to Weymouth)
+0840 to Maiden Newton AutoTrailer
+0850 FSX to Yeovil BSK SK SK SK SK SK BCK ( forms 1055 FSX Yeovil to Weymouth )
+0900 to Paddington BSK SK CK RB CK SK BSK (SO plus 2xSK) (formed of 1800 from Paddington)
+0925 SO Wolverhapton BCK SK SK SK CK SK SK SK BG (balanced by 0800 SO from Birmingham)
+0925 SX / 0935 SO Yeovil B set (formed of 07.13 Castle Cary to Weymouth)
+1000 SO Birmingham BCK SK SK SK SK CK SK SK SK BG
+1020 SO / 1033 SX Wolverhampton BSK SK CK SK SK BSK (formed of 1105 Wolverhapmton to Weymouth)
+1037 SO Yeovil BS S (forms 1335 SO Yeovil to Weymouth)
+1045 SX Dorchester BS S
+        BS (forms 1732 SX Dorchester to Weymouth with AutoTrailer)
+        S (forms
+1112 SO to Paddington BSK SK CK BSK (0545 Bristol to Weymouth) / SK SK SK BSK
+1140 SX to Westbury BSK SK CK BSK (formed of 0545 Bristol to Weymouth)
+1150 SO to Westbury (ER stock) BSK SK SK CK BSK (formed of 0927 SO Westbury to Weymouth)
+1235 SX / 1240 SO Bristol (K set = BSK SK CK CK SK BSK [48F+240S]) formed of 0805 Bristol to Weymouth
+        0805 Bristol to Weymouth conveys 2x SK extra detached, attached 1930 to Bristol
+1242 ThO to Dorchester BC, S
+        forms 1325 ThO Dorchester to Weymouth
+1250 Yeovil AutoTrailer (formed of 0925 from Maiden Newton)
+1335 SO to Cardiff SK SK BSK SK SK CK SK BSK ( formed of 0600 SO Cardiff to Weymouth )
+1340 SX to Westbury BSK SK SK CK SK BSK ( formed of 0830 Weston-super-Mare to Weymouth )
+1345 SO to Bristol BSK SK SK SK CK CK SK SK SK BSK ( formed of 0910 SO Bristol to Weymouth )
+1405 SX Dorchester AutoTrailer ( forms 1500 Dorchester to Weymouth )
+1405 SO Dorchester B set (formed of 12.10 Yeovil to Melcombe Regis) add SK
+forms 1645 SO Dorchester to Yeovil B set, SK
+1432 Westbury 460 / 458SO
+1540 Maiden Newton AutoTrailer (formed of 1500 from Dorchester, forms 1630 Maiden Newton to Weymouth)
+1614 Paddington [SO 2x SK] / BSK CK SK SK BSK (balanced 1230 Paddington / SX BG (0430 Swindon)
+
+1605 SO Weymouth Quay to Cardiff BCK SK SK CK SK SK BSK
+        Weymouth Town attach front BSK CK SK SK BCK (all formed of 0800 SO Birmingham to Weymouth)
+
+1630 SX Yeovil B set (formed of 11.50 Yeovil to Weymouth) add milk van
+1750 Maiden Newton AutoTrailer (formed of 1630 from Maiden Newton, forms 1845 Maiden Newton to Weymouth)
+1810 Westbury BSK, SK, CK, SK, BSK (formed of front of 1125SO/1145SX from Chippenham)
+1835 Paddington B, B, B(36 or 155)
+1930 SX Bristol (M-set) formed of 1615 from Westbury, SK SK off 0545 from Bristol, Slip off 1242 SX from Westbury
+1930 SO Bristol (M-set) formed of 1615 from Westbury, SK SK off 0545 from Bristol, BSK SK CK SK SK BSK off 1245 SO from Bristol
+ (M-set = BSK SK CK(4) BSK)
+2100 Yeovil AutoTrailer (formed of 1640 Yeovil to Weymouth)
+
+From Weymouth Quay
+1545 to Paddington BG(SX) BSK SK SK SK SK SK CK FK(7) BSK from Weymouth Quay + RB BCK from Weymouth Jc
+ (balanced 0820 Paddington)
+
+
+From Southampton 
+1010 to Cheltenham BCK SK BSK (balanced by 1400 from Cheltenham)
+1636 Cheltenham BCK SK BSK B (formed of 1015 from Cheltenham)
+
+From Portsmouth
+0803 Bristol B BSK SK CK SK SK BSK (forms 1632 Bristol to Portsmouth)
+0933 Cardiff 312 (K-set SR stock) (forms 1625 Cardiff to Portsmouth)
+1034 SO Cardiff (SR stock)
+1034 SX Salisbury (K-set) (forms 1910 Bristol to Portsmouth - Siphon(Milk) Melksham to Eastleigh)
+1115 SO Bristol (K-set)
+1433 SX Bristol BSK SK SK CK SK BSK SiphonG(parcels) (formed of 0810 SX from Bristol)
+1433 SO Bristol BSK SK SK SK CK CK SK SK SK BSK
+1745 Cardiff (K-set) B, B, [SO SiphonG]
+
+From Portsmouth Harbour
+0900 SO Cardiff SK SK BSK SK SK CK CK SK SK BSK (WR and SR alternately)
+1135 SO Cardiff SK SK BSK SK SK FK(7) SK SK BSK (SR stock)
+1527 SO Cardiff (K-set)SK SK (formed of 1050 SO from Bristol - detaches SiphonG to Portsmouth)
+
+From Brighton
+1000 SO Cardiff SK SK BSK SK SK CK CK SK SK BSK
+1100 Cardiff BSK CK SK BSK / SK SK SK / BSK CK SK BSK (WR and SR stock alternate days)
+
+From Bournemouth Central
+0900 SO Cardiff SK BSK SK SK CK CK SK SK BSK (WR and SR stock alternate days)
+
+======================
+
+1955 Summer London
+
+
+From Basingstoke to Reading (SR Corridor sets)
+0657 Basingstoke to Reading SX: B BSK CK BSK / SO: B BSK CK BSK SK
+0738 Basingstoke to Reading SX: BSK CK BSK BSK CK BSK / SO: BSK CK BSK BSK CK BSK BSK CK BSK
+0912 Reading to Portsmouth SX: B B BSK CK BSK BSK CK BSK (B each parcels Ports, Ston)
+0912 Reading to Portsmouth SO: BSK CK BSK BSK CK BSK BSK CK BSK
+0824 Basingstoke to Reading SX: BSK CK BSK SK / SO: BSK CK BSK BSK CK BSK
+0902sx 132
+0757 Reading to Basingstoke SX: B B B BSK CK BSK / SO: B B B BSK CK BSK SK (B each Ston, Weym, Ports)
+1210 SO Basingstoke to Reading BSK CK BSK SK (formed of 0757 from Reading)
+1305 SO Reading to Basingstoke BSK CK BSK SK
+1018 Reading to Basingstoke SX: BSK CK BSK SK / SO: BSK CK BSK BSK CK BSK
+1520 SX Reading to Basingstoke SX: BSK CK BSK SK (formed of 1018)
+1545 SO BSK CK BSK BSK CK BSK + SK
+1645SO 188
+1805 195
+1445 Portsmouth to Reading FSX: BSK CK BSK / FSO: BSK CK BSK BSK CK BSK
+1547 Reading to Basingstoke FSX: BSK CK BSK / FSO: BSK CK BSK BSK CK BSK
+1948 Weymouth to Reading 196
+1835 Bournemouth West to Reading SX: BSK CK BSK SK B / SO: BSK CK BSK BSK CK BSK B
+
+
+
+2110 Reading to Basingstoke and 2235 Basingstoke to Reading (WR local set) BT C T BT
+
+0650 SX Reading to Basingstoke (attached rear) and 1655 Basingstoke to Reading (WR workmens set) BT T T
+[0650 Reading to Basingstoke SR BSK CK BSK SK]
+
+
+
+Dorchester and Weymouth
+
+BC - B set [BC BC]
+BS
+S
+GWR goods brake van!
+older carriages - BC, S
+AutoTrailer
+
+Corridor stock for trains to Paddington, Bristol, Cardiff etc
+BSK
+SK
+CK
+BCK
+FK(7)
+BG
+B
+SiphonG
+Siphon (Milk)
+Milk van
+
+Slip
+RB
+
+(K set = BSK SK CK CK SK BSK [48F+240S])
+(M-set = BSK SK CK(4) BSK)
+
+
+2110 Reading to Basingstoke and 2235 Basingstoke to Reading (WR local set) BT C T BT
+
+0650 SX Reading to Basingstoke (attached rear) and 1655 Basingstoke to Reading (WR workmens set) BT T T
+[0650 Reading to Basingstoke SR BSK CK BSK SK]
+

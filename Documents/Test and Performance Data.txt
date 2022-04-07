@@ -1,0 +1,9 @@
+From BR test calculation
+
+Merchant Navy (with 200 psi in steam chest)
+15% cut off 1425 ihp @ 70 mph = 1280 40 1382 44.5
+20% cut off 1580 ihp @ 65 mph... 300 rpm ...1610
+30% cut off 2200 ihp @ 65 mph ... 1980
+40% cut off 2250 ihp @ 50 mph ... 2040
+50% cut off 1150 ihp @ 20 mph ... 1132
+

@@ -1,0 +1,31 @@
+DEE_MNR
+Discs - use headcode files from common headcodes
+Lamps - add LMS_Headlamp individually
+
+
+RF_BR_4F
+Can not be changed.
+All locos are carrying S&D passenger headcode.
+Would need to contact RF to get model without lamps.
+
+
+BR Modified Hall
+Existing lamps are 'Express Passenger' (15) - they could possibly be alphaed out to allow changing lamp code.
+
+
+BR 30316 (ex LSWR 700 class) - my model - could export a version without discs.
+
+
+BR_AdamsRadial - individual discs or lamps could be added.
+
+
+BR_T9 - individual discs or lamps can be added
+
+
+BR 30093 (ex LSWR B4) - individual discs or lamps can be added - shunting lamps??
+
+
+CCW_BR_Q - all disc codes available in common.headcodes, lamps can be added individually
+
+
+CCW_BR_U - common.headcodes has discs 01, 06, 11, 15 and 19 only; other discs could be added to make other combinations and lamps need to be added individually
