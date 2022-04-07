@@ -1,0 +1,57 @@
+                                             A Couple of Commercial Size Glass Greenhouses as a Scenery objects for MSTS
+
+                             These Two GreenHouses are Commercial Sized 22meters long x 12 meters Wide and 5 meters high
+                  These GreenHouses are the correct size for File ID 23803. (Tomato Plants on Stakes) not included with GreenHouses
+
+  One of the GreenHouses have a Dirt coloured floor and the other does not have a Floor so will show your Terrain colour inside
+
+    There is no Snow Texture as it is presumed that these GreenHouses are heated
+                                  
+
+  Instalation
+
+  Un-zip into a Temperary Folder 
+
+  Copy and Paste the "S" and "SD" files into your Shapes folder of your route
+
+  Copy and Paste the "ACE" file into your Texture folder of your Route
+
+Copy and Paste the below Ref's into your Routes Ref folder
+ 
+ 
+
+  
+
+
+Static (
+    Class ( "Buildings" )
+    Filename ( fc_Glasshouse.s )
+    Align ( None )
+    Description ( GlassHouse-with-Dirt-Floor )
+)
+Static (
+    Class ( "Buildings" )
+    Filename ( fc_Glasshouse1.s )
+    Align ( None )
+    Description ( GlassHouse-without-Dirt-Floor )
+)
+
+
+
+
+
+
+Ownership and Copyright 
+
+ These scenery objects are released as a FREEWARE object. 
+
+ The files may be included in any larger freeware distribution, such as a route and distributed.
+
+  Glass modified by Polymaster V2
+
+  All shapes  are original by TSM.   Frank Carver,  aka  EmuFarmer3.
+
+ 
+ Copyright (C) 10/05/10
+
+pfc382   at   yahoo.        com.au
