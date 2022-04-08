@@ -1,0 +1,102 @@
+SIMISA@@@@@@@@@@JINX0x1t______
+
+Tr_SMS (
+	ScalabiltyGroup( 3
+		Activation (
+			CabCam ()
+			Distance (100)
+		)
+		Deactivation (
+			PassengerCam ()
+			ExternalCam ()
+			Distance (100)
+		)
+		Stereo ()
+		Streams ( 5
+			Stream (
+				Priority ( 5 )
+				Volume ( 1.0 )
+				Triggers ( 1
+					Discrete_Trigger ( 109
+						PlayOneShot ( 1
+							File ( "..\\..\\AWS\\SOUND\\AWS_bing.wav" -1 )
+							SelectionMethod ( SequentialSelection )
+						)
+					)
+				)
+			)
+			Stream (
+				Priority ( 5 )
+				Volume ( 1.0 )
+				Triggers ( 1
+					Discrete_Trigger ( 110
+						PlayOneShot ( 1
+							File ( "..\\..\\AWS\\SOUND\\kvb-bip.wav" -1 )
+							SelectionMethod ( SequentialSelection )
+						)
+					)
+				)
+			)
+			Stream (
+				Priority ( 5 )
+				Volume ( 1.0 )
+				Triggers ( 3
+					Discrete_Trigger ( 113
+						StartLoopRelease ( 1
+							File ( "..\\..\\AWS\\SOUND\\AWS_alert.wav" -1 )
+							SelectionMethod ( SequentialSelection )
+						)
+					)
+					Discrete_Trigger ( 114
+						SetStreamVolume ( 0.0 )
+					)
+					Discrete_Trigger ( 114
+						ReleaseLoopReleaseWithJump ()
+					)
+				)
+			)
+			Stream (
+				Priority ( 5 )
+				Volume ( 1.0 )
+				Triggers ( 4
+					Discrete_Trigger ( 115
+						SetStreamVolume ( 1.0 )
+					)
+					Discrete_Trigger ( 115
+						StartLoopRelease ( 1
+							File ( "..\\..\\AWS\\SOUND\\AWS_alert.wav" -1 )
+							SelectionMethod ( SequentialSelection )
+						)
+					)
+					Discrete_Trigger ( 116
+						SetStreamVolume ( 0.0 )
+					)
+					Discrete_Trigger ( 116
+						ReleaseLoopReleaseWithJump ()
+					)
+				)
+			)
+			Stream (
+				Priority ( 5 )
+				Volume ( 1.0 )
+				Triggers ( 4
+					Discrete_Trigger ( 117
+						SetStreamVolume ( 1.0 )
+					)
+					Discrete_Trigger ( 117
+						StartLoopRelease ( 1
+							File ( "..\\..\\AWS\\SOUND\\AWS_alert.wav" -1 )
+							SelectionMethod ( SequentialSelection )
+						)
+					)
+					Discrete_Trigger ( 118
+						SetStreamVolume ( 0.0 )
+					)
+					Discrete_Trigger ( 118
+						ReleaseLoopReleaseWithJump ()
+					)
+				)
+			)
+		)
+	)
+)

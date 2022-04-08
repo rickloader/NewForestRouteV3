@@ -1,0 +1,38 @@
+Push Pull sets
+Set 5 BSL 2621 + BCL 6495
+Set 36 BSL 3070 + CL 4749
+
+2-Lav sets
+Set 20 BCK 6540 + BSL 2618
+Set 42 BSL 2636 + BCL 6401
+
+3-Lav sets = check BSL textures
+Set 105 BSL 3018 + CL 4643 + BSL 3019
+Set 116 BSL 3034 + CL 4687 + BSL 3035
+
+
+6-NC set 340
+BSK 3144 + CK 5120 + CL 4752 + CL 4664 + CL 4730 + BSK 3169
+
+**BTK 3144 Model should be mirror image
+**CL 4752 remove PP pipes from model
+
+Loose cars
+
+SL 11, 188, 194, 313
+
+CL 4753 d286 - remove PP pipes from model
+
+
+Ironclad sets
+Set 274 A
+CK 9ft bogies 5133
+SK exFK Outside Frame, 2325, 2326, 2327, 2328
+SK exFK 9ft =7192
+SK exFK 8ft 2338, 2333
+
+Set 432 C
+BSK Outside Frame 3180, 3183
+SK Outside Frame -730, 729
+SK 9ft -747
+FK 9ft -7200

@@ -1,0 +1,55 @@
+These loaded will fit into most wagons based n the RCH 1923 5, 7 & 8 plank wagons and most flat and lowsided wagons.
+
+The stone, ballast and spoil loads will only half fill the wagon as these loads were too heavy for a full load.
+
+
+To use these loads...
+
+Open the wagon folder and make a copy of the empty wagon .wag file.
+Rename the copy and the first line of the file by adding _loadname.
+
+eg emptywagon_stone.wag
+
+
+SIMISA@@@@@@@@@@JINX0D0t______
+
+Wagon ( emptywagon_stone
+	Id ( ? )
+	Type ( Freight )
+
+
+Add one of these lines after the Type line (Cut and Paste to avoid errors)
+
+FreightAnim ( ..\\common.Loads\\General_open\\2CratesLoad.S 0.0 3.0 0 )
+
+reightAnim ( ..\\common.Loads\\General_open\\2Crates_High.S 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\General_open\\3_6x3x3Block.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\General_open\\12_2x3StoneFlatLoad.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\General_open\\12_3x2x2DressedStone.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\General_open\\Barrels.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\General_open\\BarrelsLoad.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\General_open\\CratesLoad.S 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\General_open\\Rocks1.S 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\General_open\\Rocks2.S 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\General_open\\Wood1.S 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\General_open\\Wood2.S 0.0 3.0 0 )
+
+NOTE
+~~~~
+
+Sticking to this renaming comvention will avoid missing wagon errors if one of these loaded wagons is used in an activity.
+
+
+
+
+

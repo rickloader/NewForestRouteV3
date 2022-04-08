@@ -1,0 +1,25 @@
+This is a pack of five Bath GP and Templecombe based panniers derived from Frank Sandwell's GWR 8700 model. Many thanks to Frank for the permission to do these and for applying the BR logo and smokebox door stuff.
+Thanks also go to Lew Price for permission to include his GWR cab,
+
+The GWR soundset (File ID: 6481) and Crew Alias (File ID: 7706) are also required.
+
+
+They were only present in the late BR era.
+3742 and 3720 are automatic coupling and the rest are chain.
+
+Here are the numbers :-
+
+
+Bath GP
+
+3742
+9770
+
+
+
+Templecombe
+
+3720
+3795
+4691
+

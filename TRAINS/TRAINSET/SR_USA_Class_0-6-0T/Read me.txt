@@ -1,0 +1,33 @@
+SR 'USA' 0-6-0T Docks Locomotive
+
+Version 1.0
+Feb 2011
+
+These models were built  by Clive Heard with TSM from information supplied from drawings and photographs.
+
+Two locos are included: 30064 and 30065. Included are ai(#) versions of the locos.
+***************************************************
+
+These ungainly and very un-British looking locomotives came to the Southern Railway, where they performed sterling service, as a result of WWII.
+
+In 1942 the United States Army Transportation Corps had these shunting tanks and the class S-160 2-8-0 heavy goods locomotives built by various American builders for use in post-invasion Europe. As these locomotives were shipped to England, some were stored and some used in the build up to D-Day. The 0-6-0 tanks were powerful and, due to their short coupled wheelbase, able to manoueuvre in tight areas.
+
+*************************************************
+
+These models are released as freeware. You may re-paint them without asking my permission. They can be included in any freeware route that is distributed on CD/DVD without asking my permission. They may not be used to make a profit from.
+
+I retain copyright of these models and may change the conditions of use if necessary.
+
+***********************************************
+ INSTALLATION
+
+Un zip the file to a safe place.
+
+Copy the folder 'SR_USA_Class_0-6-0T' into your trainset folder.
+
+You will find the locos in your consist editor as:
+SR_USA_Class_30064
+SR_USA_Class_30065
+
+
+You will also need Stuart Williamson`s " 2 cylinder generic sound set file "  UKTS File ID 2910. Just add it to your Common.sound folder

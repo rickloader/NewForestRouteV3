@@ -1,0 +1,14 @@
+The Southern Region used combinations of six disks on the front of the loco to indicate to the signalman the route the train was taking.
+
+To set up a new combination of disks, first refer to the picture "Loco Disks" which shows the naming given to each disk A, B, C, D, E and F. There are six seperate texture (.ACE) files for each disk. copy and paste the texture files from Live Disks into the loco folder (330nn) for the disks you wish to appear. Use the textures from Dead Disks for the ones that should not show. 
+
+For example, if you wanted the left and right disks above the buffers on number 33028 to show then you would copy DiskA and DiskC from Live Disks into 33028 and DiskB, DiskD, DiskE and DiskF from Dead Disks into 33028.
+
+Disks are also present on the tenders for if you are travelling tender first. The same pattern of disks applies but looking at the rear of the tender. In most cases the tender disks will be all dead and this is the supplied configuration. The tender folders are Tender_Late and Tender_Early.
+
+
+
+
+
+
+

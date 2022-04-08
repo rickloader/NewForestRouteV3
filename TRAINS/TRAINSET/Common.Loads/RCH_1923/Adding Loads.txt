@@ -1,0 +1,64 @@
+These loaded will fit into most wagons based on the RCH 1923 5, 7 & 8 plank wagons.
+
+The stone, ballast and spoil loads will only half fill the wagon as these loads were too heavy for a full load.
+
+
+To use these loads...
+
+Open the wagon folder and make a copy of the empty wagon .wag file.
+Rename the copy and the first line of the file by adding _loadname.
+
+eg emptywagon_stone.wag
+
+
+SIMISA@@@@@@@@@@JINX0D0t______
+
+Wagon ( emptywagon_stone
+	Id ( ? )
+	Type ( Freight )
+
+
+Add one of these lines after the Type line (Cut and Paste to avoid errors)
+
+FreightAnim ( ..\\common.Loads\\RCH_1923\\RCH1923_7&8p_Anthracite.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\RCH_1923\\RCH1923_5to8p_Ash.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\RCH_1923\\RCH1923_5to8p_Ballast.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\RCH_1923\\RCH1923_7&8p_Beet.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\RCH_1923\\RCH1923_7&8p_Bricks.S 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\RCH_1923\\RCH1923_7&8p_Chalk.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\RCH_1923\\RCH1923_7&8p_Coal1.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\RCH_1923\\RCH1923_5to8p_Limestone.S 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\RCH_1923\\RCH1923_5to8p_Ore.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\RCH_1923\\RCH1923_7&8p_Sand.S 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\RCH_1923\\RCH1923_7&8p_Scrap.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\RCH_1923\\RCH1923_7&8p_Spoil.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\RCH_1923\\RCH1923_7&8p_Stone.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\RCH_1923\\RCH1923_7p_Tarp.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\RCH_1923\\RCH1923_5p_Timberload.s 0.0 3.0 0 )
+
+NOTE
+~~~~
+
+Sticking to this renaming comvention will avoid missing wagon errors if one of these loaded wagons is used in an activity.
+
+These models are freeware. You are free to use them as you wish.
+However I take no responsibilty if you mess up your installation of MSTS or worse.
+
+Wagon builders may add them to their wagons and upload them but may not change or replace any existing files in the common.loads folder without my or the original author's permission. Additional loads are welcome.
+
+
+

@@ -1,0 +1,41 @@
+These are reskins of Frank Sandwell's Great Western Class 2251.
+My thanks to Frank for allowing the release of this and making all the tenders possible.
+
+The City Of Truro cabview by Hans Nooyen is included. Many thanks to Hans for permission.
+
+The GWR sound set (File ID: 6481) and Crew Alias (File ID: 7706) are required.
+
+Note that some of the locos have the early Templecombe shedplate (82G) and some have the late one (83G). I believe the change was made in 1963.
+
+3205 and 3215 have chain coupling, the rest are automatic.
+
+
+
+
+2217	82E
+3205	83G
+3210	82G
+3215	82G
+3218	83G
+
+Key: 
+82E Bristol (Barrow Road)
+82G Templecombe (Early)
+83G Templecombe (Late)
+
+
+
+NB: The AI locos call a .SMS file called #GWR-Manor-66-100-11.SMS in folder SteamSoundsOrgUK in Common.Sound. This has an error in that the number of triggers should be 47 not 45.
+
+Open the file with a text editor or wordpad and search for the word Triggers, When you find a line like this :-
+
+				Triggers ( 45
+
+Change it to :-
+
+				Triggers ( 47
+
+
+
+
+

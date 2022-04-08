@@ -1,0 +1,36 @@
+This is a pack of nine Q1s all based at Tonbridge with two clean and seven dirty versions and a mix of chain and automatic coupling. Both Late and Early crest tenders are supplied in clean and dirty versions with both chain and automatic coupling.
+
+Many thanks to Refman, Dee4141 and Frank Sandwell for allowing the borrowing of the odd texture, to Rick Gibb for doing up the Engine and Tender files and finally to Hans Nooyen for allowing the inclusion of his excellent Q1 cab.
+
+The 2 Cylinder sound set (File ID: 2910 and 2919) rather than the Bulleid one has been used, but this can easily be changed.
+
+Reskins / Renumbering are allowed, plus inclusion with any freeware routes or stock packs.
+
+Variable disk configurations can be set up for each individual loco, see the text file in the folder Disks. 
+They can also be configured for the tenders if running tender first.
+
+Thanks to Refman for donating the crew.
+Thanks to Pilots (Jim Ashman) for giving it a test.
+
+Here are the numbers with livery and coupling :-
+
+
+33028	Clean	Chain
+33029	Dirty	Chain
+33030	Clean	Auto
+33031	Dirty	Auto
+33032	Dirty	Chain
+33033	Dirty	Chain
+33034	Dirty	Chain
+33035	Dirty	Chain
+33036	Dirty	Auto
+
+
+To install just run the program provided.
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+
+Comment ( 20T Tank - 35T GLW Tank -  TS027 and similar - Empty )
+
+Comment ( ******************** General Information **********************
+              Included in this section - Type, Shape, Size, Mass, etc
+       *************************************************************** )
+
+Mass  ( 35t )
+WheelRadius ( 18in )
+ORTSNumberAxles ( 2 )
+MaxVelocity ( 60mph )
+
+Include ( ..\\Common_Wagons\\ScrewCoupling.inc )
+
+Comment ( ******************************* Brakes *********************************************
+             Included in this section - Type, Force, Reservoir, Applicatiion, Release, etc
+         ************************************************************************************ )
+
+BrakeEquipmentType( Vacuum_brake, Auxilary_reservoir, Handbrake )
+BrakeSystemType( Vacuum_single_pipe )
+MaxBrakeForce( 50kN ) Comment ( * braked 16t loaded, 7t empty, coefficient of friction 0.31 * )
+MaxHandBrakeForce ( 5kN ) Comment ( * hand lever * )
+
+ORTSNumberBrakeCylinders ( 2 ) Comment ( Loaded 2, Empty 1 )
+ORTSBrakeCylinderSize ( 18in )
+ORTSAuxilaryResCapacity ( 6.48ft^3 )
+
+MaxReleaseRate ( 5.0InHg/s )
+MaxApplicationRate ( 2.5InHg/s )
+BrakeCylinderPressureForMaxBrakeBrakeForce ( 21InHg )
+BrakePipeVolume ( 0.70ft^3 )
+
+ORTSBrakeShoeFriction ( 0 0.31 1 0.30 2 0.28 3 0.27 4 0.26 5 0.25 7 0.24 8 0.23 9 0.22 12 0.21 14 0.20 17 0.19 20 0.18 24 0.17 29 0.16 34 0.15 40 0.14 47 0.13 55 0.12 66 0.11 84 0.10 115 0.09 160 0.09 ) 
+Comment ( cast iron brake shoes )
+
+Comment ( ******************* Resistance & SuperElevation ********
+          Included in this section - Wheelbase, gauge, friction, etc
+         ******************************************************** )
+
+ORTSBearingType ( Roller )
+ORTSDavis_A ( 310 )
+ORTSDavis_B ( 12.4 )
+ORTSDavis_C ( 0.74 )
+
+ORTSWagonFrontalArea ( 86ft^2 ) Comment ( * Estimate based on dimensions * )
+ORTSDavisDragConstant ( 0.0006 )
+
+CentreOfGravity ( 0m 1.1m 0m )
+ORTSTrackGauge ( 4ft 8.5in )
+ORTSUnbalancedSuperelevation ( 0in )
+ORTSRigidWheelbase ( 15ft 0in )
+
+Comment ( ********************** Micellaneous Information **********
+                      Included in this section - Name, Sounds, etc
+          ********************************************************* )
+
+Sound ( "uk-swb-fit-wag01.sms" )

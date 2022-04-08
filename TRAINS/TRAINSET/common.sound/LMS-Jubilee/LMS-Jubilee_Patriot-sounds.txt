@@ -1,0 +1,108 @@
+
+
+
+LMS-Jubilee or Patriot Sounds-OR	 [02/02/2021, v2.5]
+
+These .SMS files are intended for the 'Jubilee class' locomotives or variants, so these are 3 cylinder locomotives.
+The .SMS files and sounds can only be used in OR (not MSTS) and have been tested in the latest OR releases.
+Some functions (including reversing) do not work in older releases OR! 
+The content and sounds may be used under the "Freeware conditions", so private is no problem, never commercial. 
+
+
+
+The basic .SMS files for the Jubilee locomotive are:
+
+LMS-Jubilee_ENG.sms 	---> External locomotive sounds	(locomotive.ENG)
+LMS-Jubilee_CAB.sms 	---> CAB sounds			(locomotive.ENG)
+LMS-Jubilee_ENG-Tender.sms	---> External Tender sounds		(Tender.WAG)
+
+The .SMS files below are the same as above, only the "extra" are more different CHUFF sounds between 0 -22kmh (0-14.5mph)
+LMS-Jubilee_ENG-extra.sms 	---> External locomotive sounds
+LMS-Jubilee_CAB-extra.sms 	---> CAB sounds
+A bit of a disadvantage in OR is that you should accelerate slowly, so not too fast, otherwise the chuff sounds will go 'out of sync' too much. Great for heavy trains ....
+
+
+The .SMS files for the Patriot locomotives are equivalent to the above Jubilee, the difference is mainly the steam whistle sounds:
+
+LMS-Patriot_ENG.sms 	---> External locomotive sounds	(locomotive.ENG)
+LMS-Patriot_CAB.sms 	---> CAB sounds			(locomotive.ENG)
+LMS-Patriot_ENG-Tender.sms	---> External Tender sounds		(Tender.WAG)
+
+The .SMS files below are the same as above, only the "extra" are more different CHUFF sounds between 0 -22kmh (0-14.5mph)
+LMS-Patriot_ENG-extra.sms 	---> External locomotive sounds
+LMS-Patriot_CAB-extra.sms 	---> CAB sounds
+
+
+
+========================================================================================================
+
+Particularities:
+
+1) Chuff Sounds.
+
+The Chuff sounds are records of a Jubilee locomotive, sounds in reality from a standstill up to about 95kmh (60mph)
+In OR the Chuff sounds are made audible up to about 160kmh (100mph), although of course the last part has been adjusted manually.
+
+The Chuff sounds consist of 3 variations of chuff sounds (low - normal - heavy power) that are played overlap, depending on the power consumed by the locomotive.
+So not only volume difference, but also the pitch difference as in reality.
+Also as an extra a "fast spinning wheels" sound of a Jubilee. (which you normally shouldn't hear ..........!!)
+
+2) Blower Sounds.
+The blower sounds are also from a Jubilee locomotive. In OR the blower sound is not yet manually adjustable, therefore different sounds are automatically reproduced here as if the firingman would do.
+- Extra blower sound when stationary / slow driving. (due to the lack of 'the Chuffs'. This for extra suction of the air for the fire )
+- Blower sound with regulator cut off. (Here too, the blower provides for extra suction of the air for the fire in the case of missing Chuffs, and prevents 'fire recoil' in the cabin)
+- Blower sound while driving. (lightly, for safety from fire recoil, like tunnels, etc.)
+
+3) Whistle
+Also of course from a Jubilee 'hooter'.
+The [SPACE] key is short-long for a hooter, depending on how long you press the key.
+The [B] key is for short hooter signals. When at stillstand as an 'attention signal' and while driving as a 'short warning', everything in several variants. At higher speeds also a little 'echo effect'.
+
+4) Cylinder hiss sounds.
+Cylinder hiss when the cylinder cocks are opened. Because all cylinder hiss escapes at the front of the Jubilee, the sound is a combination of a 'constant hiss' and a 'chuff hiss' (up to about 48kmh) from one side of the locomotive.
+(after all, you stand externally on one side, or you hang out of the window on one side ...)
+
+5) Various "background sounds" and operating sounds.
+- Connecting rod (bearings) noises during freewheel of the locomotive. (generally not audible when the locomotive is delivering power, except for mechanical damage)
+- Cabin noise while driving.
+- Rolling noises from the wheels and bogie.
+- Tender coupling (at start and stop).
+- Safety valve (too high steam pressure in the boiler, in OR only audible with manual firing).
+- Coupling and uncoupling wagons.
+- Sand spreader (to prevent wheel slip).
+
+6) Injectors.
+Both (water) injectors have slightly different sound, also recorded from a Jubilee.
+In manual firing, the sounds work 1: 1 depending on the operation of one or both injectors.
+In AI firing, injector_1 is always automatically operated in OR. However, this injector is constantly on during longer journeys. (water quantity is regulated with AI firing)
+As an extra you can manually switch the Injector on or off temporarily (sound only) by [ALT-R] key (original Cab-radio function)
+
+7) Ejectors.
+Both (Vacuum) Ejectors have different sound and volume, partly recorded from a Jubilee and a Black-5.
+
+8) Train Brake Controler.
+The train brake controler has two functions, both the Vacuum brake (for the train) and the Steam brake (for the locomotive and tender)
+Regarding the sound, you will hear the "Vacuum hiss" during the apply position, as long as the pressure decreases in the brake pipe.
+The "steam hiss" is audible when it is active, ie when the brake cylinders of the locomotive and tender are energized.
+(this works independently ....! so depending on the situation)
+Externally you hear accordingly, the vacuum hiss, or the activation of 'the braking system' (mechanism) or the wheel brake noises (brake shoes). 
+
+9) Shoveling.
+Fire door sounds are audible, as well as the "Fire Burn" when the door is open. This "fire Burn" is different during standstill and driving, the sound (volume) is also changed depending on "the draft on the fire" (especially opening of the regulator)
+Second you have "the shoveling sound", audible at burn rate, both with start (shovel from tender), shoveling (various sounds) and the end after closing fire door (shovel back into tender.)
+
+10) Water Scoop.
+If the water scoop can be used when driving over a water trough, the sounds of the turning wheel (lowering or lifting of the water scoop) and the water noise from filling the tender can be heard.
+Note that the water scoop, also in OR, can break if it is lowered at the wrong times!!
+
+11) 
+Various controls such as levers and valves are audible, most of them also re-recorded. 
+
+
+
+
+
+Have fun driving !!!
+
+Regards, Roger van Duijnhoven
+

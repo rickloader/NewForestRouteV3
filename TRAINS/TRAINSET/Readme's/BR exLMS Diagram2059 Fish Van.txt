@@ -1,0 +1,29 @@
+BR exLMS Diagram2059 Fish Van.
+Version2
+Model and texture by Ian Macmillan.
+
+
+75 of these wagons were built in 1941 using the same design as the banana and insulated vans.
+They were classed as non passenger coaching stock, the reason being that they were used on fast goods trains that did not pass thru goods yards.
+The passenger status indicated that they were to be examined and oiled by passenger train examiners who would normally ignore goods stock.
+
+INSTALLATION
+~~~~~~~~~~~~
+
+Unzip to a temporary folder.
+Drag, Copy or Move the folder exLMS_D2059_Fish_Van to your Trainset folder; usually c\Program Files\Microsoft Games\Train Simulator\TRAINS\TRAINSET
+
+If you have the earlier version of this wagon installed, allow it to overwrite if asked.
+ 
+You are now ready to create a consist containing this model by using the Activity Editor
+supplied with Microsoft Train Simulator - the model will not be available in the simulator unless you do this.
+
+
+
+This model is freeware but I retain the copywrite.
+It must not under any circumstances be included on any CD sold for profit or uploaded to any website without prior permission.
+
+Reskinning or repainting is prohibited without permission. I will usually give this permission, I just want to avoid duplication.
+
+Ian Macmillan.
+ian@Woodstock-Wagon.co.uk

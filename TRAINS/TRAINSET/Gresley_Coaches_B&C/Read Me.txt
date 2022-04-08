@@ -1,0 +1,108 @@
+****NOTE: PLEASE DELETE ALL PREVIOUS VERSIONS. THIS IS A MASSIVE UPDATE WHICH RESULTS IN MANY FILES BEING CHANGED.**** 
+
+To delete the previous version:
+
+1) Go to your MSTS Trainset Directory
+(usually c:\Program Files\Microsoft Games\train simulator\trains\trainset)
+
+2) Search for the folder: Gresley_Coaches_B&C
+
+3) Delete this folder.
+
+This update is a direct replacement which renders alot of the old files pointless.
+However none of your consists/activites need to be changed due to the 'wag' files being named the same.
+
+--------------------------------------------------------------------------------------------------------------------------
+Thank you for downlaoding this coach pack.
+
+This pack is updated to V2.
+
+It changes the coach textures to match the other coaches that have been released by me.
+All shapes have had work done to them to improve the overall apperance of these coaches.
+Whilst no 'wag' file names have been changed the coaches have now been re-'named' in these files.
+All consist/activities that you have made will not need changeing.
+The SD files have also been updated to make sure that they work correctly.
+I have included 1 new coach: the Restaurant Kitchen First.
+
+
+Previous versions
+
+Gresley 61'6" Coach roof patch v1:
+
+Removed drain pipes from the ends of the coaches
+
+V1.1:
+
+This pack had corrected chain copulers and a few file fixes.
+
+V1:
+
+Original release with automatic buckeye couplers.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+These coaches can be found in your trainset folder under Gresley_Coaches_B&C.
+
+You need to use MSTS's activity editor or another program to make consists as no consists have been provided.
+
+
+This pack contains the following coaches:
+
+LNER Gresley 61'6" Coaches in Crimson & Cream
+
+Coach Type					        Name to look for in Editors:
+
+First Corridor..................................(Gresley_FK_C&C)
+Third Corridor..................................(Gresley_TK_C&C)
+Composite Corridor..............................(Gresley_CK_C&C)
+Buffet Open.....................................(Gresley_RB_C&C)
+Brake Composite Corridor Front..................(Gresley_BCK_Front_C&C)
+Brake Composite Corridor Rear...................(Gresley_BCK_Rear_C&C)
+Full Brake......................................(Gresley_BG_C&C)
+Restaurant triplet articulate First.............(Gresley_tri-art_RKC_Front_C&C)
+Restaurant triplet articulate Kitchen...........(Gresley_tri-art_RKC_Mid_C&C)
+Restaurant triplet articulate Third.............(Gresley_tri-art_RKC_Rear_C&C)
+First Open......................................(Gresley_FO_C&C)
+Third Open......................................(Gresley_TO_C&C)
+Restaurant First Open...........................(Gresley_RFO_C&C)
+Restaurant Third Open...........................(Gresley_RTO_C&C)
+Brake Third Open Front..........................(Gresley_BTO_Front_C&C)
+Brake Third Open Rear...........................(Gresley_BTO_Rear_C&C)
+Brake Third Corridor Front......................(Gresley_BTK_Front_C&C)
+Brake Third Corridor Rear.......................(Gresley_BTK_Rear_C&C)
+Sleeper First...................................(Gresley_SLF_C&C)
+Sleeper Third...................................(Gresley_SLT_C&C)
+Restaurant Kitchen First........................(Gresley_RKF_C&C)
+
+
+----------------------------------------------------------------------
+
+These coaches are not 100% accurate. They are a representation of the real thing.
+The coaches in this pack are based of the Hornby OO scale coaches,
+reference photo's on the internet, and diagrams from the following books:
+"Historic Carriage Drawings Vol1: LNER and Constituents" by Nick Campling
+"LNER Carriages" by Michael Harris
+"Gresley's Coaches" By Michael Harris
+
+A big thank you to all in the MSTS community who's hard work and
+dedication provided me with the insparation to have a go at these coaches.
+ 
+All 3d models by Justin Waite.
+Textures by Justin Waite and Ian Macmillan
+
+
+
+----------------------------------------------------------------------
+EULA
+
+You may not upload these coaches to another website.
+You may not repaint these coaches without my permision.
+These coaches are not 100% accurate so please don't complain about them.
+Any questions or comments please contact me at:
+
+j3801_2003@yahoo.com
+
+
+Thank you.
+
+Justin Waite

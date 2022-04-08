@@ -1,0 +1,39 @@
+These loaded will fit into most cattle wagons.
+
+To use these loads...
+
+Open the wagon folder and make a copy of the empty wagon .wag file.
+Rename the copy and the first line of the file by adding _loadname.
+
+eg LNER_Cattle_Sheep.wag
+
+
+SIMISA@@@@@@@@@@JINX0D0t______
+
+Wagon ( emptywagon_stone
+	Id ( ? )
+	Type ( Freight )
+
+
+Add one of these lines after the Type line (Cut and Paste to avoid errors)
+
+FreightAnim ( ..\\common.Loads\\Livestock\\MCLW_coo1.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\Livestock\\MCLW_Sheepies.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\Livestock\\CattleVanBarrels.s 0.0 3.0 0 )
+
+
+
+NOTE
+~~~~
+
+Sticking to this renaming comvention will avoid missing wagon errors if one of these loaded wagons is used in an activity.
+
+These models are freeware. You are free to use them as you wish.
+However I take no responsibilty if you mess up your installation of MSTS or worse.
+
+Wagon builders may add them to their wagons and upload them but may not change or replace any existing files in the common.loads folder without my or the original author's permission. Additional loads are welcome.
+
+
+

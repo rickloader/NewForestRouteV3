@@ -1,0 +1,19 @@
+Army Steel End 5 Plank Open Wagons
+
+Model and Textures by Ian Macmillan.
+Version 3 beefs up the brake gear and adds 3D springes and other minor tweeks.
+
+Part of the BR_Steel_End_5_Plank_Wagons pack
+
+
+PROTOTYPE.
+~~~~~~~~~~
+
+In 1963 42 wagons to BR diagram 44 were built for the army. These had the LMS design of 8 shoe brake but did not have the additional springs and were fitted with hydraulic buffers.
+The wagons continued in use until the 1980s.
+
+These models may not be posted on any website or included on CD without written permission.
+Please also obtain permission for repaints. This will usually be granted, I just want to avoid duplication.
+
+Ian Macmillan.
+ian@BCLR.co.uk

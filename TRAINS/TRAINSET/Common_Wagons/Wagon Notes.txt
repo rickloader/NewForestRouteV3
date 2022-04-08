@@ -1,0 +1,8 @@
+Army D44 - put seperately as different loads.
+Rick has copy/paste as OR complains BR_D44_High_F.inc is missing
+LNER_D158_BrakeVan.inc same
+BR_High_U
+Rick renames instantercoupling to instanter.inc restores instantercoupling.inc so now 2 file
+rick copies / renames BR_12T_Van_U.inc
+rick substitutes coupling statement for Bournemouth belle pulman - link to include coupling not working
+deleted exLNER_2xSingle

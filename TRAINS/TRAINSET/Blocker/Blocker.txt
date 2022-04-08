@@ -1,0 +1,15 @@
+Blocker
+Replacement file by Ian Macmillan.
+
+
+An invisible diesel with very low power.
+
+Use it to block the player path in an activity.
+
+
+The model is invisible but pressing Ctrl and numberpad + will show the bounding box.
+No ace file is needed - it aliases to the global/textures folder.
+
+
+This is model is based on the GP38 .eng file.
+As such no restrictions are placed on this model but if you modify it in any way please rename it to avoid breaking existing activities.

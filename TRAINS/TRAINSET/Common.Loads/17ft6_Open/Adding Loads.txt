@@ -1,0 +1,55 @@
+These loaded will fit into most wagons based n the RCH 17ft 6in 5 plank wagons.
+
+To use these loads...
+
+Open the wagon folder and make a copy of the empty wagon .wag file.
+Rename the copy and the first line of the file by adding _loadname.
+
+eg emptywagon_stone.wag
+
+
+SIMISA@@@@@@@@@@JINX0D0t______
+
+Wagon ( emptywagon_stone
+	Id ( ? )
+	Type ( Freight )
+
+
+Add one of these lines after the Type line (Cut and Paste to avoid errors)
+
+FreightAnim ( ..\\common.Loads\\17ft6_open\\5P_Ash.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\17ft6_open\\5P_Ballast.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\17ft6_open\\5P_Bricks.S 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\17ft6_open\\5P_Chalk.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\17ft6_open\\5P_coal1.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\17ft6_open\\5P_Limestone.S 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\17ft6_open\\5P_Sand.S 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\17ft6_open\\5P_Spoil.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\17ft6_open\\5P_Stone.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\17ft6_open\\5P_Timberload.s 0.0 3.0 0 )
+
+FreightAnim ( ..\\common.Loads\\17ft6_open\\5P_UnmarkedTarp.S 0.0 3.0 0 )
+
+
+
+NOTE
+~~~~
+
+Sticking to this renaming comvention will avoid missing wagon errors if one of these loaded wagons is used in an activity.
+
+These models are freeware. You are free to use them as you wish.
+However I take no responsibilty if you mess up your installation of MSTS or worse.
+
+Wagon builders may add them to their wagons and upload them but may not change or replace any existing files in the common.loads folder without my or the original author's permission. Additional loads are welcome.
+
+
+

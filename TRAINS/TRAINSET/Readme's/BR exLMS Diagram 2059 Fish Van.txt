@@ -1,0 +1,31 @@
+Model : BR exLMS Diagram 2059 Fish Van
+Version: 3.0
+Released : 22/10/2010
+Author : Ian Macmillan.
+ian@Woodstock-Wagon.co.uk
+
+WARNING This product may contain nuts.
+
+This model is for your personal use only, and may not be sold or distributed in any way without the author's permission.
+
+HISTORY
+~~~~~~~
+One of 110 vehicles built in 1941 for the fast fish trains operating from most ports to rush the catch to the cities.
+Although similar to ordinary goods vans, most fish vans were classified as passenger stock to bring them under the stricter maintainance and examination procedures needed for high speed running. They therefore recieved passenger maroon livery.
+They only became goods stock in 1965 by which time fish traffic was almost gone. Most were soon scrapped, mainly because of the smell.
+They could often be seen attached to passenger trains to rush them on their way.
+
+INSTALLATION
+~~~~~~~~~~~~
+
+Unzip to tenporary folder and copy, move or drag to your Trainsets folder.
+If you have a previous version of this wagon, allow it to overwrite. 
+
+You are now ready to create a consist containing this model by using the Activity Editor
+supplied with Microsoft Train Simulator - the model will not be available in the simulator unless you do this.
+
+Please be aware that this model may or may not be compatible with all the engines and rolling stock that you 
+have available.
+
+WARNING: It is not recommended that you delete these files once installed.
+

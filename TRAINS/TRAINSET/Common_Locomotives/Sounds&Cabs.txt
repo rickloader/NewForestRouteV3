@@ -1,0 +1,97 @@
+
+BR 3MT, BR 3MT Tank, BR 4MT 260, BR 4MT 460, BR 4MT Tank
+CabView ( "..\\..\\Common.Cab\\7MT\\BR3MT.cvf" )
+Sound ( "..\\..\\Common.Sound\\LMS-Crab\\BR-Standard_cab.sms" )
+
+BR 5MT
+CabView ( "..\\..\\Common.Cab\\7MT\\BR5MT.cvf" )
+Sound ( "..\\..\\Common.Sound\\LMS-Crab\\BR-Standard_cab.sms" )
+
+Battle of Britain - West Country
+Cabview ( "..\\..\\common.cab\\WC_BB\\Blackmoor_C.cvf" )
+Sound ("..\\..\\common.sound\\Bullied_LightPacific\\blp-cab01.sms" )
+
+BR Rebuilt Merchant Navy
+CabView ( "..\\..\\common.cab\\MN\\MN_BR.cvf" )
+Sound ( "..\\..\\common.sound\\Bullied_LightPacific\\blp-cab01.sms" )
+
+GWR 43xx
+CabView ( "..\\..\\common.cab\\GWR1\\Manor.cvf" )
+Sound ( "..\\..\\common.sound\\SteamSoundsOrgUk\\GWR-Manor-Int-100a-01.sms" )
+
+GWR 51xx
+CabView ( "..\\..\\Common.Cab\\GWR2\\Prairie.cvf" )
+Sound ("..\\..\\common.sound\\SteamSoundsOrgUk\\GWR-Manor-Int-100b-01.sms" )
+
+GWR 79xx
+CabView ( "..\\..\\common.cab\\GWR1\\Hall_BR.cvf" )
+Sound ( "..\\..\\common.sound\\SteamSoundsOrgUk\\GWR-Manor-Int-100a-01.sms" )
+
+GWR 1366
+CabView ( "..\\..\\common.cab\\GWR2\\Pannier2.cvf" )
+Sound ( "..\\..\\common.sound\\SteamSoundsOrgUk\\GWR-Manor-Int-100a-01.sms" )
+
+GWR 2251
+CabView ( "..\\..\\common.cab\\GWR2\\2251.cvf" )
+Sound ( "..\\..\\common.sound\\SteamSoundsOrgUk\\GWR-Manor-Int-100a-01.sms" )
+
+LBSCR H2, LBSCR K
+CabView ( ..\\..\\common.cab\\CR903\\LBSC.cvf  )
+Sound ( ..\\..\\common.sound\\PKP-Pt47\\Lok_4_Cab.sms  )
+
+LMS Ivatt 2MT tank
+CabView ( "..\\..\\common.cab\\5XP\\BR2MT.cvf" )
+Sound ("..\\..\\common.sound\\LMS-Crab\\LMS-Stanier_cab.sms" )
+
+LMS 2P, LMS 4F, MR 3F
+CabView ( "..\\..\\common.cab\\Fowler_LHD\\88.cvf" )
+Sound ( "..\\..\\Common.Sound\\BA_8F\\4Fcab.sms" )
+
+LSWR 0415
+CabView ( "..\\..\\Common.Cab\\HRPT_cab\\Yankee.cvf" )
+Sound ( "..\\..\\Common.Sound\\BA_8F\\4Fcab.sms" )
+
+LSWR 700, LSWR M7, LSWR O2, LSWR T9
+CabView ( "..\\..\\common.cab\\Ben\\Ben.cvf" )
+Sound ( "..\\..\\Common.Sound\\BA_8F\\4Fcab.sms" )
+
+LSWR B4
+CabView ( "..\\..\\common.cab\\HRPT_cab\\HRPT.cvf" )
+Sound ( "..\\..\\common.sound\\Baldwin_Tram\\LSWR_B4_cab.sms" )
+
+LSWR S15, SR N15, SR S15
+CabView ( "..\\..\\common.cab\\ArthurcabV3\\KA.cvf" )
+Sound ( "..\\..\\common.sound\\LMS-Crab\\LMS-Hughes_cab.sms"  )
+
+SDJR 7F
+CabView ( "..\\..\\common.cab\\Fowler_LHD\\88.cvf" )
+Sound ( "..\\..\\Common.Sound\\LMS-Crab\\LMS-Hughes_cab.sms" )
+
+SR LN
+CabView ( "..\\..\\common.cab\\ArthurcabV3\\KA.cvf" )
+Sound ( "..\\..\\common.sound\\2cyl_generic\\4c-LN-cab01.sms" )
+
+SR Q
+CabView ( "..\\..\\common.cab\\LYR_Aspinall\\LYR04.cvf" )
+Sound ( "..\\..\\Common.Sound\\LMS-Crab\\LMS-Hughes_cab.sms" )
+
+SR Q1
+CabView ( "..\\..\\common.cab\\SR_Q1\\Q1cab.cvf" )
+Sound ( "..\\..\\Common.Sound\\LMS-Crab\\SR-Q1_cab.sms" )
+
+SR U
+CabView ( "..\\..\\common.cab\\SR_U\\31806LHD.cvf" )
+Sound ( "..\\..\\Common.Sound\\LMS-Crab\\LMS-Hughes_cab.sms" )
+
+SR USA
+CabView ( "..\\..\\common.cab\\USA\\USA.cvf" )
+Sound ( "..\\..\\common.sound\\Baldwin_Tram\\USA_cab.sms" )
+
+SR V
+CabView ( "..\\..\\common.cab\\ArthurcabV3\\KA.cvf" )
+Sound ( "..\\..\\common.sound\\LMS-Jubilee\\LMS-Patriot_cab.sms" )
+
+Peckett W4
+CabView (..\\..\\Common.cab\\LYR_Aspinall\\Peckett.cvf)
+Sound ( "..\\..\\common.sound\\Baldwin_Tram\\BaldwinTram_#103_cab.sms" )
+

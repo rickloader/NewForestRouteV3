@@ -1,0 +1,38 @@
+Guide for Lamp textures on the M7 Loco.
+
+
+1.  To change textures to make the lamps invisible use the "Dead" textures in the "Lamps dead" folder, Copy these into the main folder where the rest of the textures are. To make a lamp live again just Copy the relevant texture from the "Live" folder.
+
+
+
+Viewed from the front the texture formats are as laid out below:
+
+
+					Lamp1	(Top of Smokebox)
+
+                                  Lamp2         Lamp3	
+
+		           Lamp4	Lamp5         Lamp6 
+
+
+REMEMBER YOU MUST HAVE 6 in no .ACE FILES (lamp1,lamp2,lamp3....lamp6.ace) - either LIVE or DEAD -  SHOWING in the main file list, otherwise MSTS will show an error.
+
+
+
+2.  REAR (TAIL) LAMPs.  Lamps have been modelled so that the appropriate rear lamps are added or removed to the same positions as those at the front.
+
+
+
+3.  TO ACTIVATE OR DE-ACTIVATE INDIVIDUAL LIGHT BEAMS. This is done in the .eng file .  Scroll down to the Lights/Headlights section and look for the Headlight () line.  To turn a beam on enter 3 in the brackets, to turn a beam off enter 2 in the brackets. Remember you will also need to turn on/off the appropriate Rearlight beams to match those at the front.
+
+4. EXAMPLE:  Assume Lamps 3 and 4 are the required Headcode.
+
+Lamps 1,2, 5and 6 should be "Dead" i.e.  The textures lamp1.ace, lamp2.ace, lamp5.ace and lamp6.ace. should be copied from the LAMPS DEAD folder and placed in the body of the Trainset folder.
+
+Lamps 3 and 4 should be "Live" i.e. The textures lamp3.ace and lamp4.ace should be copied from the LAMPS LIVE folder and placed in the main body of the Trainset folder.
+
+As stated above, there must always be 6 in no texture files (lamp1.ace, lamp2.ace etc) in the body of the main folder.
+
+In the Headlights Section of the .eng file, Headlights 3 and 4 should have a number 3 in the brackets of the Headlight line - all other headlights should have the number 2 inserted.
+
+Similarly, in the Rearlights Section of the .eng file, Rearlights 3 and 4 should have a number 3 in the brackets of the Headlight line - all other Rear lights should have the number 2 inserted.

@@ -1,0 +1,53 @@
+Cab-View : CR Class 903 and 177 cab view
+Version: 1.0
+Released : July 2010
+Author : Darwin Smith.
+
+Email : darwinesmith@yahoo.co.uk
+
+Thank you for downloading this cab view.
+
+Copyright © 2010 Darwin Smith
+All Rights Reserved
+
+This model is provided as freeware and may be freely distributed provided it is accompanied by this notice.  This model may not be sold or resold either alone or as part of any package.
+
+This cab is designed to be used in a common cab folder.  It includes night textures compatible with MSTS bin.
+
+The pack contains alternative cab views and parts for locomotives with both Westinghouse brakes and Vacuum brakes.
+
+
+INSTALLATION
+~~~~~~~~~~~~
+Before installing any models, I suggest you make a copy of all the files in the 
+\TRAINS\TRAINSET directory - failure to do this may result in a lengthy re-installation process.
+
+To install this cab view to any steam locomotive:
+
+1. Unzip the contents onto your desktop. 
+
+2. Use the auto installer to install the cab view into the common.cab directory.  Please be aware that this will overwrite any previous versions of this cab.
+
+3. Replace the cab view entry of the .eng file of the locomotive with one of the following lines:
+	
+	(a) For Caledonian Railway locomotives (using the Westinghouse brake only)	
+
+	CabView ( "..\\..\\common.cab\\CR903\\CR903.cvf" )
+
+	(b) For LMS or BR locomotives (working vacuum braked consists)	
+
+	CabView ( "..\\..\\common.cab\\CR903\\LMS903.cvf" )
+
+	(c) For LMS or BR locomotives (working Westinghouse braked consists)	
+
+	CabView ( "..\\..\\common.cab\\CR903\\LMS903w.cvf" )
+
+NOTICE: Please take care to use the correct cab view for the correct locomotive with the .eng file set up to use that braking system. For most purposes when replacing MSTS cab views for British locomotives option (b) will suffice.
+
+WARNING: If you wish to remove or replace this cab view please amend the CabView line of the .eng file as appropriate before removing or replacing the CabView folder or any of its contents.
+
+Darwin Smith
+July 2010
+darwinesmith@yahoo.co.uk
+
+

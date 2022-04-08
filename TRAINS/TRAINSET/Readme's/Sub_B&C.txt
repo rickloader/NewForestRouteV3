@@ -1,0 +1,38 @@
+Please note: These coaches are for personal use only.  They may not be sold or redistributed without permission from their author.
+
+Please note: The version 2 coaches will work with all consists developed for the version 1 coaches.
+
+Please note: These coaches require version 2.01 of the common textures.
+
+
+LMS Period 3 Coaches: Version 2.0 - How to Install
+
+
+1 - If you have not already done so, download and install the common textures.  These must be installed before any of the individual coaches are installed.
+
+
+2 - Using Windows Explorer, navigate to the installation folder of Train Simulator.  If you installed Train Simulator with the default settings, this will be:
+
+'C:\Program Files\Microsoft Games\Train Simulator'
+
+
+3 - Once you are into the installation folder, navigate to the 'Trains' folder.  Once in the 'Trains' folder, navigate to the 'TrainSet' folder.
+
+
+4 - If this is the first time that you have installed any of the LMS coaches, create a folder in the 'TrainSet' folder called 'LMSPERIOD3'.
+
+
+5 - Navigate to the folder called 'LMSPERIOD3'.  Copy all of the files from the zip file into this folder. 
+
+
+6 - Run the Train Simulator consist editor to create a consist with the LMS Period 3 coaches.  They will all have names that look like LMS_PIII_...
+
+
+Thank you
+
+David Ball
+jinty3@hotmail.com
+
+
+
+
