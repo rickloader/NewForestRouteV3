@@ -2,14 +2,13 @@ Thanks for your interest in the NewForest Route or the "Watersnake" V3.
 The route depicts the Bournemouth line in Hampshire and Dorset, under British Railways Southern Region in the 1950s.
 
 Installation
-	The route is presented as a stand alone mini route. Copy the “Newforestminiroute”  folder to any location. Run by clicking the Open Rails “menu.exe” inside the folder. Included is the mongame variant of Open Rails. If it is desired to run on the mainstream version of Open Rails, then open the OR content menu and point to Newforestminiroute / watersnake. Note that the updater function on the MG version will produce errors. The route is OR only, and will not run under MSTS. There are custom global and tsection files. Do not copy these into an existing installation.
+	The route is presented as a stand alone mini route. Download the route to a  “NewforestrouteV3”  folder in any location. Run by using the current "Unstable version of Open Rails or The ORNYMG version, then open the OR Options/content/ installation profiles menu and point to NewforestrouteV3 / watersnake. Note that the updater function on the MG version will produce errors. The route is OR only, and will not run under MSTS. There are custom global and tsection files. Do not copy these into an existing installation.
 
-					Testing Version Copyright
- 	A complete trainset isIncluded for testing the timetable. I don`t have permission from the model authors to distribute this yet. DO NOT SHARE THIS as it will prejudice my getting permission.
+					 Copyright
+ 	A complete trainset isIncluded for testing the timetable. . DO NOT SHARE THIS as copyright remains with the model authors.
 The route folder “watersnake” and Global may be shared
 	Updates
-Newforestminiroute is a work in progress. Updates are maintained on Google Drive. Email me for details. rickloader@hotmail.com . Key for trusted users:
-https://drive.google.com/drive/folders/1cHickRk7ebcCN2iFuMe-nzSXoOqsVgBR?usp=sharing
+Newforestminiroute is a work in progress. Updates are maintained on GitHub. Email me for details. rickloader@hotmail.com .
 
 The Route described
 
@@ -20,7 +19,7 @@ The Route described
 	In addition to the main line, several subsidiary routes are partly represented. e.g the Great Western Didcot Newbury and Southampton, the Somerset and Dorset to Templecombe and the Salisbury line as far as Romsey.
 	Southampton Docks has  reduced trackwork. The existing track shapes are not adequate, and the 1000 points needed for accuracy would overload the tile.
 	The period is set around 1958 but would be valid from the late `30s when Brockenhurst was remodelled, to 1964 when the old Ringwood line closed, and possibly electrification in `67.
-This version has scenery between Winchester and Wareham. Elsewhere scenery is minimal but it is included so that trains may run over the complete network . In V4 I hope to complete the rest of the scenery
+This version has scenery between Basingstoke and Weymouth. Elsewhere scenery is minimal but it is included so that trains may run over the complete network . In V4 I hope to complete the rest of the scenery
 Timetable 
 
 	The route focus is on OpenRails timetable mode. The aim is to simulate the complete network of services. Locomotives follow a complete “Duty” .Leaving the loco  shed  they pick up stock, run the service, dispose of stock, and finally retire to shed .
@@ -81,9 +80,8 @@ Gradients are a compromise with the DEMEX generated  terrain relief and the skew
 Known Problems
 
 1) Timetable stuck trains . At present some trains that previously worked well become inactive and do not move to their next location or pickup/transfer. I hope this can be resolved eventually. For now contact me for the latest timetable version or try a different timetable.
-2) Open rails errors. The OR log will show many errors. Some are the results of track data base problems from the MSTS editor. For now the route should run OK, but I welcome any help in fixing them.
-3) Some turntables do not operate
-4)  Signals were made for MSTS and some are not OR compatible. In particular the indicator signals.
+2) Open rails errors. The OR log will show many errors. Some are the results of track data base problems from the MSTS editor. For now the route should run OK.
+3)  Signals were made for MSTS and some are not OR compatible. In particular the indicator signals.
 
  
 	Copyright and thanks
@@ -138,12 +136,17 @@ Many other models are my own. My own models may be freely used and distributed, 
 If there is ANY doubt as to the author of a model please contact me . Apologies to anyone I have missed.
 
 Special thanks to
-		 John Yelland, Simon Barnes - custom Signals and signal kits
+		
+		Chris Jakeman - Open Rails and GitHub support 
+		Darwin Smith OR .eng files and carriages
+		David Forrest - File organisation
+		Martin Phillips - vehicles
 		Richard Stevenson and John Fox -signal Info
-		David Gibbons - texturing and prototype  help. Bournemouth train shed
-		Tim Booth - superb UKFS track
-		Darwin Smith OR .eng files
+		David Gibbons - texturing and prototype  help.
+		Tim Booth -  UKFS track
+		
 		Andrew Moody - prototype info
+		John Yelland, Simon Barnes - custom Signals and signal kits
 		Rob Roeterdink – timetable mode author
 		The Open Rails team
 		Goku – TSRE route editor
