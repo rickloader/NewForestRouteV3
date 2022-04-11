@@ -1,0 +1,161 @@
+1MSTS_Check v2.1                                             09-Apr-22 7:22:57 PM
+                   Missing Cabviews Report (cvfReport_1.txt)                   
+                  For installation :- C:\OR route - New Forest                  
+
+  No suggestions are shown because either 'None' was selected or a SourceList  
+       file is not available for the selected check for the chosen Group.
+
+*******************************************************************************
+Error number : 1
+Stock Folder   : DR_BR_4MT_76031
+Stock Item     : DR_BR_76031-L09.eng
+
+
+The vehicle's shape file ( DR_BR_4MT_76031.s ) is missing from its folder.
+===============================================================================
+Error number : 2
+Stock Folder   : DR_BR_WC_34102
+Stock Item     : DR_BR_WC_34102-D01.eng
+
+
+The vehicle's shape file ( DR_BR_WC_34102-D0l.s ) is missing from its folder.
+===============================================================================
+Error number : 3
+Stock Folder   : DR_BR_WC_34102
+Stock Item     : DR_BR_WC_34102-D11.eng
+
+
+The vehicle's shape file ( DR_BR_WC_34102-Dll.s ) is missing from its folder.
+===============================================================================
+Error number : 4
+Stock Folder   : DR_BR_WC_34102
+Stock Item     : DR_BR_WC_34102-D14.eng
+
+
+The vehicle's shape file ( DR_BR_WC_34102-Dl4.s ) is missing from its folder.
+===============================================================================
+Error number : 5
+Stock Folder   : GeorgeJennings
+Stock Item     : CCW_George_Jennings.eng
+
+
+The vehicle's shape file ( CCW_George_Jennings.s ) is missing from its folder.
+===============================================================================
+Error number : 6
+Stock Folder   : GWR1366
+Stock Item     : gwr1366-s.eng
+File Line      : CabView ( "..\\..\\common.cab\\GWR2\\tanker.cvf" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.cab\GWR2\tanker.cvf
+
+ >> 5 different .ace files are missing (may be more than one occurrence of each) :
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.cvf file line No. 5 : CabViewFile ( cabfront2.ace )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.cab\GWR2\cabfront2.ace
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.cvf file line No. 25 : Graphic ( fire2.ace )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.cab\GWR2\fire2.ace
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.cvf file line No. 26 : FuelCoal ( coal2.ace )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.cab\GWR2\coal2.ace
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.cvf file line No. 31 : Graphic ( firebox2.ace )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.cab\GWR2\firebox2.ace
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.cvf file line No. 70 : Graphic ( "injectorsteamcontrol left.ace" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.cab\GWR2\injectorsteamcontrol left.ace
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+Error number : 7
+Stock Folder   : LJ_14xx
+Stock Item     : RF_BR14xx1431.eng
+File Line      : CabView ( "Pannier.cvf" ) 
+
+.ace files folder/s not found.
+Missing folder : C:\OR route - New Forest\TRAINS\TRAINSET\common.cab\Tanker
+.cvf line No. 10 : CabViewFile (  "..\\..\\common.cab\\Tanker\\cableft.ace" )
+===============================================================================
+Error number : 8
+Stock Folder   : Maunsell_BR_Coaches
+Stock Item     : PP_Set602_BCK_6681.eng
+File Line      : CabView ( "..\\..\\common.cab\\SR_Push_Pull\\Push_Pull.cvf" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.cab\SR_Push_Pull\Push_Pull.cvf
+
+ >> One .ace file is missing, but there may be more than one occurrence of it :
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.cvf file line No. 70 : Graphic ( "blankview.ace" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.cab\SR_Push_Pull\blankview.ace
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+Error number : 9
+Stock Folder   : SDJR Class 2251
+Stock Item     : 3218.eng
+File Line      : CabView ( City.cvf )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\SDJR Class 2251\cabview\City.cvf
+
+Specified cabview folder doesn't exist.
+===============================================================================
+Error number : 10
+Stock Folder   : SDJR_2P_MultiPack
+Stock Item     : SDJR_2P_40564.eng
+File Line      : CabView ( "..\\..\\common.cab\\RF_Fowler_Cabs\\FOWLER_TENDER_CAB.cvf" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.cab\RF_Fowler_Cabs\FOWLER_TENDER_CAB.cvf
+
+ >> 8 different .ace files are missing (may be more than one occurrence of each) :
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.cvf file line No. 5 : CabViewFile ( ../../Common.cab/RF_Fowler_Cabs/Fowlerfront.ACE )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\Common.cab\RF_Fowler_Cabs\Fowlerfront.ACE
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.cvf file line No. 10 : CabViewFile ( ../../Common.cab/RF_Fowler_Cabs/Fowlerleft.ace )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\Common.cab\RF_Fowler_Cabs\Fowlerleft.ace
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.cvf file line No. 15 : CabViewFile ( ../../Common.cab/RF_Fowler_Cabs/Fowlerright.ace )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\Common.cab\RF_Fowler_Cabs\Fowlerright.ace
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.cvf file line No. 25 : Graphic ( "../../Common.cab/RF_Fowler_Cabs/fire.ace" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\Common.cab\RF_Fowler_Cabs\fire.ace
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.cvf file line No. 26 : FuelCoal ( "../../Common.cab/RF_Fowler_Cabs/coal.ace" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\Common.cab\RF_Fowler_Cabs\coal.ace
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.cvf file line No. 31 : Graphic ( ../../Common.cab/RF_Fowler_Cabs/horn.ace )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\Common.cab\RF_Fowler_Cabs\horn.ace
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.cvf file line No. 39 : Graphic ( "../../Common.cab/RF_Fowler_Cabs/injectorcontrols.ace" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\Common.cab\RF_Fowler_Cabs\injectorcontrols.ace
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.cvf file line No. 142 : Graphic (  ../../Common.cab/RF_Fowler_Cabs/SmallEjector.ace )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\Common.cab\RF_Fowler_Cabs\SmallEjector.ace
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+Error number : 11
+Stock Folder   : SIMPLEX2028NOCABNG
+Stock Item     : simplex2028nocabng.eng
+File Line      : CabView ( simplex2028nocabng.cvf )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\SIMPLEX2028NOCABNG\cabview\simplex2028nocabng.cvf
+
+Specified cabview folder doesn't exist.
+===============================================================================
+Error number : 12
+Stock Folder   : SR_Carriages_Ironclad
+Stock Item     : BS_4053-d03.eng
+File Line      : CabView ( "..\\..\\common.cab\\SR_Push_Pull\\Push_Pull.cvf" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.cab\SR_Push_Pull\Push_Pull.cvf
+
+ >> One .ace file is missing, but there may be more than one occurrence of it :
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.cvf file line No. 70 : Graphic ( "blankview.ace" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.cab\SR_Push_Pull\blankview.ace
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+Error number : 13
+Stock Folder   : SR_exLSWR_Coach_NC
+Stock Item     : SR_BCL_6495-d03.eng
+File Line      : CabView ( "..\\..\\common.cab\\SR_Push_Pull\\Push_Pull.cvf" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.cab\SR_Push_Pull\Push_Pull.cvf
+
+ >> One .ace file is missing, but there may be more than one occurrence of it :
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.cvf file line No. 70 : Graphic ( "blankview.ace" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.cab\SR_Push_Pull\blankview.ace
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================

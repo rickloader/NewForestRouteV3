@@ -1,0 +1,64 @@
+MSTS_Check v2.1                                             09-Apr-22 1:40:08 PM
+        Missing Freight Animations/Passenger Views Report (faReport.txt)        
+                  For installation :- C:\OR route - New Forest                  
+
+  No suggestions are shown because either 'None' was selected or a SourceList  
+       file is not available for the selected check for the chosen Group.
+
+*******************************************************************************
+Error number : 1
+Stock Folder   : CCW_George_Jennings
+Stock Item     : CCW_George_Jennings.eng
+File Line      : FreightAnim ( "..//common.crew//BA_1//CCW_DockTank.S" 0.1 0.1 )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.crew\BA_1\CCW_DockTank.S
+
+Shape file not found. <shape file added from patch file George jennings Fix>
+===============================================================================
+Error number : 2
+Stock Folder   : DR_BR_WC-R_34039
+Stock Item     : DR_BR_WC-R_34039.eng
+File Line      : PassengerCabinFile ( DR_BR_WC_34102.s )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\DR_BR_WC-R_34039\DR_BR_WC_34102.s
+
+Shape file not found.
+===============================================================================
+Error number : 3
+Stock Folder   : MB_50s_MK1_BCK_CC
+Stock Item     : MB_50s_MK1_BCK_CC.wag
+File Line      : PassengerCabinFile ( "..\\Mk1PassengerViews\\Mk1FirstInterior.s" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\Mk1PassengerViews\Mk1FirstInterior.s
+
+Shape file not found.
+===============================================================================
+Error number : 4
+Stock Folder   : MB_50s_MK1_BCK_M
+Stock Item     : MB_50s_MK1_BCK_M.wag
+File Line      : PassengerCabinFile ( "..\\Mk1PassengerViews\\Mk1FirstInterior.s" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\Mk1PassengerViews\Mk1FirstInterior.s
+
+Shape file not found.
+===============================================================================
+Error number : 5
+Stock Folder   : MB_50s_MK1_FK_M
+Stock Item     : MB_50s_MK1_FK_M.wag
+File Line      : PassengerCabinFile ( "..\\Mk1PassengerViews\\Mk1FirstInterior.s" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\Mk1PassengerViews\Mk1FirstInterior.s
+
+Shape file not found.
+===============================================================================
+Error number : 6
+Stock Folder   : SR_NPCS
+Stock Item     : SR_BY_404.wag
+File Line      : FreightAnim ( 404.s 0.1 0.1 )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\SR_NPCS\404.s
+
+Shape file not found.
+===============================================================================
+Error number : 7
+Stock Folder   : SR_NPCS
+Stock Item     : SR_BY_422.wag
+File Line      : FreightAnim ( 422.s 0.1 0.1 )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\SR_NPCS\422.s
+
+Shape file not found.
+===============================================================================

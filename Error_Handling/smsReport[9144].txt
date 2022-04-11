@@ -1,0 +1,306 @@
+MSTS_Check v2.1                                             09-Apr-22 1:39:37 PM
+                     Missing Sounds Report (smsReport.txt)                     
+                  For installation :- C:\OR route - New Forest                  
+
+  No suggestions are shown because either 'None' was selected or a SourceList  
+       file is not available for the selected check for the chosen Group.
+
+*******************************************************************************
+Error number : 1
+Stock Folder   : 3h_darkgreen
+Stock Item     : 3h_dbmso_darkgreen.eng
+File Line      : Sound ( "..\\..\\common.sound\\Thumper\\gp38eng.sms" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.sound\Thumper\gp38eng.sms
+
+ >> 2 different .wav files are missing (may be more than one occurrence of each) :
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.sms file line No. 143 : Discrete_Trigger (  12	StartLoopRelease ( 1	File ( "../../common.sound/Thumper/x_gp_compressor.wav" -1 )	SelectionMethod ( SequentialSelection ) ) )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.sound\Thumper\x_gp_compressor.wav
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.sms file line No. 237 : Variable_Trigger ( Variable2_Dec_Past 0.350 StartLoop   ( 1 File ( "../../common.sound/Thumper/ x_gp_power_cruise1.wav" -1 )   SelectionMethod ( SequentialSelection ) ) )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.sound\Thumper\ x_gp_power_cruise1.wav
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Missing folder : C:\OR route - New Forest\TRAINS\TRAINSET\common.sound\73Diesel
+.sms line No. 165 : Discrete_Trigger ( 22  	PlayOneShot ( 2 File ( "../../common.sound/Thumper/x_gp_airb_ind1.wav" -1 ) File ( "../../common.sound/73Diesel/x_gp_airb_ind2.wav" -1 ) SelectionMethod ( RandomSelection ) ) )
+===============================================================================
+Error number : 2
+Stock Folder   : 3h_darkgreen
+Stock Item     : 3h_dbmso_darkgreen.eng
+File Line      : Sound ( "..\\..\\common.sound\\Thumper\\gp38cab.sms" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.sound\Thumper\gp38cab.sms
+
+ >> 2 different .wav files are missing (may be more than one occurrence of each) :
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.sms file line No. 149 : Discrete_Trigger (  12	StartLoopRelease ( 1	File ( "../../common.sound/Thumper/gp_compressor.wav" -1 )	SelectionMethod ( SequentialSelection ) ) )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.sound\Thumper\gp_compressor.wav
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.sms file line No. 197 : Discrete_Trigger ( 26	PlayOneShot ( 1	File ( "../../common.sound/Thumper/gp_sandf.wav" -1 ) SelectionMethod ( SequentialSelection ) ) )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.sound\Thumper\gp_sandf.wav
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+Error number : 3
+Stock Folder   : 3h_darkgreen
+Stock Item     : 3h_dtcol_darkgreen.eng
+File Line      : Sound ( "..\\..\\common.sound\\Thumper\\trailereng.sms" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.sound\Thumper\trailereng.sms
+
+>> One .wav file is missing, but there may be more than one occurrence of it :
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.sms file line No. 43 : Discrete_Trigger (  12	StartLoopRelease ( 1	File ( "../../common.sound/Thumper/x_gp_compressor.wav" -1 )	SelectionMethod ( SequentialSelection ) ) )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.sound\Thumper\x_gp_compressor.wav
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Missing folder : C:\OR route - New Forest\TRAINS\TRAINSET\common.sound\73Diesel
+.sms line No. 65 : Discrete_Trigger ( 22  	PlayOneShot ( 2 File ( "../../common.sound/Thumper/x_gp_airb_ind1.wav" -1 ) File ( "../../common.sound/73Diesel/x_gp_airb_ind2.wav" -1 ) SelectionMethod ( RandomSelection ) ) )
+===============================================================================
+Error number : 4
+Stock Folder   : 3h_darkgreen
+Stock Item     : 3h_dtcol_darkgreen.eng
+File Line      : Sound ( "..\\..\\common.sound\\Thumper\\trailercab.sms" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.sound\Thumper\trailercab.sms
+
+ >> 2 different .wav files are missing (may be more than one occurrence of each) :
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.sms file line No. 51 : Discrete_Trigger (  12	StartLoopRelease ( 1	File ( "../../common.sound/Thumper/gp_compressor.wav" -1 )	SelectionMethod ( SequentialSelection ) ) )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.sound\Thumper\gp_compressor.wav
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.sms file line No. 99 : Discrete_Trigger ( 26	PlayOneShot ( 1	File ( "../../common.sound/Thumper/gp_sandf.wav" -1 ) SelectionMethod ( SequentialSelection ) ) )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.sound\Thumper\gp_sandf.wav
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+Error number : 5
+Stock Folder   : BR_exLMS
+Stock Item     : BR_exLMS_PIII_Open_Third_9023.wag
+
+
+The vehicle's shape file ( BR_P3TO9023.s ) is missing from its folder.
+===============================================================================
+Error number : 6
+Stock Folder   : BR_exLMS
+Stock Item     : BR_exLMS_PIII_Open_Third_9119.wag
+
+
+The vehicle's shape file ( BR_P3TO9119.s ) is missing from its folder.
+===============================================================================
+Error number : 7
+Stock Folder   : BR_exLMS
+Stock Item     : BR_exLMS_PIII_Open_Third_9186.wag
+
+
+The vehicle's shape file ( BR_P3TO9186.s ) is missing from its folder.
+===============================================================================
+Error number : 8
+Stock Folder   : BR_exLMS
+Stock Item     : BR_exLMS_PIII_Open_Third_9351.wag
+
+
+The vehicle's shape file ( BR_P3TO9351.s ) is missing from its folder.
+===============================================================================
+Error number : 9
+Stock Folder   : BR_Pullmans_LSW
+Stock Item     : BR_PKC_Theodora.wag
+
+
+The vehicle's shape file ( SR_PKC_Theodora.s ) is missing from its folder.
+===============================================================================
+Error number : 10
+Stock Folder   : CCW_George_Jennings
+Stock Item     : CCW_George_Jennings.eng
+File Line      : Sound ( "..\\..\\common.sound\\Baldwin_Tram\\BaldwinTram_#103_cab.sms" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.sound\Baldwin_Tram\BaldwinTram_#103_cab.sms
+
+ >> 2 different .wav files are missing (may be more than one occurrence of each) :
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.sms file line No. 706 : Discrete_Trigger ( 32 PlayOneShot ( 1 File ( "i-AsphanLever_15F_SA.wav" -1 ) SelectionMethod ( SequentialSelection ) ) )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.sound\Baldwin_Tram\i-AsphanLever_15F_SA.wav
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.sms file line No. 707 : Discrete_Trigger ( 44 PlayOneShot ( 1 File ( "i-SteamValve_control.wav" -1 ) SelectionMethod ( SequentialSelection ) ) )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.sound\Baldwin_Tram\i-SteamValve_control.wav
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+Error number : 11
+Stock Folder   : DEE_D6541
+Stock Item     : DEE_D6541_VB.eng
+File Line      : Sound ("..\\..\\common.sound\\26_27.snd\\gp38eng.sms")
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+The following .sms file line is invalid and cannot be checked.
+Invalid separator in path
+line No. 206 : Variable_Trigger ( Variable2_Dec_Past 0.010 StartLoop   ( 1 File ("..\\..\\common.sound\26_27.snd\\\x_gp_power_cruise1.wav" -1 )   SelectionMethod ( SequentialSelection ) ) )
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+===============================================================================
+Error number : 12
+Stock Folder   : DEE_D6541
+Stock Item     : DEE_D6541_VB.eng
+File Line      : Sound ("..\\..\\common.sound\\26_27.snd\\gp38cab.sms")
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.sound\26_27.snd\gp38cab.sms
+
+>> One .wav file is missing, but there may be more than one occurrence of it :
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.sms file line No. 276 : Variable_Trigger ( Variable2_Dec_Past 0.350 StartLoop   ( 1 File ("..\\..\\common.sound\\26_27.snd\\ gp_power_cruise1.wav" -1 )   SelectionMethod ( SequentialSelection ) ) )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\common.sound\26_27.snd\ gp_power_cruise1.wav
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+Error number : 13
+Stock Folder   : DR_BR_43xx_5322
+Stock Item     : DR_BR_43xx_5322-B.eng
+File Line      : Sound ( "..\\..\\common.sound\\SteamSoundsOrgUk\\GWR-Manor-Int-100b-01.sms" )
+
+.wav files folder/s not found.
+Missing folder : C:\OR route - New Forest\TRAINS\TRAINSET\380\sound
+.sms line No. 504 : Discrete_Trigger ( 4 	StartLoopRelease ( 1 File ( "../../380/sound/x_a380_sand.wav" -1  ) SelectionMethod ( SequentialSelection ) ) )
+===============================================================================
+Error number : 14
+Stock Folder   : DR_BR_4MT_76031
+Stock Item     : DR_BR_4MT_76031T.wag
+
+
+The vehicle's shape file ( DR_BR_4MT_76005T.s ) is missing from its folder.
+===============================================================================
+Error number : 15
+Stock Folder   : GWR1366
+Stock Item     : gwr1366-s.eng
+File Line      : Sound ( "..\\..\\common.sound\\SteamSoundsOrgUk\\GWR-Manor-Int-100a-01.sms" )
+
+.wav files folder/s not found.
+Missing folder : C:\OR route - New Forest\TRAINS\TRAINSET\380\sound
+.sms line No. 504 : Discrete_Trigger ( 4 	StartLoopRelease ( 1 File ( "../../380/sound/x_a380_sand.wav" -1  ) SelectionMethod ( SequentialSelection ) ) )
+===============================================================================
+Error number : 16
+Stock Folder   : LJ_14xx
+Stock Item     : RF_BR14xx1431.eng
+File Line      : Sound ( "..\\..\\common.sound\\2cyl_generic\\2c-100b-eng01.sms" )
+
+.wav files folder/s not found.
+Missing folder : C:\OR route - New Forest\TRAINS\TRAINSET\380\sound
+.sms line No. 414 : Discrete_Trigger ( 4 	StartLoopRelease ( 1 File ( "../../380/sound/x_a380_sand.wav" -1  ) SelectionMethod ( SequentialSelection ) ) )
+===============================================================================
+Error number : 17
+Stock Folder   : LJ_14xx
+Stock Item     : RF_BR14xx1431.eng
+File Line      : Sound ( "..\\..\\common.sound\\2cyl_generic\\2c-100b-cab01.sms" )
+
+.wav files folder/s not found.
+Missing folder : C:\OR route - New Forest\TRAINS\TRAINSET\380\sound
+.sms line No. 397 : Discrete_Trigger ( 30 	StartLoopRelease ( 1 File ( "../../380/sound/a380_injector1i.wav" -1  ) SelectionMethod ( SequentialSelection ) ) )		
+===============================================================================
+Error number : 18
+Stock Folder   : LJ_Railcar
+Stock Item     : LJ_ExGW_Railcar.eng
+File Line      : Sound ( Sound ( "..\\..\\common.sound\\1st Gen DMU\\DMUcab.sms" )
+
+Invalid characters in path
+===============================================================================
+Error number : 19
+Stock Folder   : SDJR Class 2251
+Stock Item     : 2217.eng
+File Line      : Sound ( "..\\..\\common.sound\\SteamSoundsOrgUk\\GWR-Manor-Int-100a-01.sms" )
+
+.wav files folder/s not found.
+Missing folder : C:\OR route - New Forest\TRAINS\TRAINSET\380\sound
+.sms line No. 504 : Discrete_Trigger ( 4 	StartLoopRelease ( 1 File ( "../../380/sound/x_a380_sand.wav" -1  ) SelectionMethod ( SequentialSelection ) ) )
+===============================================================================
+Error number : 20
+Stock Folder   : SDJR Class 2251
+Stock Item     : BRBlk_Early_2251T.wag
+
+
+The vehicle's shape file ( RBlk_Early_2251T.s ) is missing from its folder.
+===============================================================================
+Error number : 21
+Stock Folder   : SDJR Class 5700
+Stock Item     : #3720.eng
+File Line      : Sound ( "..\\..\\common.sound\\SteamSoundsOrgUk\\#GWR-Manor-66-100-11.sms" )
+
+.wav files folder/s not found.
+Missing folder : C:\OR route - New Forest\TRAINS\TRAINSET\380\sound
+.sms line No. 51 : File ( "../../380/sound/x_a380_random1.wav" -1 )
+===============================================================================
+Error number : 22
+Stock Folder   : SDJR Class 5700
+Stock Item     : 3720.eng
+File Line      : Sound ( "..\\..\\common.sound\\SteamSoundsOrgUk\\GWR-Manor-Int-100a-01.sms" )
+
+.wav files folder/s not found.
+Missing folder : C:\OR route - New Forest\TRAINS\TRAINSET\380\sound
+.sms line No. 504 : Discrete_Trigger ( 4 	StartLoopRelease ( 1 File ( "../../380/sound/x_a380_sand.wav" -1  ) SelectionMethod ( SequentialSelection ) ) )
+===============================================================================
+Error number : 23
+Stock Folder   : SDJR_2P_MultiPack
+Stock Item     : SDJR_2P_40564.eng
+File Line      : Sound ( "..\\..\\common.sound\\2cyl_generic\\2c-80b-eng01.sms" )
+
+.wav files folder/s not found.
+Missing folder : C:\OR route - New Forest\TRAINS\TRAINSET\380\sound
+.sms line No. 414 : Discrete_Trigger ( 4 	StartLoopRelease ( 1 File ( "../../380/sound/x_a380_sand.wav" -1  ) SelectionMethod ( SequentialSelection ) ) )
+===============================================================================
+Error number : 24
+Stock Folder   : SDJR_2P_MultiPack
+Stock Item     : SDJR_2P_40564.eng
+File Line      : Sound ( "..\\..\\common.sound\\2cyl_generic\\2c-100b-cab01.sms" )
+
+.wav files folder/s not found.
+Missing folder : C:\OR route - New Forest\TRAINS\TRAINSET\380\sound
+.sms line No. 397 : Discrete_Trigger ( 30 	StartLoopRelease ( 1 File ( "../../380/sound/a380_injector1i.wav" -1  ) SelectionMethod ( SequentialSelection ) ) )		
+===============================================================================
+Error number : 25
+Stock Folder   : SIMPLEX2028NOCABNG
+Stock Item     : simplex2028nocabng.eng
+File Line      : Sound (    "simplex2028nocabngeng.sms" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\SIMPLEX2028NOCABNG\sound\simplex2028nocabngeng.sms
+
+.sms file not found in expected location or global SOUND folder.
+===============================================================================
+Error number : 26
+Stock Folder   : SIMPLEX2028NOCABNG
+Stock Item     : simplex2028nocabng.eng
+File Line      : Sound (    "simplex2028nocabngcab.sms" )
+Full path : C:\OR route - New Forest\TRAINS\TRAINSET\SIMPLEX2028NOCABNG\sound\simplex2028nocabngcab.sms
+
+.sms file not found in expected location or global SOUND folder.
+===============================================================================
+Error number : 27
+Stock Folder   : SR_NPCS
+Stock Item     : SR_PLV_1066.wag
+
+
+The vehicle's shape file ( D3103a.s ) is missing from its folder.
+===============================================================================
+Error number : 28
+Stock Folder   : SR_NPCS
+Stock Item     : SR_PLV_1212.wag
+
+
+The vehicle's shape file ( D3103a.s ) is missing from its folder.
+===============================================================================
+Error number : 29
+Stock Folder   : SR_NPCS
+Stock Item     : SR_PLV_1974.wag
+
+
+The vehicle's shape file ( D960.s ) is missing from its folder.
+===============================================================================
+Error number : 30
+Stock Folder   : SR_USA_Class_0-6-0T
+Stock Item     : SR_USA_Class_30065.eng
+File Line      : Sound ("..\\..\\common.sound\\2cyl_generic\\2c-140b-eng01.sms" )
+
+.wav files folder/s not found.
+Missing folder : C:\OR route - New Forest\TRAINS\TRAINSET\380\sound
+.sms line No. 414 : Discrete_Trigger ( 4 	StartLoopRelease ( 1 File ( "../../380/sound/x_a380_sand.wav" -1  ) SelectionMethod ( SequentialSelection ) ) )
+===============================================================================
+Error number : 31
+Stock Folder   : SR_USA_Class_0-6-0T
+Stock Item     : SR_USA_Class_30065.eng
+File Line      : Sound ( "..\\..\\common.sound\\2cyl_generic\\2c-140b-cab01.sms" )
+
+.wav files folder/s not found.
+Missing folder : C:\OR route - New Forest\TRAINS\TRAINSET\380\sound
+.sms line No. 397 : Discrete_Trigger ( 30 	StartLoopRelease ( 1 File ( "../../380/sound/a380_injector1i.wav" -1  ) SelectionMethod ( SequentialSelection ) ) )		
+===============================================================================
+Error number : 32
+Stock Folder   : UK_Open
+Stock Item     : exLNER_2xSingle_9SmallBlkGird.wag
+
+
+The vehicle's shape file ( exLNER_2xSingle.s ) is missing from its folder.
+===============================================================================
