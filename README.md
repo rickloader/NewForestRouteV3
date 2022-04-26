@@ -11,6 +11,8 @@ Attempts to recreate the 1950s timetable for Open Rails Timetable mode.
 The route is freeware, but uses rolling stock provided by others. Copyright remains with rolling stock authors, and they have my thanks.
 Some non - fatal errors exist. These will gradually be reduced. Some errors are a MSTS legacy, and must be tolerated.
 Licence. This work is covered by the Creative Commons 4.0 International 1) the New Forest (Watersnake) route CC-BY 2) Third party models and rolling stock CC-BY-NC-ND
+#Licence
 Licence details are to be found here https://creativecommons.org/about/cclicenses/
 To get the route click on the "latest reease" or the "code" button. As the route is continually updated it is recommended you install Github desktop and watch
 You will also need Open Rails http://www.openrails.org/
+Please read the Wiki on the tab above
