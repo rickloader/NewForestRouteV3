@@ -115,7 +115,7 @@ bedford  mini                                          ian morgan
 Morris	                                                 John Dibben
 austin                                                   Jeff Layfield
 ford pop, consul, trojan vans Foden        Martin Phillips
-Vehicles Prefixed Doc. Trolleybus          MartinPhillips
+Vehicles Prefixed Doc. Trolleybus   Scenery items "Dov"       MartinPhillips
 bedford vans                                          Tony Adams
 Bristol Bus                                            Fred Carter
 Morris Minor vans  A40                                 Trevor Burt
@@ -126,6 +126,7 @@ New Roads 				Bruce Bridges, Martyn T. Griffin, Steven Masters, Jeff Rice
 Large Greenhouse	allotment		Frank Carver
 Speed posts				John Kendrick
 sewage works				Charles Malcolm
+  GWR footbridge			Gordon Mackenzie
 6 coasters in "boats" - Darwin Smith.
 Travelling crane Frank Sandwell
 Refinery - William W. Bieszczak Russel Beer
@@ -160,6 +161,7 @@ Route History
 		V2 Nov 09   Track improved at Bournemouth and Southampton Docks. Scenery extended to Bournemouth and Westmoors. Additional custom signals added.
 		V2.1Dec 09  Christchurch signal relocated. Newroads files eliminated.
 		V3 July19. Route extended to Basingstoke, weymouth and Templecombe.Route optimised for OR timetable mode. Now OR only
+		V3 April22 Route released on GitHub
 
 Personal
 	In 1958 my mother took a teaching job at Brockenhurst. As a toddler I took the 08:10 train from Christchurch. It was only an M7 tank engine, but that engendered a life long love of trains .
