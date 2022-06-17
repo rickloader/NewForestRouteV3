@@ -1,0 +1,40 @@
+Version 1.1
+
+53806 now chain coupled and chain tender also supplied.
+Improvement to ai sounds.
+My thanks to Martin Pope for improvements to the .eng file sounds and testing by Jim Ashman. 
+
+These changes should not impact the running of the 15 activities for the S & D created by me, and uploaded the same time as the S & D route. 
+*****************************************************
+
+
+
+BR Class 7F 2-8-0 steam locomotive
+
+3D Model built from Photos and textured by Dave Robinson
+
+Sounds By Stuart Williamson 
+
+
+-----------------------------------------------------------------------------
+The 3D model has been built using TrainSim Modeller
+
+
+
+These are re-numbers of the original model, 53809, built by Dave Robinson. My thanks go to him for allowing re-skins.
+
+The loco,s are 53806, 53807, 53808. All were based at Bath Green Park MPD, or one of its sub sheds at some time in the 1950,s until closure of the line.
+
+You will need Reg Furniss,s Fowler CabView file UKTS ID20803 ( add it to 
+your common.cab folder )
+
+
+You must have Stuart Williamson 2Cyl sounds File ID 2910 installed in your common.sound folder. 
+
+please refer to the original read-me on how to use the lamps and restrictions on use etc.
+
+INSTALLATION:
+Unzip the file to somewhere safe. Copy the folder.............Bath_SDJR_7F................... into your trainset folder.
+
+Clive Heard (casperdog)
+Dec 2010
