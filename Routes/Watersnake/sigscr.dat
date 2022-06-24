@@ -144,28 +144,40 @@ extern float    block_state();
 
 SCRIPT SRStop
 
-// Stop
+// Stop with callon
 
-	extern float	block_state ();
-	extern float	route_set ();
-	extern float	def_draw_state ();
-	extern float	state;
-	extern float	draw_state;
-	extern float	enabled;
+	extern float    block_state();
+        extern float    route_set();
+        extern float    def_draw_state();
+        extern float    state;
+        extern float    draw_state;
+        extern float    enabled;
+		extern float    TrainHasCallOn_Restricted();  
 
-	if (!enabled ||								// Not enabled/cleared to show natural state?
-		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
-		!route_set())							// Switch not set as per link?
+		if (!enabled ||								
+// Not enabled/cleared to show natural state?
+		block_state() != BLOCK_CLEAR ||		
+// Block ahead not clear?
+		!route_set())							
+// Switch not set as per link?
 	{
 		state = SIGASP_STOP;
 	}
-	else
+        if (enabled && route_set() && TrainHasCallOn_Restricted() && block_state() == BLOCK_OCCUPIED )
+           
+                        // clear on CallOn
+	{ 
+                        state = SIGASP_RESTRICTING;
+      }                  
+                else if (block_state == BLOCK_CLEAR)
+                        // normal clear
 	{
-		state = SIGASP_CLEAR_2;
-	}
+                        state = SIGASP_CLEAR_2;
+                                        
+        }
 
 // Get draw state
-	draw_state = def_draw_state (state);
+        draw_state = def_draw_state(state);
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -465,28 +477,41 @@ SCRIPT LSWRGrdSig
 ///////////////////////////////////////////////////////////////////////////////
 SCRIPT LSWRStop
 
-// Stop
+// Stop with callon
 
-	extern float	block_state ();
-	extern float	route_set ();
-	extern float	def_draw_state ();
-	extern float	state;
-	extern float	draw_state;
-	extern float	enabled;
+extern float    block_state();
+        extern float    route_set();
+        extern float    def_draw_state();
+        extern float    state;
+        extern float    draw_state;
+        extern float    enabled;
+		extern float    TrainHasCallOn_Restricted();  
 
-	if (!enabled ||								// Not enabled/cleared to show natural state?
-		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
-		!route_set())							// Switch not set as per link?
+		if (!enabled ||								
+// Not enabled/cleared to show natural state?
+		block_state() != BLOCK_CLEAR ||		
+// Block ahead not clear?
+		!route_set())							
+// Switch not set as per link?
 	{
 		state = SIGASP_STOP;
 	}
-	else
+        if (enabled && route_set() && TrainHasCallOn_Restricted() && block_state() == BLOCK_OCCUPIED )
+           
+                        // clear on CallOn
+	{ 
+                        state = SIGASP_RESTRICTING;
+      }                  
+                else if (block_state == BLOCK_CLEAR)
+                        // normal clear
 	{
-		state = SIGASP_CLEAR_2;
-	}
+                        state = SIGASP_CLEAR_2;
+                                        
+        }
 
 // Get draw state
-	draw_state = def_draw_state (state);
+        draw_state = def_draw_state(state);
+
 
 ///////////////////////////////////////////////////////////////////////////////
 SCRIPT LSWRStopBranch

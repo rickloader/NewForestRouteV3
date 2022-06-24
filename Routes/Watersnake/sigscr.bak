@@ -1,0 +1,1768 @@
+
+///////////////////////////////////////////////////////////////////////////////
+// Signal Type Logic Scripts
+// 10 12 24 SR
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT BannerRepeaterHome
+
+// 'BannerRepeater Home' signal head
+
+	extern float	next_sig_lr ();
+	extern float	draw_state;
+	extern float	sig_feature ();
+
+// If required, show the 'stop' indication.				(operates on 'AUTO' basis
+	if (next_sig_lr (SIGFN_NORMAL) ==# SIGASP_STOP)			// Main sig on STOP?
+	{
+		draw_state = 0;
+	}
+	else
+//											Check if 'UQ' display needed
+	{ if (sig_feature (SIGFEAT_USER2))
+		{	
+		draw_state = 2;
+		}
+	  else
+		{draw_state = 1;
+		}
+	}
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT BannerRepeaterDistant
+
+// 'BannerRepeater Distant' signal head
+
+	extern float	next_sig_lr ();
+	extern float	draw_state;
+	extern float	sig_feature ();
+	float			next_state;
+
+//							If repeating a semaphore - find it
+//							otherwise deduce from next normal signal
+      if (sig_feature (SIGFEAT_USER1))
+	{
+	next_state = next_sig_lr (SIGFN_DISTANCE);
+	}
+	else
+	{
+	next_state = next_sig_lr (SIGFN_NORMAL);
+	}
+// If required, show the 'stop' indication.				(operates on 'AUTO' basis
+
+	if (next_state <# SIGASP_CLEAR_1) 					// Main sig not on CLEAR?
+	{
+		draw_state = 0;
+	}
+	else
+//											Check if 'UQ' display needed
+	{ if (sig_feature (SIGFEAT_USER2))
+		{	
+		draw_state = 2;
+		}
+	  else
+		{draw_state = 1;
+		}
+	}
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SRGrdSig
+
+// Callon Shunt
+extern float    block_state();
+        extern float    route_set();
+        extern float    def_draw_state();
+        extern float    state;
+        extern float    draw_state;
+        extern float    enabled;
+		extern float    TrainHasCallOn_Restricted();  
+
+		if (!enabled ||								
+// Not enabled/cleared to show natural state?
+		block_state() != BLOCK_CLEAR ||		
+// Block ahead not clear?
+		!route_set())							
+// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+        if (enabled && route_set() && TrainHasCallOn_Restricted() && block_state() == BLOCK_OCCUPIED )
+           
+                        // clear on CallOn
+	{ 
+                        state = SIGASP_RESTRICTING;
+      }                  
+                else if (block_state == BLOCK_CLEAR)
+                        // normal clear
+	{
+                        state = SIGASP_CLEAR_2;
+                                        
+        }
+
+// Get draw state
+        draw_state = def_draw_state(state);
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SRCallon
+
+// Callon Shunt
+extern float    block_state();
+        extern float    route_set();
+        extern float    def_draw_state();
+        extern float    state;
+        extern float    draw_state;
+        extern float    enabled;
+		extern float    TrainHasCallOn_Restricted();  
+
+		if (!enabled ||								
+// Not enabled/cleared to show natural state?
+		block_state() != BLOCK_CLEAR ||		
+// Block ahead not clear?
+		!route_set())							
+// Switch not set as per link?
+	{
+		draw_state = 0;
+	}
+        if (enabled && route_set() && TrainHasCallOn_Restricted() && block_state() == BLOCK_OCCUPIED )
+           
+                        // clear on CallOn
+	{ 
+                        state = SIGASP_RESTRICTING;
+      }                  
+                else if (block_state == BLOCK_CLEAR)
+                        // normal clear
+	{
+                        state = SIGASP_CLEAR_2;
+                                        
+        }
+
+// Get draw state
+        draw_state = def_draw_state(state);
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SRStop
+//stop
+// Callon
+extern float    block_state();
+        extern float    route_set();
+        extern float    def_draw_state();
+        extern float    state;
+        extern float    draw_state;
+        extern float    enabled;
+		extern float    TrainHasCallOn_Restricted();  
+
+		if (!enabled ||								
+// Not enabled/cleared to show natural state?
+		block_state() != BLOCK_CLEAR ||		
+// Block ahead not clear?
+		!route_set())							
+// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+        if (enabled && route_set() && TrainHasCallOn_Restricted() && block_state() == BLOCK_OCCUPIED )
+           
+                        // clear on CallOn
+	{ 
+                        state = SIGASP_CLEAR_2;
+      }                  
+                else if (block_state == BLOCK_CLEAR)
+                        // normal clear
+	{
+                        state = SIGASP_CLEAR_2;
+                                        
+        }
+
+// Get draw state
+        draw_state = def_draw_state(state);
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SRlocalStop
+
+// Stop
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SRStopBranch
+
+// Branch Stop
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_1;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SRStopBranch40
+
+// Branch Stop
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_1;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SRDist
+
+// Distant
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	dist_multi_sig_mr ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if ( //!enabled ||							// Not enabled/cleared to show natural state?
+		!route_set() ||							// Switch not set as per link?
+		dist_multi_sig_mr (SIGFN_NORMAL, SIGFN_DISTANCE) !=# SIGASP_CLEAR_2)
+	{
+		state = SIGASP_APPROACH_2;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SRDistBranch
+
+// Branch Distant
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	dist_multi_sig_mr ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if ( //!enabled ||							// Not enabled/cleared to show natural state?
+		!route_set() ||							// Switch not set as per link?
+		dist_multi_sig_mr (SIGFN_NORMAL, SIGFN_DISTANCE) <# SIGASP_CLEAR_1)
+	{
+		state = SIGASP_APPROACH_2;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SRDistStop
+
+// Distant and Stop
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	dist_multi_sig_mr ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	extern float	this_sig_lr ();
+
+	if ( //!enabled ||
+		!route_set () ||							// Not enabled/cleared to show natural state?
+		dist_multi_sig_mr (SIGFN_NORMAL, SIGFN_DISTANCE) !=# SIGASP_CLEAR_2 ||
+		this_sig_lr (SIGFN_NORMAL) !=# SIGASP_CLEAR_2 )
+
+	{
+		state = SIGASP_APPROACH_2;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SRSiding
+
+// Siding
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_1;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SRDummy
+
+// Dummy
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+	else
+	{
+		state = SIGASP_RESTRICTING;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SRDumDistStop
+
+// SR Dummy Distant and Stop
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_APPROACH_2;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SRFixedDist
+
+// Fixed Distant
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	dist_multi_sig_mr ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if ( //!enabled ||							// Not enabled/cleared to show natural state?
+		!route_set() ||							// Switch not set as per link?
+		dist_multi_sig_mr (SIGFN_NORMAL, SIGFN_DISTANCE) !=# SIGASP_CLEAR_2)
+	{
+		state = SIGASP_APPROACH_2;
+	}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Signal Type Logic Scripts
+// 10 12 24 LSWR
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT LSWRGrdSig
+
+// Shunt
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+	else
+	{
+		state = SIGASP_RESTRICTING;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT LSWRStop
+
+// Stop
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT LSWRStopBranch
+
+// Branch Stop
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_1;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT LSWRDist
+
+// Distant
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	dist_multi_sig_mr ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if ( //!enabled ||							// Not enabled/cleared to show natural state?
+		!route_set() ||							// Switch not set as per link?
+		dist_multi_sig_mr (SIGFN_NORMAL, SIGFN_DISTANCE) !=# SIGASP_CLEAR_2)
+	{
+		state = SIGASP_APPROACH_2;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT LSWRDistBranch
+
+// Branch Distant
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	dist_multi_sig_mr ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if ( //!enabled ||							// Not enabled/cleared to show natural state?
+		!route_set() ||							// Switch not set as per link?
+		dist_multi_sig_mr (SIGFN_NORMAL, SIGFN_DISTANCE) <# SIGASP_CLEAR_1)
+	{
+		state = SIGASP_APPROACH_2;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT LSWRDistStop
+
+// Distant and Stop
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	dist_multi_sig_mr ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	extern float	this_sig_lr ();
+
+	if ( //!enabled ||
+		!route_set () ||							// Not enabled/cleared to show natural state?
+		dist_multi_sig_mr (SIGFN_NORMAL, SIGFN_DISTANCE) !=# SIGASP_CLEAR_2 ||
+		this_sig_lr (SIGFN_NORMAL) !=# SIGASP_CLEAR_2 )
+
+	{
+		state = SIGASP_APPROACH_2;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT LSWRFixDistStop
+
+// Distant and Stop
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	dist_multi_sig_mr ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	extern float	this_sig_lr ();
+
+	if ( //!enabled ||
+		!route_set () ||							// Not enabled/cleared to show natural state?
+		dist_multi_sig_mr (SIGFN_NORMAL, SIGFN_DISTANCE) !=# SIGASP_CLEAR_2 ||
+		this_sig_lr (SIGFN_NORMAL) !=# SIGASP_CLEAR_2 )
+
+	{
+		state = SIGASP_APPROACH_2;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT LSWRSiding
+
+// Siding
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_1;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SRGrdSigYellow
+
+// Yellow Shunt
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+			state = SIGASP_RESTRICTING;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_1;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SRSidingYellow
+
+// Yellow Siding
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+			state = SIGASP_RESTRICTING;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_1;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SRStopFDBranch
+// Branch Stop and Fixed Distant
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_1;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SR_LatGantry_Home
+// SR Lattice Post Gantry Upper Quad Home
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SR_SemHomeDistant
+// SR Rail built Upper Quad Home and Distant
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	dist_multi_sig_mr ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	extern float	this_sig_lr ();
+
+	if ( //!enabled ||
+		!route_set () ||							// Not enabled/cleared to show natural state?
+		dist_multi_sig_mr (SIGFN_NORMAL, SIGFN_DISTANCE) !=# SIGASP_CLEAR_2 ||
+		this_sig_lr (SIGFN_NORMAL) !=# SIGASP_CLEAR_2 )
+
+	{
+		state = SIGASP_APPROACH_2;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SR_SemDistant
+//SR Rail built Upper Quad Distant
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	dist_multi_sig_mr ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if ( //!enabled ||							// Not enabled/cleared to show natural state?
+		!route_set() ||							// Switch not set as per link?
+		dist_multi_sig_mr (SIGFN_NORMAL, SIGFN_DISTANCE) !=# SIGASP_CLEAR_2)
+	{
+		state = SIGASP_APPROACH_2;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SR_SemHome
+// SR Rail built Upper Quad Home
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT TRACKEND
+// End of track signal
+
+	extern float	state;
+	extern float	draw_state;
+
+	state = SIGASP_STOP ;
+	draw_state = 0;
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT LampCallon_OR
+// Callon Signal signal for Open Rails restricting MSTS
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_1;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+
+	
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT VR_HC1
+
+	// Use SIG_EXTERNS 'macro' instead?..
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	next_sig_lr ();
+	extern float	sig_feature ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	float			next_state;
+
+	if (!enabled ||
+		block_state() !=# BLOCK_CLEAR ||	
+		!route_set ())	// Switch not set as per link?
+  
+	{
+		state = SIGASP_STOP;
+	}
+   else
+	      {
+           next_state = next_sig_lr (SIGFN_NORMAL);
+		if (next_state ==# SIGASP_CLEAR_1 ||
+                next_state ==# SIGASP_APPROACH_1 ||
+                next_state ==# SIGASP_APPROACH_2 ||
+                next_state ==# SIGASP_APPROACH_3 )
+       {     
+            state = SIGASP_STOP;
+       }
+	else
+		{
+		       state = SIGASP_CLEAR_2;    
+            }
+        }
+
+	draw_state = def_draw_state (state);
+
+//////////////////////////////////////////////////////////////////////////////////////
+SCRIPT VR_HC2
+
+	// Use SIG_EXTERNS 'macro' instead?..
+	extern float	block_state ();
+	extern float	route_set ();
+     	extern float	next_sig_lr ();
+	extern float	sig_feature ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	extern float	TrainHasCallon ();
+	
+	float			next_state;
+
+	if (!enabled ||
+		block_state() !=# BLOCK_CLEAR ||	
+		!route_set ()) 				
+	{
+			state = SIGASP_STOP;
+	}
+else if (block_state == #BLOCK_OCCUPIED && TrainHasCallOn() )
+{
+// clear on occupied track and CallOn allowed
+state  = SIGASP_RESTRICTING;
+}
+	else
+	{
+		next_state = next_sig_lr (SIGFN_NORMAL);
+
+		if (next_state ==# SIGASP_CLEAR_1 ||
+                next_state ==# SIGASP_APPROACH_1 )
+		{
+			state = SIGASP_RESTRICTING;
+		}	 
+		else 
+		{
+			state = SIGASP_CLEAR_2;
+		}
+	}
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT VR_SPEC
+
+	// Use SIG_EXTERNS 'macro' instead?..
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	next_sig_lr ();
+	extern float	sig_feature ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	float			next_state;
+
+	if (!enabled ||							
+		block_state() !=# BLOCK_CLEAR ||	
+		!route_set ())						
+	{			
+			state = SIGASP_CLEAR_1;
+	}
+	else     
+	      {
+		next_state = next_sig_lr (SIGFN_NORMAL);
+
+		if (next_state ==# SIGASP_STOP ||
+			next_state ==# SIGASP_STOP_AND_PROCEED)
+             {
+			state = SIGASP_RESTRICTING;
+             }
+       else if (next_state ==# SIGASP_RESTRICTING)
+		 {
+			state = SIGASP_APPROACH_1;
+		 }	
+	  else        
+		 {
+			state = SIGASP_CLEAR_2;
+		 }
+	}
+	draw_state = def_draw_state (state);
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SR_SemHomeDistantA
+// SR Rail built Upper Quad Home and Distant
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	dist_multi_sig_mr ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	extern float	this_sig_lr ();
+
+	if ( //!enabled ||
+		!route_set () ||							// Not enabled/cleared to show natural state?
+		dist_multi_sig_mr (SIGFN_NORMAL, SIGFN_DISTANCE) !=# SIGASP_CLEAR_2 ||
+		this_sig_lr (SIGFN_NORMAL) !=# SIGASP_CLEAR_2 )
+
+	{
+		state = SIGASP_APPROACH_2;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT UKInd
+
+	// Use SIG_EXTERNS 'macro' instead?..
+	extern float	block_state ();
+	extern float	route_set ();
+     	extern float	next_sig_lr ();
+	extern float	sig_feature ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	float			next_state;
+
+	if (  !enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		draw_state = 0;
+	}
+	else
+	{	draw_state = 1;
+	}
+
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT UKInd1
+
+	// Use SIG_EXTERNS 'macro' instead?..
+	extern float	block_state ();
+	extern float	route_set ();
+     	extern float	next_sig_lr ();
+	extern float	sig_feature ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	float			next_state;
+
+	if (  !enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		draw_state = 0;
+	}
+	else
+	{	draw_state = 1;
+	}
+
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT UKInd2
+
+	// Use SIG_EXTERNS 'macro' instead?..
+	extern float	block_state ();
+	extern float	route_set ();
+     	extern float	next_sig_lr ();
+	extern float	sig_feature ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	float			next_state;
+
+	if (  !enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		draw_state = 0;
+	}
+	else
+	{	draw_state = 1;
+	}
+
+
+// Get draw state
+	draw_state = def_draw_state (state);
+//////////////////////////////////////////////////////////////////////////////////////
+SCRIPT UKInd3
+
+	// Use SIG_EXTERNS 'macro' instead?..
+	extern float	block_state ();
+	extern float	route_set ();
+     	extern float	next_sig_lr ();
+	extern float	sig_feature ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	float			next_state;
+
+	if (  !enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		draw_state = 0;
+	}
+	else
+	{	draw_state = 1;
+	}
+
+
+// Get draw state
+	draw_state = def_draw_state (state);
+//////////////////////////////////////////////////////////////////////////////////////
+SCRIPT UKInd4
+
+	// Use SIG_EXTERNS 'macro' instead?..
+	extern float	block_state ();
+	extern float	route_set ();
+     	extern float	next_sig_lr ();
+	extern float	sig_feature ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	float			next_state;
+
+	if (  !enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		draw_state = 0;
+	}
+	else
+	{	draw_state = 1;
+	}
+
+
+// Get draw state
+	draw_state = def_draw_state (state);
+//////////////////////////////////////////////////////////////////////////////////////
+SCRIPT UKInd5
+
+
+	// Use SIG_EXTERNS 'macro' instead?..
+	extern float	block_state ();
+	extern float	route_set ();
+     	extern float	next_sig_lr ();
+	extern float	sig_feature ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	float			next_state;
+
+	if (  !enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		draw_state = 0;
+	}
+	else
+	{	draw_state = 1;
+	}
+
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SRGrdSigNoCallon
+
+// Shunt
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_1;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+SCRIPT UKInd6
+
+	// Use SIG_EXTERNS 'macro' instead?..
+	extern float	block_state ();
+	extern float	route_set ();
+     	extern float	next_sig_lr ();
+	extern float	sig_feature ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	float			next_state;
+
+	if (  !enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		draw_state = 0;
+	}
+	else
+	{	draw_state = 1;
+	}
+
+
+// Get draw state
+	draw_state = def_draw_state (state);
+//////////////////////////////////////////////////////////////////////////////////////
+SCRIPT UKInd7
+
+	// Use SIG_EXTERNS 'macro' instead?..
+	extern float	block_state ();
+	extern float	route_set ();
+     	extern float	next_sig_lr ();
+	extern float	sig_feature ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	float			next_state;
+
+	if (  !enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	
+{
+		draw_state = 0;
+	}
+	else
+	{	draw_state = 1;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+//////////////////////////////////////////////////////////////////////////////////////
+SCRIPT UKInd8
+
+	// Use SIG_EXTERNS 'macro' instead?..
+	extern float	block_state ();
+	extern float	route_set ();
+     	extern float	next_sig_lr ();
+	extern float	sig_feature ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	float			next_state;
+
+	if (  !enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		draw_state = 0;
+	}
+	else
+	{	draw_state = 1;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+//////////////////////////////////////////////////////////////////////////////////////
+SCRIPT UKInd9
+
+	// Use SIG_EXTERNS 'macro' instead?..
+	extern float	block_state ();
+	extern float	route_set ();
+     	extern float	next_sig_lr ();
+	extern float	sig_feature ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	float			next_state;
+
+	if (  !enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		draw_state = 0;
+	}
+	else
+	{	draw_state = 1;
+	}
+
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT Shunting
+
+	// Use SIG_EXTERNS 'macro' instead?..
+	extern float	block_state ();
+	extern float	route_set ();
+     	extern float	next_sig_lr ();
+	extern float	sig_feature ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	
+	float			next_state;
+
+	if (!enabled ||
+		block_state() !=# BLOCK_CLEAR ||	
+		!route_set ()) 				
+	{
+			state = SIGASP_APPROACH_2;
+	}
+	else
+	{
+		next_state = next_sig_lr (SIGFN_NORMAL);
+
+		if (next_state ==# SIGASP_CLEAR_1 ||
+                next_state ==# SIGASP_RESTRICTING)
+		{
+			state = SIGASP_APPROACH_2;
+		}	 
+		else 
+		{
+			state = SIGASP_APPROACH_3;
+		}
+	}
+// Get draw state
+	draw_state = def_draw_state (state);
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SHUNT_SPEC
+
+	// Use SIG_EXTERNS 'macro' instead?..
+	extern float	block_state ();
+	extern float	route_set ();
+     	extern float	next_sig_lr ();
+	extern float	sig_feature ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	
+	float			next_state;
+
+	if (!enabled ||
+		block_state() !=# BLOCK_CLEAR ||	
+		!route_set ()) 				
+	{
+			state = SIGASP_APPROACH_2;
+	}
+	else
+	{
+		next_state = next_sig_lr (SIGFN_NORMAL);
+
+		if (next_state ==# SIGASP_CLEAR_1 ||
+                next_state ==# SIGASP_RESTRICTING)
+		{
+			state = SIGASP_APPROACH_2;
+		}	 
+		else 
+		{
+			state = SIGASP_APPROACH_3;
+		}
+	}
+// Get draw state
+	draw_state = def_draw_state (state);
+//////////////////////////////////////////////////////////////////////////////////////
+SCRIPT VR_HC2a
+
+	// Use SIG_EXTERNS 'macro' instead?..
+	extern float	block_state ();
+	extern float	route_set ();
+     	extern float	next_sig_lr ();
+	extern float	sig_feature ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	
+	float			next_state;
+
+	if (!enabled ||
+		block_state() !=# BLOCK_CLEAR ||	
+		!route_set ()) 				
+	{
+			state = SIGASP_STOP;
+	}
+	else
+	{
+		next_state = next_sig_lr (SIGFN_NORMAL);
+
+		if (next_state ==# SIGASP_CLEAR_1 ||
+                next_state ==# SIGASP_APPROACH_1 )
+		{
+			state = SIGASP_RESTRICTING;
+		}	 
+		else 
+		{
+			state = SIGASP_CLEAR_2;
+		}
+	}
+	draw_state = def_draw_state (state);
+//////////////////////////////////////////////////////////////////////////////////////
+SCRIPT VR_HC2b
+
+	// Use SIG_EXTERNS 'macro' instead?..
+	extern float	block_state ();
+	extern float	route_set ();
+     	extern float	next_sig_lr ();
+	extern float	sig_feature ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	
+	float			next_state;
+
+	if (!enabled ||
+		block_state() !=# BLOCK_CLEAR ||	
+		!route_set ()) 				
+	{
+			state = SIGASP_STOP;
+	}
+	else
+	{
+		next_state = next_sig_lr (SIGFN_NORMAL);
+
+		if (next_state ==# SIGASP_CLEAR_1 ||
+                next_state ==# SIGASP_APPROACH_1 )
+		{
+			state = SIGASP_RESTRICTING;
+		}	 
+		else 
+		{
+			state = SIGASP_CLEAR_2;
+		}
+	}
+	draw_state = def_draw_state (state);
+///////////////////////////////////////////////////////////////////////////////
+// Signal Type Logic Scripts
+// 10 12 24 GWR
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT GWRGrdSig
+
+// Callon Shunt
+extern float    block_state();
+        extern float    route_set();
+        extern float    def_draw_state();
+        extern float    state;
+        extern float    draw_state;
+        extern float    enabled;
+		extern float    TrainHasCallOn_Restricted();  
+
+		if (!enabled ||								
+// Not enabled/cleared to show natural state?
+		block_state() != BLOCK_CLEAR ||		
+// Block ahead not clear?
+		!route_set())							
+// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+        if (enabled && route_set() && TrainHasCallOn_Restricted() && block_state() == BLOCK_OCCUPIED )
+           
+                        // clear on CallOn
+	{ 
+                        state = SIGASP_RESTRICTING;
+      }                  
+                else if (block_state == BLOCK_CLEAR)
+                        // normal clear
+	{
+                        state = SIGASP_CLEAR_2;
+                                        
+        }
+
+// Get draw state
+        draw_state = def_draw_state(state);
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT GWRStop
+
+// Stop
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT GWRStopBranch
+
+// Branch Stop
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_1;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT GWRDist
+
+// Distant
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	dist_multi_sig_mr ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if ( //!enabled ||							// Not enabled/cleared to show natural state?
+		!route_set() ||							// Switch not set as per link?
+		dist_multi_sig_mr (SIGFN_NORMAL, SIGFN_DISTANCE) !=# SIGASP_CLEAR_2)
+	{
+		state = SIGASP_APPROACH_2;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT GWRDistBranch
+
+// Branch Distant
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	dist_multi_sig_mr ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if ( //!enabled ||							// Not enabled/cleared to show natural state?
+		!route_set() ||							// Switch not set as per link?
+		dist_multi_sig_mr (SIGFN_NORMAL, SIGFN_DISTANCE) <# SIGASP_CLEAR_1)
+	{
+		state = SIGASP_APPROACH_2;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT GWRDistStop
+
+// Distant and Stop
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	dist_multi_sig_mr ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	extern float	this_sig_lr ();
+
+	if ( //!enabled ||
+		!route_set () ||							// Not enabled/cleared to show natural state?
+		dist_multi_sig_mr (SIGFN_NORMAL, SIGFN_DISTANCE) !=# SIGASP_CLEAR_2 ||
+		this_sig_lr (SIGFN_NORMAL) !=# SIGASP_CLEAR_2 )
+
+	{
+		state = SIGASP_APPROACH_2;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT GWRSiding
+
+// Siding
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_1;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT GWRDummy
+
+// Dummy
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+	else
+	{
+		state = SIGASP_RESTRICTING;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+//Callonstopdist
+SCRIPT Callonstopdist
+
+// Callon Shunt
+extern float    block_state();
+        extern float    route_set();
+        extern float    def_draw_state();
+        extern float    state;
+        extern float    draw_state;
+        extern float    enabled;
+		extern float    TrainHasCallOn_Restricted();  
+
+		if (!enabled ||								
+// Not enabled/cleared to show natural state?
+		block_state() != BLOCK_CLEAR ||		
+// Block ahead not clear?
+		!route_set())							
+// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+        if (enabled && route_set() && TrainHasCallOn_Restricted() && block_state() == BLOCK_OCCUPIED )
+           
+                        // clear on CallOn
+	{ 
+                        state = SIGASP_RESTRICTING;
+      }                  
+                else if (block_state == BLOCK_CLEAR)
+                        // normal clear
+	{
+                        state = SIGASP_CLEAR_2;
+                                        
+        }
+
+// Get draw state
+        draw_state = def_draw_state(state);
+
+
+// End of File
+
+
+
+// End of File
+
