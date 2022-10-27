@@ -1,0 +1,4813 @@
+SIMISA@@@@@@@@@@JINX0G0t______
+LightTextures ( 1
+	LightTex ( "ltex"			"SigLight.ace"		0 0 1 1 )
+)
+
+LightsTab ( 6
+	LightsTabEntry (
+		"Red Light"
+		colour ( 255 255 40 40 )
+	)
+	LightsTabEntry (
+		"Amber Light"
+		colour ( 255 255 200 0 )
+	)
+	LightsTabEntry (
+		"Green Light"
+		colour ( 255 0 255 0 )
+	)
+	LightsTabEntry (
+		"White Light"
+		colour ( 255 255 255 255 )
+	)
+        LightsTabEntry (
+		"Violet Light"
+		colour ( 188 40 40 245 )
+)
+LightsTabEntry (
+		"Purple Light"
+		colour ( 255 129 0 127 )
+	)
+
+)
+
+SignalTypes ( 58
+SignalType ( "MR_Semaphore_Shunt_Disc"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 3
+			SignalLight ( 0 "Red Light"
+				Position ( 0.11 0.15 0.00 )
+				Radius ( 0.03 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( 0.11 0.15 0.00  )
+				Radius ( 0.03 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 2 	"Amber Light"
+				Position ( 0.11 0.15 0.02  )
+				Radius ( 0.03 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+
+		)
+		SignalDrawStates ( 3
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		SignalDrawState ( 2
+				"purple"
+				DrawLights ( 1
+					DrawLight ( 2 )
+				)	
+				SemaphorePos ( 1 )
+			)
+
+		)
+		SignalAspects ( 3
+			SignalAspect ( STOP					"Red" )
+			SignalAspect ( CLEAR_2					"Green" )
+			SignalAspect ( RESTRICTING				"Purple" )
+
+		)
+		SignalNumClearAhead ( 2 )
+	)
+
+
+SignalType ( "SR_SemHomeDistant"
+	
+		SignalFnType ( DISTANCE )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Amber Light"
+				Position ( 0.10110 -0.309000 0.101 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( 0.10110 -0.309000 0.101 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Yellow"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)	
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( APPROACH_2				"Yellow" )
+			SignalAspect ( CLEAR_2					"Green" )
+		)
+   	)
+
+SignalType ( "SR_SemDistant"
+	
+		SignalFnType ( DISTANCE )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Amber Light"
+				Position ( 0.10110 -0.309000 0.101 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( 0.10110 -0.309000 0.101 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Yellow"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( APPROACH_2			"Yellow" )
+			SignalAspect ( CLEAR_2				"Green" )
+		)
+	)
+
+SignalType ( "SR_SemHome"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( 0.10110 -0.309000 0.101 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( 0.10110 -0.309000 0.101 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( STOP				"Red" )
+			SignalAspect ( CLEAR_2				"Green" )
+		)
+		SignalNumClearAhead ( 4 )
+	)
+
+SignalType ( "BannerRepeaterHome"
+	
+		SignalFnType ( REPEATER )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights (1
+			SignalLight ( 0 "White Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001  )
+			)
+		)
+		SignalDrawStates ( 3
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 1 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 2
+				"GreenUQ"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 2 )
+			)
+		)
+		SignalAspects ( 0
+		)
+	)
+
+SignalType ( "BannerRepeaterDistant"
+	
+		SignalFnType ( REPEATER )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights (1
+			SignalLight ( 0 "White Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001  )
+			)
+		)
+		SignalDrawStates ( 3
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 1 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 2
+				"GreenUQ"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 2 )
+			)
+		)
+		SignalAspects ( 0
+		)
+	)
+
+SignalType ( "SRStopFDBranch"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 3
+			SignalLight ( 0 "Red Light"
+				Position ( 0.1 -0.29 0.07 )
+				Radius ( 0.09 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( 0.1 -0.28 0.06)
+				Radius ( 0.1 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 2 "Amber Light"                                                            
+				Position ( 0.1 -1.78 0.06 )
+				Radius ( 0.09)
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 2
+					DrawLight ( 0 )
+					DrawLight ( 2 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 2
+					DrawLight ( 1 )
+					DrawLight ( 2 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( STOP					"Red" )
+	      	SignalAspect ( CLEAR_1					"Green" SpeedMPH (20) )
+		)
+		SignalNumClearAhead ( 1 )
+	)
+
+	          
+
+SignalType ( "SRGrdSigYellow"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Amber Light"
+				Position ( 0 0.19 0.04 )
+				Radius ( 0.04 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( 0 0.19 0.04 )
+				Radius ( 0.04 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Yellow"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( RESTRICTING					"Yellow" )
+			SignalAspect ( CLEAR_1					"Green" )
+		)
+		SignalNumClearAhead ( 1 )
+	)
+
+SignalType ( "SRSidingYellow"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Amber Light"
+				Position (0.1 -0.29 0.05 )
+				Radius ( 0.05 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position (0.1 -0.28 0.05 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Yellow"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( RESTRICTING					"Yellow" )
+			SignalAspect ( CLEAR_1					"Green" )
+		)
+		SignalNumClearAhead ( 1 )
+				
+	)												
+
+
+SignalType ( "LSWRDist"
+	
+		SignalFnType ( DISTANCE )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Amber Light"
+				Position ( -0.3 -0.03  0.07  )
+				Radius ( 0.05 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( -0.3 -0.03  0.05   )
+				Radius ( 0.05 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Yellow"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)	
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( APPROACH_2				"Yellow" )
+			SignalAspect ( CLEAR_2					"Green" )
+		)
+	)
+
+SignalType ( "LSWRDistStop"
+	
+		SignalFnType ( DISTANCE )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Amber Light"
+				Position ( -0.25 -0.02  0.07   )
+				Radius ( 0.05 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( -0.25 -0.02  0.07   )
+				Radius ( 0.05 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Yellow"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)	
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( APPROACH_2				"Yellow" )
+			SignalAspect ( CLEAR_2					"Green" )
+		)
+	)
+SignalType ( "LSWRFixDistStop"
+	
+		SignalFnType ( DISTANCE )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 1
+			SignalLight ( 0 "Amber Light"
+				Position ( -0.25 -0.02  0.07   )
+				Radius ( 0.05 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			
+			)
+		)
+		SignalDrawStates ( 1
+			SignalDrawState ( 0
+				"Yellow"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)	
+				SemaphorePos ( 0 )
+			
+			)
+		)
+		SignalAspects ( 1
+			SignalAspect ( APPROACH_2				"Yellow" )
+		)
+	)
+
+SignalType ( "LSWRStop"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( -0.35 -0.06  0.03   )
+				Radius ( 0.05 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( -0.35 -0.06  0.03   )
+				Radius ( 0.05 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( STOP					"Red" )
+			SignalAspect ( CLEAR_2					"Green" )
+		)
+		SignalNumClearAhead ( 3 )
+	)
+SignalType ( "SigSDbacking"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( -0.35 -0.06  0.03   )
+				Radius ( 0.05 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( -0.35 -0.06  0.03   )
+				Radius ( 0.05 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( STOP					"Red" )
+			SignalAspect ( CLEAR_2					"Green" )
+		)
+		SignalNumClearAhead ( 1 )
+	)
+
+
+SignalType ( "LSWRStopBranch"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( -0.25 0.08 0.03 )
+				Radius ( 0.05 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( -0.25 0.08 0.03 )
+				Radius ( 0.05 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( STOP					"Red" )
+SignalAspect ( CLEAR_1					"Green"  )
+
+		)
+		SignalNumClearAhead ( 2 )
+	)
+SignalType ( "SRGrdSig"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 3
+			SignalLight ( 0 "Red Light"
+				Position ( 0.11 0.15 0.00 )
+				Radius ( 0.03 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( 0.11 0.15 0.00  )
+				Radius ( 0.03 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 2 	"Amber Light"
+				Position ( 0.11 0.15 0.02  )
+				Radius ( 0.03 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+
+		)
+		SignalDrawStates ( 3
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		SignalDrawState ( 2
+				"purple"
+				DrawLights ( 1
+					DrawLight ( 2 )
+				)	
+				SemaphorePos ( 1 )
+			)
+
+		)
+		SignalAspects ( 3
+			SignalAspect ( STOP					"Red" )
+			SignalAspect ( CLEAR_2					"Green" )
+			SignalAspect ( RESTRICTING				"Purple" )
+
+		)
+		SignalNumClearAhead ( 2 )
+	)
+
+SignalType ( "SRGrdSigNocallOn"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( 0 0.19 0.04 )
+				Radius ( 0.04 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( 0 0.19 0.04 )
+				Radius ( 0.04 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( STOP					"Red" )
+			SignalAspect ( CLEAR_1					"Green" )
+		)
+		SignalNumClearAhead ( 1 )
+	)
+
+SignalType ( "SRStop"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 3
+			SignalLight ( 0 "Red Light"
+				Position ( 0.1 -0.29 0.06 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( 0.1 -0.28 0.04 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 2 "Purple Light"
+				Position ( 0.1 -0.28 0.04 )
+				Radius ( 0.05 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+
+		)
+		SignalDrawStates ( 3
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		SignalDrawState ( 2
+				"purple"
+				DrawLights ( 1
+					DrawLight ( 2 )
+				)	
+				SemaphorePos ( 1 )
+			)
+
+		)
+		SignalAspects ( 3
+			SignalAspect ( STOP					"Red" )
+			SignalAspect ( CLEAR_2					"Green" )
+			SignalAspect ( RESTRICTING				"Purple" )
+
+		)
+		SignalNumClearAhead ( 3 )
+	)
+
+SignalType ( "SRStopBranch"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position (0.1 -0.29 0.06 )
+				Radius ( 0.09 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position (0.1 -0.28 0.05 )
+				Radius ( 0.1 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( STOP					"Red" )
+SignalAspect ( CLEAR_1					"Green" SpeedMPH (40) )
+
+		)
+		SignalNumClearAhead ( 2 )
+	)
+SignalType ( "SRStopBranch40"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position (0.1 -0.29 0.04 )
+				Radius ( 0.09 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position (0.1 -0.28 0.04 )
+				Radius ( 0.1 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( STOP					"Red" )
+SignalAspect ( CLEAR_1					"Green" SpeedMPH (40) )
+
+		)
+		SignalNumClearAhead ( 2 )
+	)
+
+SignalType ( "SRDist"
+	
+		SignalFnType ( DISTANCE )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Amber Light"
+				Position (0.1 -0.29 0.05 )
+				Radius ( 0.09 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position (0.1 -0.28 0.05 )
+				Radius ( 0.1 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Yellow"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)	
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( APPROACH_2				"Yellow" )
+			SignalAspect ( CLEAR_2					"Green" )
+		)
+	)
+
+SignalType ( "SRDistStop"
+	
+		SignalFnType ( DISTANCE )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Amber Light"
+				Position (0.1 -0.29 0.05 )
+				Radius ( 0.09 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position (0.1 -0.28 0.05 )
+				Radius ( 0.1 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Yellow"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)	
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( APPROACH_2				"Yellow" )
+			SignalAspect ( CLEAR_2					"Green" )
+		)
+SignalNumClearAhead ( 4 )
+	)
+
+SignalType ( "SRDistBranch"
+	
+		SignalFnType ( DISTANCE )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Amber Light"
+				Position (0.1 -0.29 0.05 )
+				Radius ( 0.09 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position (0.1 -0.28 0.04 )
+				Radius ( 0.1 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Yellow"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)	
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( APPROACH_2				"Yellow" )
+			SignalAspect ( CLEAR_2					"Green" )
+		)
+	)
+SignalType ( "SRSiding"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position (0.1 -0.29 0.04 )
+				Radius ( 0.05 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position (0.1 -0.28 0.04 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( RESTRICTING					"Red" )
+			SignalAspect ( CLEAR_1					"Green" )
+		)
+		SignalNumClearAhead ( 1 )
+				
+	)												
+SignalType ( "SRlocalStop"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position (0.1 -0.29 0.04 )
+				Radius ( 0.05 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position (0.1 -0.28 0.04 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( STOP					"Red" )
+			SignalAspect ( CLEAR_1					"Green" )
+		)
+		SignalNumClearAhead ( 1 )
+				
+	)					
+SignalType ( "SRDummy"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( -0.00 0.01 0.00 )
+				Radius ( 0.01 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( -0.00 0.01 0.00 )
+				Radius ( 0.01 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( STOP					"Red" )
+			SignalAspect ( RESTRICTING				"Green" )
+		)
+	)
+
+SignalType ( "SRDumDistStop"
+	
+		SignalFnType ( DISTANCE )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Amber Light"
+				Position ( -0.00 0.01 0.00 )
+				Radius ( 0.01 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( -0.00 0.01 0.00 )
+				Radius ( 0.01 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Yellow"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( APPROACH_2				"Yellow" )
+			SignalAspect ( CLEAR_2					"Green" )
+		)
+	)
+SignalType ( "TRACKEND"
+
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+
+		SignalLights (1
+			SignalLight ( 0 "White Light"
+				Position ( 0 0.123 0.03 )
+				Radius ( 0.04  )
+			)
+		)
+		SignalDrawStates ( 1
+			SignalDrawState ( 0
+				"White"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+			)
+		)
+		SignalAspects ( 1
+			SignalAspect ( STOP					"White" )
+
+		)
+		)
+SignalType ( "Callon_OR"
+
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+
+		SignalLights ( 2
+		SignalLight ( 0 "Violet Light"
+				Position ( 0 0.8 0.03 )
+				Radius ( 0.04  )
+                 )
+                 SignalLight ( 1 "White Light"
+				Position ( 0 0.8 0.03 )
+				Radius ( 0.04  )
+				)
+		)
+		SignalDrawStates ( 2
+		SignalDrawState ( 0
+				"Violet"
+				DrawLights ( 1
+					DrawLight ( 0 )
+					)
+					)
+			SignalDrawState ( 1
+				"White"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( STOP_AND_PROCEED	    "Violet" )
+			SignalAspect ( CLEAR_1			"White" )
+		)
+SignalNumClearAhead ( 1 )
+		)
+		
+SignalType ( "VR_HC1"
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( -0.12 -0.305 0.0 )
+				Radius ( 0.09 )
+                        SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			SignalLight ( 1 "Green Light"
+				Position ( -0.14 -0.305 0.0 )
+				Radius ( 0.1 )
+                        SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			     )
+		SignalDrawStates ( 3
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+						)
+                        SemaphorePos ( 1 )
+	                  )
+			SignalDrawState ( 1
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+						)
+                        SemaphorePos ( 1 )
+					)
+			SignalDrawState ( 2
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+						)
+                        SemaphorePos ( 0 )
+	                        )
+				)
+		SignalAspects ( 3
+			SignalAspect ( STOP	  "Red" )
+                  SignalAspect ( STOP       "Red" )
+                  SignalAspect ( CLEAR_2	  "Green" )
+                 
+				)
+		SignalNumClearAhead ( 3 )
+		)
+
+SignalType ( "VR_HC2"
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 3
+			SignalLight ( 0 "Red Light"
+				Position ( 0.035 -0.403 0.0 )
+				Radius ( 0.06 )
+                        SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			SignalLight ( 1 "Green Light"
+				Position (  -0.015 -0.305 0.0  )
+				Radius ( 0.05 )
+                        SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			SignalLight ( 2 "Red Light"
+				Position ( 0.035 -0.403 0.0 )
+				Radius ( 0.06 )
+                        SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			     )
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+					)
+                        SemaphorePos ( 1 )
+					)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+                                        )
+                        SemaphorePos ( 0 )
+					)
+				)
+		SignalAspects ( 2
+			SignalAspect ( STOP	         "Red" )
+			SignalAspect ( RESTRICTING       "Green" )
+                  SignalAspect ( STOP	         "Red" )
+		)
+		SignalNumClearAhead ( 1 )
+		)
+
+SignalType ( "VR_SPEC"
+
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+
+		SignalLights ( 3
+			SignalLight ( 0 "Red Light"
+				Position ( 0 -0.5 0.1 )
+				Radius ( 0.10 )
+			)
+			SignalLight ( 1 "Amber Light"
+				Position ( 0 -0.5 0.1 )
+				Radius ( 0.10 )
+			)
+			SignalLight ( 2 "Green Light"
+				Position ( 0 -0.5 0.1 )
+				Radius ( 0.10 )
+			)
+		)
+		SignalDrawStates ( 3
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+                         SemaphorePos ( 1 )
+			)
+			SignalDrawState ( 1
+				"Amber"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)
+                         SemaphorePos ( 0 )
+                         )
+                  SignalDrawState ( 2
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 2 )
+				)
+                         SemaphorePos ( 0 )
+			)
+		)
+		SignalAspects ( 3
+                  SignalAspect ( CLEAR_1		              "Red" )
+                  SignalAspect ( RESTRICTING		        "Amber" )
+			SignalAspect ( CLEAR_2			        "Green" )
+		)
+		SignalNumClearAhead ( 2 )
+)
+SignalType ( "SR_SemHomeDistantA"
+	
+		SignalFnType ( DISTANCE )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Amber Light"
+				Position ( 1.78 1.935 0.0 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( 1.75 1.91 0.0 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Yellow"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)	
+				SemaphorePos ( 1 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 0 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( APPROACH_2				"Yellow" )
+			SignalAspect ( CLEAR_2					"Green" )
+		)
+   	)
+SignalType ( "SRGrdSig_callon"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 3
+			SignalLight ( 0 "Red Light"
+				Position ( 0 0.19 0.04  )
+				Radius ( 0.03 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( 0 0.19 0.04  )
+				Radius ( 0.03 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 2 	"Amber Light"
+				Position ( 0 0.19 0.04  )
+				Radius ( 0.03 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+
+		)
+		SignalDrawStates ( 3
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		SignalDrawState ( 2
+				"purple"
+				DrawLights ( 1
+					DrawLight ( 2 )
+				)	
+				SemaphorePos ( 1 )
+			)
+
+		)
+		SignalAspects ( 3
+			SignalAspect ( STOP					"Red" )
+			SignalAspect ( CLEAR_2					"Green" )
+			SignalAspect ( RESTRICTING				"Purple" )
+
+		)
+		SignalNumClearAhead ( 2 )
+	)
+
+
+SignalType ( "GWRGrdSig"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( -0.2 0.02 0.04 )
+				Radius ( 0.05 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( -0.2 0.03 0.04 )
+				Radius ( 0.05 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( STOP					"Red" )
+			SignalAspect ( CLEAR_1					"Green" )
+		)
+		SignalNumClearAhead ( 1 )
+	)
+
+
+	SignalType ( "GWRStop"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( -0.33 -0.025 0.03 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( -0.33 -0.13 0.03 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( STOP					"Red" )
+			SignalAspect ( CLEAR_2					"Green" )
+		)
+		SignalNumClearAhead ( 3 )
+	)
+
+	SignalType ( "GWRStopBranch"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( -0.37 -0.1 0.05 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( -0.37 -0.1 0.05 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( STOP					"Red" )
+			SignalAspect ( CLEAR_1					"Green" )
+		)
+		SignalNumClearAhead ( 1 )
+	)
+
+	SignalType ( "GWRDist"
+	
+		SignalFnType ( DISTANCE )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Amber Light"
+				Position ( -0.37 -0.1 0.05 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( -0.37 -0.1 0.05 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Yellow"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)	
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( APPROACH_2				"Yellow" )
+			SignalAspect ( CLEAR_2					"Green" )
+		)
+	)
+
+	SignalType ( "GWRDistStop"
+	
+		SignalFnType ( DISTANCE )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Amber Light"
+				Position ( -0.37 -0.1 0.05 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( -0.37 -0.1 0.05 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Yellow"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)	
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( APPROACH_2				"Yellow" )
+			SignalAspect ( CLEAR_2					"Green" )
+		)
+	)
+
+	SignalType ( "GWRDistBranch"
+	
+		SignalFnType ( DISTANCE )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Amber Light"
+				Position ( -0.37 -0.1 0.05 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( -0.37 -0.1 0.05 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Yellow"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)	
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( APPROACH_2				"Yellow" )
+			SignalAspect ( CLEAR_2					"Green" )
+		)
+	)
+	SignalType ( "GWRSiding"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( -0.35 0 0.05 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( -0.4 0 0.05 )
+				Radius ( 0.08 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( STOP					"Red" )
+			SignalAspect ( CLEAR_1					"Green" )
+		)
+		SignalNumClearAhead ( 1 )
+				
+	)												
+	SignalType ( "GWRDummy"
+	
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( -0.00 0.00 0.00 )
+				Radius ( 0.04 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+			SignalLight ( 1 "Green Light"
+				Position ( -0.00 0.00 0.00 )
+				Radius ( 0.04 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+			)
+		)
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+				SemaphorePos ( 0 )
+			)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)	
+				SemaphorePos ( 1 )
+			)
+		)
+		SignalAspects ( 2
+			SignalAspect ( STOP					"Red" )
+			SignalAspect ( RESTRICTING				"Green" )
+		)
+	)          
+
+SignalType ( "UKInd"
+
+		SignalFnType ( INFO )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.25 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			SignalLight ( 1 "Green Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			     )
+		SignalDrawStates ( 2
+			SignalDrawState ( 1
+				"Unlit"
+				SemaphorePos ( 0 )
+                        )
+			SignalDrawState ( 0
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+					)
+				SemaphorePos ( 1 )
+				    )
+				)
+		SignalAspects ( 2
+			SignalAspect ( STOP	     "Unlit" )
+			SignalAspect ( CLEAR_2       "Green"  )
+
+		SignalNumClearAhead ( 1 )
+		)
+      )
+SignalType ( "UKInd1"
+
+		SignalFnType ( INFO )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.25 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			SignalLight ( 1 "Green Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			     )
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Unlit"
+				SemaphorePos ( 1 )
+                        )
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+					)
+				SemaphorePos ( 0 )
+				    )
+				)
+		SignalAspects ( 2
+			SignalAspect ( STOP	     "Unlit" )
+			SignalAspect ( CLEAR_2       "Green"  )
+
+		SignalNumClearAhead ( 1 )
+		)
+      )
+
+SignalType ( "UKInd2"
+
+		SignalFnType ( INFO )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.25 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			SignalLight ( 1 "Green Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			     )
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Unlit"
+				SemaphorePos ( 1 )
+                        )
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)
+				SemaphorePos ( 0 )
+				    )
+				)
+		SignalAspects ( 2
+			SignalAspect ( STOP	     "Unlit" )
+			SignalAspect ( CLEAR_2       "Green"  )
+
+		SignalNumClearAhead ( 1 )
+		)
+      )
+
+SignalType ( "UKInd3"
+
+		SignalFnType ( INFO )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.25 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			SignalLight ( 1 "Green Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			     )
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Unlit"
+				SemaphorePos ( 1 )
+                        )
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)
+				SemaphorePos ( 0 )
+				    )
+				)
+		SignalAspects ( 2
+			SignalAspect ( STOP	     "Unlit" )
+			SignalAspect ( CLEAR_2       "Green"  )
+
+		SignalNumClearAhead ( 1 )
+		)
+      )
+
+SignalType ( "UKInd4"
+
+		SignalFnType ( INFO )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.25 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			SignalLight ( 1 "Green Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			     )
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Unlit"
+				SemaphorePos ( 1 )
+                        )
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)
+				SemaphorePos ( 0 )
+				    )
+				)
+		SignalAspects ( 2
+			SignalAspect ( STOP	     "Unlit" )
+			SignalAspect ( CLEAR_2       "Green"  )
+
+		SignalNumClearAhead ( 1 )
+		)
+      )
+
+SignalType ( "UKInd5"
+
+		SignalFnType ( INFO )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.25 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			SignalLight ( 1 "Green Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			     )
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Unlit"
+				SemaphorePos ( 1 )
+                        )
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)
+				SemaphorePos ( 0 )
+				    )
+				)
+		SignalAspects ( 2
+			SignalAspect ( STOP	     "Unlit" )
+			SignalAspect ( CLEAR_2       "Green"  )
+
+		SignalNumClearAhead ( 1 )
+		)
+      )
+
+SignalType ( "UKInd6"
+
+		SignalFnType ( INFO )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.25 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			SignalLight ( 1 "Green Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			     )
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Unlit"
+				SemaphorePos ( 1 )
+                        )
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)
+				SemaphorePos ( 0 )
+				    )
+				)
+		SignalAspects ( 2
+			SignalAspect ( STOP	     "Unlit" )
+			SignalAspect ( CLEAR_2       "Green"  )
+
+		SignalNumClearAhead ( 1 )
+		)
+      )
+SignalType ( "UKInd6"
+
+		SignalFnType ( INFO )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.25 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			SignalLight ( 1 "Green Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			     )
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Unlit"
+				SemaphorePos ( 1 )
+                        )
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)
+				SemaphorePos ( 0 )
+				    )
+				)
+		SignalAspects ( 2
+			SignalAspect ( STOP	     "Unlit" )
+			SignalAspect ( CLEAR_2       "Green"  )
+
+		SignalNumClearAhead ( 1 )
+		)
+      )
+SignalType ( "UKInd7"
+
+		SignalFnType ( INFO )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.25 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			SignalLight ( 1 "Green Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			     )
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Unlit"
+				SemaphorePos ( 1 )
+                        )
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)
+				SemaphorePos ( 0 )
+				    )
+				)
+		SignalAspects ( 2
+			SignalAspect ( STOP	     "Unlit" )
+			SignalAspect ( CLEAR_2       "Green"  )
+
+		SignalNumClearAhead ( 1 )
+		)
+      )
+SignalType ( "UKInd8"
+
+		SignalFnType ( INFO )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.25 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			SignalLight ( 1 "Green Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			     )
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Unlit"
+				SemaphorePos ( 1 )
+                        )
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)
+				SemaphorePos ( 0 )
+				    )
+				)
+		SignalAspects ( 2
+			SignalAspect ( STOP	     "Unlit" )
+			SignalAspect ( CLEAR_2       "Green"  )
+
+		SignalNumClearAhead ( 1 )
+		)
+      )
+SignalType ( "UKInd9"
+
+		SignalFnType ( INFO )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.25 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			SignalLight ( 1 "Green Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+				SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			     )
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Unlit"
+				SemaphorePos ( 1 )
+                        )
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)
+				SemaphorePos ( 0 )
+				    )
+				)
+		SignalAspects ( 2
+			SignalAspect ( STOP	     "Unlit" )
+			SignalAspect ( CLEAR_2       "Green"  )
+
+		SignalNumClearAhead ( 1 )
+		)
+      )
+
+SignalType ( "Shunting"
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( -0.12 -0.305 0.0 )
+				Radius ( 0.09 )
+                        SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			SignalLight ( 1 "Green Light"
+				Position ( -0.14 -0.305 0.0 )
+				Radius ( 0.1 )
+                        SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			     )
+		SignalDrawStates ( 3
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+						)
+                        SemaphorePos ( 1 )
+	                  )
+			SignalDrawState ( 1
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+						)
+                        SemaphorePos ( 1 )
+					)
+			SignalDrawState ( 2
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+						)
+                        SemaphorePos ( 0 )
+	                        )
+				)
+		SignalAspects ( 2
+			SignalAspect ( APPROACH_2	         "Red" )
+			SignalAspect ( APPROACH_3      "Green" )
+		)
+		SignalNumClearAhead ( 1 )
+		)
+
+SignalType ( "SHUNT_SPEC"
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+
+		SignalLights ( 3
+			SignalLight ( 0 "Red Light"
+				Position ( 0 -0.5 0.1 )
+				Radius ( 0.10 )
+			)
+			SignalLight ( 1 "Amber Light"
+				Position ( 0 -0.5 0.1 )
+				Radius ( 0.10 )
+			)
+			SignalLight ( 2 "Green Light"
+				Position ( 0 -0.5 0.1 )
+				Radius ( 0.10 )
+			)
+		)
+		SignalDrawStates ( 3
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+				)
+                         SemaphorePos ( 1 )
+			)
+			SignalDrawState ( 1
+				"Amber"
+				DrawLights ( 1
+					DrawLight ( 1 )
+				)
+                         SemaphorePos ( 0 )
+                         )
+                  SignalDrawState ( 2
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 2 )
+				)
+                         SemaphorePos ( 0 )
+			)
+		)
+		SignalAspects ( 2
+                  SignalAspect ( APPROACH_2		              "Amber" )
+			SignalAspect ( APPROACH_3		        "Amber" )
+		)
+		SignalNumClearAhead ( 2 )
+        )
+SignalType ( "VR_HC2a"
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 3
+			SignalLight ( 0 "Red Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+                        SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			SignalLight ( 1 "Green Light"
+				Position (  0 0 0  )
+				Radius ( 0.001 )
+                        SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			SignalLight ( 2 "Red Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+                        SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			     )
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+					)
+                        SemaphorePos ( 1 )
+					)
+			SignalDrawState ( 1
+				"Amber"
+				DrawLights ( 1
+					DrawLight ( 1 )
+                                        )
+                        SemaphorePos ( 0 )
+					)
+				)
+		SignalAspects ( 2
+			SignalAspect ( STOP	         "Red" )
+			SignalAspect ( RESTRICTING       "Amber" )
+                  SignalAspect ( STOP	         "Red" )
+		)
+		SignalNumClearAhead ( 1 )
+		)
+SignalType ( "Callonstopdist"
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 2
+			SignalLight ( 0 "Red Light"
+				Position ( 0.035 -0.403 0.0 )
+				Radius ( 0.06 )
+                        SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			SignalLight ( 1 "Green Light"
+				Position (  -0.015 -0.305 0.0  )
+				Radius ( 0.05 )
+                        SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			
+			     )
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+					)
+                        SemaphorePos ( 1 )
+					)
+			SignalDrawState ( 1
+				"Green"
+				DrawLights ( 1
+					DrawLight ( 1 )
+                                        )
+                        SemaphorePos ( 0 )
+					)
+				)
+		SignalAspects ( 2
+			SignalAspect ( STOP	         "Red" )
+			SignalAspect ( RESTRICTING       "Green" )
+                
+		)
+		SignalNumClearAhead ( 1 )
+		)
+
+SignalType ( "VR_HC2b"
+		SignalFnType ( NORMAL )
+		SignalLightTex ( "ltex" )
+		SemaphoreInfo ( 0.5 )
+		SignalFlags ( SEMAPHORE )
+
+		SignalLights ( 3
+			SignalLight ( 0 "Red Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+                        SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			SignalLight ( 1 "White Light"
+				Position (  -0.15 -0.315 0.0  )
+				Radius ( 0.07 )
+                        SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			SignalLight ( 2 "Red Light"
+				Position ( 0 0 0 )
+				Radius ( 0.001 )
+                        SignalFlags ( SEMAPHORE_CHANGE )
+				    )
+			     )
+		SignalDrawStates ( 2
+			SignalDrawState ( 0
+				"Red"
+				DrawLights ( 1
+					DrawLight ( 0 )
+					)
+                        SemaphorePos ( 1 )
+					)
+			SignalDrawState ( 1
+				"White"
+				DrawLights ( 1
+					DrawLight ( 1 )
+                                        )
+                        SemaphorePos ( 0 )
+					)
+				)
+		SignalAspects ( 2
+			SignalAspect ( STOP	         "Red" )
+			SignalAspect ( RESTRICTING       "White" )
+		)
+		SignalNumClearAhead ( 1 )
+		)
+                )
+SignalShapes ( 86
+SignalShape (
+		"MR_Semaphore_Shunt_Disc.s"
+		"MR_Semaphore_Shunt_Disc"
+		SignalSubObjs ( 1
+			SignalSubObj ( 0
+				"HEAD1"
+				"Shunt Disc"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "MR_Semaphore_Shunt_Disc" )
+			)
+		)
+	)
+
+SignalShape (
+		"SR_LatGantry_GaBhdMhd.s"
+		"SR Lattice Gantry Jcn Signal GaBhdMhd"
+		SignalSubObjs ( 5
+			SignalSubObj ( 0
+				"HEAD1"
+				"Siding"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SR_SemHome" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Down Through Home"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SR_SemHome" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Down Through Distant"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SR_SemDistant" )
+			)
+			SignalSubObj ( 3
+				"HEAD4"
+				"Down Local Home"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SR_SemHome" )
+			)
+			SignalSubObj ( 4
+				"HEAD5"
+				"Down Local Distant"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SR_SemDistant" )
+			)
+		)
+	)
+SignalShape (
+		"SR_LatGantry_GaMhdBhd.s"
+		"SR Lattice Gantry Jcn Signal GaMhdBhd"
+		SignalSubObjs ( 5
+			SignalSubObj ( 0
+				"HEAD1"
+				"Siding"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SR_SemHome" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Down Through Home"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SR_SemHome" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Down Through Distant"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SR_SemDistant" )
+			)
+			SignalSubObj ( 3
+				"HEAD4"
+				"Down Local Home"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SR_SemHome" )
+			)
+			SignalSubObj ( 4
+				"HEAD5"
+				"Down Local Distant"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SR_SemDistant" )
+			)
+		)
+	)
+SignalShape (
+		"SR_LatGantry_MhdBd.s"
+		"SR Lattice Gantry Jcn Signal MhdBd"
+		SignalSubObjs ( 3
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Line Starter"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT OPTIONAL )				
+				SigSubSType ( "SR_SemHome" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Main Line Distant"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SR_SemDistant" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Branch splitting Distant"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SR_SemDistant" )
+			)
+		)
+	)
+SignalShape (
+		"SR_LatGantry_MhGaMh.s"
+		"SR Lattice Gantry Jcn Signal MhGaMh"
+		SignalSubObjs ( 3
+			SignalSubObj ( 0
+				"HEAD1"
+				"Branch Line"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SR_SemHome" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"West Moors WD Sdg"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SR_SemHome" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Main Starter"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SR_SemHome" )
+			)
+		)
+	)
+SignalShape (
+		"SR_LatGantry_GaMhMh.s"
+		"SR Lattice Gantry Jcn Signal GaMhMh"
+		SignalSubObjs ( 3
+			SignalSubObj ( 0
+				"HEAD1"
+				"Goods Line"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SR_SemHome" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Main Line"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SR_SemHome" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Main Line"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SR_SemHome" )
+			)
+		)
+	)
+	SignalShape (
+		"BannRepComp.s"
+		"UK Banner Repeater Composite"
+		SignalSubObjs ( 9
+			SignalSubObj ( 0
+				"HEAD1"
+				"BannerRepeaterComposite"
+				SigSubType ( DECOR )
+			)
+			SignalSubObj ( 1
+				"BOARDHB"
+				"Banner Home (Black)"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT OPTIONAL )				
+				SigSubSType ( "BannerRepeaterHome" )
+			)
+			SignalSubObj ( 2
+				"BOARDHR"
+				"Banner Home (Red)"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( OPTIONAL )				
+				SigSubSType ( "BannerRepeaterHome" )
+			)
+			SignalSubObj ( 3
+				"BOARDDB"
+				"Banner Distant (Black)"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( OPTIONAL )				
+				SigSubSType ( "BannerRepeaterDistant" )
+			)
+			SignalSubObj ( 4
+				"BOARDDY"
+				"Banner Distant (Yellow)"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( OPTIONAL )				
+				SigSubSType ( "BannerRepeaterDistant" )
+			)
+			SignalSubObj ( 5
+				"RSD"
+				"Repeating Semaphore Distant"
+				SigSubType ( USER1 )
+				SignalFlags ( OPTIONAL )
+			)
+			SignalSubObj ( 6
+				"UQ"
+				"Upper Quadrant"
+				SigSubType ( USER2 )
+				SignalFlags ( OPTIONAL )
+			)
+			SignalSubObj ( 7
+				"BACK"
+				"Back Fittings"
+				SigSubType ( DECOR )
+				SignalFlags ( DEFAULT OPTIONAL )
+			)
+			SignalSubObj ( 8
+				"BACKSCREEN"
+				"White Back Screen "
+				SigSubType ( DECOR )
+				SignalFlags ( DEFAULT OPTIONAL )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRJct-BSFD-MSD.s"
+		"SR Jct BStop + Fixed Dist / MStop + Dist"
+		SignalSubObjs ( 3
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Main Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "SRDistStop" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Branch Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRStopFDBranch" )
+			)
+		)
+	)
+SignalShape (
+		"SRLnk-GrdsigYellow.s"
+		"SR Lnk Yellow Ground Signal"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Shunt Arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRGrdsigYellow" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Dummy Arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRDummy" )
+			)
+		)
+	)
+
+SignalShape (
+		"SRLnk-SidingYellow.s"
+		"SR Lnk Yellow Siding Signal"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Siding Arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRSidingYellow" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Dummy Arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRDummy" )
+			)
+		)
+	)
+
+
+	SignalShape (
+		"LSWRStopDist.s"
+		"LSWR Stop + Dist"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "LSWRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "LSWRDistStop" )
+			)
+		)
+	)
+SignalShape (
+		"LSWRhomeDistCoact.s"
+		"LSWR homeDistCoact"
+		SignalSubObjs ( 3
+			SignalSubObj ( 0
+				"HEAD1"
+				"Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "LSWRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )
+				SigSubSType ( "LSWRDistStop" )
+				)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "LSWRStop" )
+
+			)
+		)
+	)
+
+SignalShape (
+		"LSWRHFDshortrail.s"
+		"LSWRFixDistStop"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "LSWRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "LSWRFixDistStop" )
+			)
+		)
+	)
+
+	SignalShape (
+		"LSWRDist.s"
+		"LSWR Dist"
+		SignalSubObjs ( 1
+			SignalSubObj ( 0
+				"HEAD1"
+				"Distance arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags( DEFAULT OPTIONAL )
+				SigSubSType ( "LSWRDist" )
+			)
+		)
+	)
+
+SignalShape (
+		"LSWRStop.s"
+		"LSWR Stop"
+		SignalSubObjs ( 1
+			SignalSubObj ( 0
+				"HEAD1"
+				"Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "LSWRStop" )
+			)
+		)
+	)
+SignalShape (
+		"SigSDbacking.s"
+		"SigSDbacking"
+		SignalSubObjs ( 1
+			SignalSubObj ( 0
+				"HEAD1"
+				"Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "LSWRstop" )
+			)
+		)
+	)
+
+
+	SignalShape (
+		"SRGrdsig.s"
+		"SR Ground Signal"
+		SignalSubObjs ( 1
+			SignalSubObj ( 0
+				"HEAD1"
+				"Shunt Disc"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "SRGrdsig" )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRStop.s"
+		"SR Stop"
+		SignalSubObjs ( 1
+			SignalSubObj ( 0
+				"HEAD1"
+				"Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "SRStop" )
+
+)
+		)
+	)
+SignalShape (
+		"SRlocalStop.s"
+		"SR local Stop"
+		SignalSubObjs ( 1
+			SignalSubObj ( 0
+				"HEAD1"
+				"Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "SRStop" )
+
+)
+		)
+	)
+
+	SignalShape (
+		"SRStopDist.s"
+		"SR Stop + Dist"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "SRDistStop" )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRStopStop.s"
+		"SR Stop + Stop"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "SRStop" )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRSiding.s"
+		"SR Siding"
+		SignalSubObjs ( 1
+			SignalSubObj ( 0
+				"HEAD1"
+				"Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "SRStop" )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRRingSiding.s"
+		"SR Ring Siding"
+		SignalSubObjs ( 1
+			SignalSubObj ( 0
+				"HEAD1"
+				"Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT  )				
+				SigSubSType ( "SRStop" )
+			)
+		)
+	)
+	SignalShape (
+		"SRJct-MSD-MSD.s"
+		"SR Jct MStop + Dist / MStop + Dist"
+		SignalSubObjs ( 4
+			SignalSubObj ( 0
+				"HEAD1"
+				"Left Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Left Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRDist" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Right Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 3
+				"HEAD4"
+				"Right Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRDist" )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRJct-MS-MS.s"
+		"SR Jct MStop / MStop"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Left Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStopBranch" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Right Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRJct-MD-MD.s"
+		"SR Jct MDist / MDist"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Left Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRDist" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Right Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRDist" )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRJct-BS-MSD.s"
+		"SR Jct BStop / MStop + Dist"
+		SignalSubObjs ( 3
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Main Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "SRDistStop" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Branch Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStopBranch" )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRJct-BS-MSD-BS.s"
+		"SR Jct BStop / MStop + Dist / BStop"
+		SignalSubObjs ( 4
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Main Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "SRDistStop" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Left Branch Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStopBranch" )
+			)
+			SignalSubObj ( 3
+				"HEAD4"
+				"Right Branch Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStopBranch" )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRJct-BS-MS-BS.s"
+		"SR Jct BStop / MStop / BStop"
+		SignalSubObjs ( 3
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Left Branch Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStopBranch" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Right Branch Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStopBranch40" )
+			)
+		)
+	)
+		SignalShape (
+		"SRJctRSRSMS.s"
+		"SR Jct RingSdg / RingSdg / MStop"
+		SignalSubObjs ( 3
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Middle Siding arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Left Siding arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+		)
+	)
+SignalShape (
+		"SRJctRsBsMs.s"
+		"SR JctRingSidingBranchStopMainstop"
+		SignalSubObjs ( 3
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SR_SemHome" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Left Branch Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SR_SemHome" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Ring Siding arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SR_SemHome" )
+			)
+		)
+	)
+SignalShape (
+		"SRGantryRsBsMs.s"
+		"SRGantryRingSidingBranchStopMainstop"
+		SignalSubObjs ( 3
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Left Branch Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStopBranch40" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Ring Siding arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRSiding" )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRJct-MSD-BS.s"
+		"SR Jct MStop + Dist / BStop"
+		SignalSubObjs ( 3
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Mainline Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "SRDistStop" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Branchline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStopBranch" )
+			)
+			
+		)
+	)
+
+	SignalShape (
+		"SRJct-BS-MS.s"
+		"SR Jct BStop / MStop"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Mainline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Branchline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStopBranch" )
+			)
+			
+		)
+	)
+
+	SignalShape (
+		"SRJct-MS-BS.s"
+		"SR Jct MStop / BStop"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Mainline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Branchline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStopBranch" )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRJct-MD-BD.s"
+		"SR Jct MDist / BDist"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRDist" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Branch Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRDistBranch" )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRJct-BD-MD.s"
+		"SR Jct BDist / MDist"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRDist" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Branch Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRDistBranch" )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRDist.s"
+		"SR Dist"
+		SignalSubObjs ( 1
+			SignalSubObj ( 0
+				"HEAD1"
+				"Distance arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags( DEFAULT OPTIONAL )
+				SigSubSType ( "SRDist" )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRJct-RSI-MS.s"
+		"SR Jct Ring Siding / MStop"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Mainline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Siding arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRSiding" )
+			)
+		)
+	)
+SignalShape (
+		"SRJctRSRS.s"
+		"SR Jct Ring Siding / Ring Siding"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Siding arm left"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Siding arm right"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRStopBranch" )
+			)
+		)
+	)
+SignalShape (
+		"SRJctRSRSVert.s"
+		"SR JctRingSiding/RingSidingVert"
+		SignalSubObjs ( 3
+			SignalSubObj ( 0
+				"HEAD1"
+				"Siding arm Upper"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Siding arm Lower"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRStopBranch" )
+			)
+SignalSubObj ( 2
+				"HEAD3"
+				"groundsignal"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRGrdsig" )
+			)
+
+		)
+	)
+
+	SignalShape (
+		"SRJct-MS-RSI.s"
+		"SR Jct MStop / Ring Siding"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Mainline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Siding arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRSiding" )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRJct-RSI-MSD.s"
+		"SR Jct Ring Siding / MStop + Dist"
+		SignalSubObjs ( 3
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Main Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRDistStop" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Siding arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRSiding" )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRJct-MSD-RSI.s"
+		"SR Jct MStop + Dist / Ring Siding"
+		SignalSubObjs ( 3
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Mainline Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "SRDistStop" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Siding arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRSiding" )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRLnk-Grdsig.s"
+		"SR Lnk Ground Signal"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Shunt Arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRGrdsig" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Dummy Arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRDummy" )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRLnk-Stop.s"
+		"SR Lnk Stop Signal"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Stop Arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Dummy Arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRDummy" )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRLnk-Siding.s"
+		"SR Lnk Siding Signal"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Siding Arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRSiding" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Dummy Arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRDummy" )
+			)
+		)
+	)
+
+	SignalShape (
+		"SRStopDumDist.s"
+		"SR Stop/Dummy Distant"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Stop Arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Dummy Distant Arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "SRDumDistStop" )
+			)
+		)
+	)
+SignalShape (
+		"SRJct-MSD-D.s"
+		"SR Jct MStop + Dist / Distant"
+
+	SignalSubObjs ( 3
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Main Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRDist" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Right Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRDistBranch" )
+			)
+		)
+	)
+SignalShape (
+		"SRRingSidingLINK.s"
+		"SR Ring Siding Link Signal"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Siding Arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRSiding" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Dummy Arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRDummy" )
+			)
+		)
+	)
+SignalShape (
+		"SRDistLINK.s"
+		"SR Distant Link Signal"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Distant Arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRDistBranch" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Dummy Arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( JN_LINK )				
+				SigSubSType ( "SRDummy" )
+			)
+		)
+	)
+SignalShape (
+		"BufferStopLamp.s"
+		"Buffer Stop Lamp"
+		SignalSubObjs ( 1
+			SignalSubObj ( 0
+				"HEAD1"
+				"Signal Head 1"
+				SigSubType ( SIGNAL_HEAD )
+				SigSubSType ( "TRACKEND" )
+			)
+		)
+	)
+SignalShape (
+		"lampcallon.s"
+		"Callon Lamp OR"
+		SignalSubObjs ( 1
+			SignalSubObj ( 0
+				"HEAD1"
+				"Signal Head 1"
+				SigSubType ( SIGNAL_HEAD )
+				SigSubSType ( "Callon_OR" )
+			)
+		)
+	)
+
+SignalShape (
+		"SRJctMSD_BSD.s"
+		"SR Jct MStop + Dist  BranchStop + Dist"
+		SignalSubObjs ( 4
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Main Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRDistStop" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Branch Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStopBranch" )
+			)
+			SignalSubObj ( 3
+				"HEAD4"
+				"Branch Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )
+				SigSubSType ( "SRDistBranch" )
+			)
+		)
+	)
+SignalShape (
+		"SRJctBSD_MSD.s"
+		"SR Jct BranchStop + Dist  MainStop + Dist"
+		SignalSubObjs ( 4
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Main Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRDistStop" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Branch Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStopBranch" )
+			)
+			SignalSubObj ( 3
+				"HEAD4"
+				"Branch Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRDistBranch" )
+			)
+		)
+	)
+
+SignalShape (
+		"SRJct-BSMHDBHD.s"
+		"SRJctBranchStopMainHome+DistBranchHome+Dist"
+		SignalSubObjs ( 5
+			SignalSubObj ( 0
+				"HEAD1"
+				"RT Branch Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStopBranch" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"RT Branch Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRDistBranch" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Main Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 3
+				"HEAD4"
+				"Main Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRDistStop" )
+			)
+
+			SignalSubObj ( 4
+				"HEAD5"
+				"Left Branch stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStopBranch" )
+			)
+		)
+	)
+SignalShape (
+		"SRJct-BSBHDMHD.s"
+		"SRJctBranchStopBranchHome+DistMainHome+Dist"
+		SignalSubObjs ( 5
+			SignalSubObj ( 0
+				"HEAD1"
+				"RT Main Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"RT Main Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRDistStop" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Branch Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStopBranch" )
+			)
+			SignalSubObj ( 3
+				"HEAD4"
+				"Branch Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRDistBranch" )
+			)
+
+			SignalSubObj ( 4
+				"HEAD5"
+				"Left Branch stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStopBranch" )
+			)
+		)
+	)
+
+SignalShape (
+		"SRMstopGrdsig.s"
+		"SR MStop Grdsig"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Ground signal"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "SRGrdsig" )
+			)
+		)
+	)
+SignalShape (
+		"srstopsahd.s"
+		"SR Home + Calling On"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "VR_HC1" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Calling On arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( OPTIONAL DEFAULT )
+				SigSubSType ( "VR_HC2" )
+			)
+			
+		)
+	)
+SignalShape (
+		"srstopdistsahd.s"
+		"SR Home + Distant + Shunt Ahead"
+		SignalSubObjs ( 3
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Home arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "VR_HC1" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Mainline Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "SR_SemHomeDistantA" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Shunt Ahead arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "VR_HC2" )
+			)
+			
+		)
+	)
+SignalShape (
+		"srstopdistcallon.s"
+		"SR Home + Distant + Callon"
+		SignalSubObjs ( 3
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Home arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "VR_HC1" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Mainline Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "SR_SemHomeDistantA" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"callon arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "Callonstopdist" )
+			)
+			
+		)
+	)
+
+SignalShape (
+		"Test.s"
+		"FALSE SIGNAL for Calling On+Shunt Ahead"
+		SignalSubObjs ( 6
+			SignalSubObj ( 0
+				"HEAD1"
+				"Post"
+				SigSubType ( SIGNAL_HEAD )
+				SigSubSType ( "VR_SPEC" )
+                 )
+			SignalSubObj ( 1
+				"HEAD2"
+				"Shunt Limit (Square Head)"
+				SignalFlags ( OPTIONAL DEFAULT )				
+                 )
+			SignalSubObj ( 2
+				"HEAD3"
+				"Shunt Limit (Round Head)"
+				SignalFlags ( OPTIONAL )
+                 )
+			SignalSubObj ( 3
+				"HEAD4"
+				"Limit of Shunt (Square Head)"
+				SignalFlags ( OPTIONAL )
+                 )
+			SignalSubObj ( 4
+				"HEAD5"
+				"Limit of Shunt (Round Head)"
+				SignalFlags ( OPTIONAL )
+                 )
+			SignalSubObj ( 5
+				"HEAD6"
+				"Calling On Marker Post"
+				SignalFlags ( OPTIONAL )
+                 )
+            )
+       )
+SignalShape (
+		"LSWRJctGS-MS-BS.s"
+		"LSWRJctGS/ BStop / MStop"
+		SignalSubObjs ( 3
+			SignalSubObj ( 0
+				"HEAD1"
+				"Mainline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )
+				SigSubSType ( "LSWRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Branchline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "LSWRStopBranch" )
+			)
+SignalSubObj ( 2
+				"HEAD3"
+				"Ground signal"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "SRGrdSigNocallOn" )
+			)
+
+		)
+	)
+SignalShape (
+		"LSWRJct-BS-MS.s"
+		"LSWRJct BStop / MStop"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Mainline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )
+				SigSubSType ( "LSWRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Branchline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "LSWRStopBranch" )
+			)
+		)
+	)
+SignalShape (
+		"LSWRJct-MS-BS.s"
+		"LSWRJct MStop / BStop"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Mainline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )
+				SigSubSType ( "LSWRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Branchline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )
+				SigSubSType ( "LSWRStopBranch" )
+			)
+		)
+	)
+       SignalShape (
+		"lswrmsbscoact.s"
+		"LSWR JCT BranchMainCoacting"
+		SignalSubObjs ( 4
+			SignalSubObj ( 0
+				"HEAD1"
+				"Main Lwr"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )
+				SigSubSType ( "LSWRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Branch lwr"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )
+				SigSubSType ( "LSWRStopBranch" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Branch Upr"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )
+				SigSubSType ( "LSWRStopBranch" )
+			)
+			SignalSubObj ( 3
+				"HEAD4"
+				"Main upr"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )
+				SigSubSType ( "LSWRStop" )
+			)
+		)
+	)
+     SignalShape (
+		"lswrbsmsgallow.s"
+		"lswrbsmsgallow"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Mainline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "LSWRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Branchline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "LSWRStopBranch" )
+			)
+		)
+	)
+SignalShape (
+		"srjctbsmsbsindic.s"
+		"SRJct BsMsBsIndicatorMech"
+		SignalSubObjs ( 10
+			SignalSubObj ( 0
+				"HEAD0"
+				"Door Flap"
+				SigSubType ( SIGNAL_HEAD )			
+				SigSubSType ( "UKInd" )
+                   )
+			SignalSubObj ( 1
+				"HEAD1"
+				"Indicator 1"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )		     
+				SigSubSType ( "UKInd1" )
+                   )
+			SignalSubObj ( 2
+				"HEAD2"
+				"Indicator 2"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )		
+				SigSubSType ( "UKInd2" )
+                   )
+			SignalSubObj ( 3
+				"HEAD3"
+				"Indicator 3"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )		
+				SigSubSType ( "UKInd3" )
+                   )
+			SignalSubObj ( 4
+				"HEAD4"
+				"Indicator 4"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )		
+				SigSubSType ( "UKInd4" )
+                   )
+			SignalSubObj ( 5
+				"HEAD5"
+				"Indicator 5"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )		
+				SigSubSType ( "UKInd5" )
+                   )
+			SignalSubObj ( 6
+				"HEAD6"
+				"Indicator 6"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )	
+				SigSubSType ( "UKInd6" )
+                 )
+                 SignalSubObj ( 7
+				"HEAD7"
+				"Main Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 8
+				"HEAD8"
+				"Left Branch Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )
+				SigSubSType ( "SRStopBranch" )
+			)
+			SignalSubObj ( 9
+				"HEAD9"
+				"Right Branch Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )
+				SigSubSType ( "SRStopBranch" )
+
+                   )
+             )
+       )
+SignalShape (
+		"SRstopIndMech3.s"
+		"SRStopIndicator 3"
+		SignalSubObjs ( 11
+			SignalSubObj ( 0
+				"HEAD0"
+				"Door Flap"
+				SigSubType ( SIGNAL_HEAD )			    			     	SignalFlags ( DEFAULT )		
+				SigSubSType ( "UKInd" )
+                   )
+			SignalSubObj ( 1
+				"HEAD1"
+				"Indicator 1"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )		     
+				SigSubSType ( "UKInd" )
+                   )
+			SignalSubObj ( 2
+				"HEAD2"
+				"Indicator 2"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )		
+				SigSubSType ( "UKInd1" )
+                   )
+			SignalSubObj ( 3
+				"HEAD3"
+				"Indicator 3"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )		
+				SigSubSType ( "UKInd2" )
+                   )
+			SignalSubObj ( 4
+				"HEAD4"
+				"Indicator 4"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )
+				SigSubSType ( "UKInd3" )
+                   )
+			SignalSubObj ( 5
+				"HEAD5"
+				"Indicator 5"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )		
+				SigSubSType ( "UKInd4" )
+                   )
+			SignalSubObj ( 6
+				"HEAD6"
+				"Indicator 6"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )	
+				SigSubSType ( "UKInd5" )
+                 )
+                 SignalSubObj ( 7
+				"Head7"
+				"Indicator ED"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( OPTIONAL JN_LINK )
+				SigSubSType ( "UKInd6" )
+		)
+			SignalSubObj ( 8
+				"HEAD8"
+				"Indicator WD1"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( OPTIONAL JN_LINK )
+				SigSubSType ( "UKInd2" )
+			)
+			SignalSubObj ( 9
+				"HEAD9"
+				"Indicator WD2"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( OPTIONAL JN_LINK )	
+				SigSubSType ( "UKInd3" )	
+			)			
+                 SignalSubObj ( 10
+				"HEAD10"
+				"Main Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )
+				SigSubSType ( "SRStop" )
+                   )
+             )
+       )
+SignalShape (
+		"SRstopIndElec6.s"
+		"SRStopElectIndicator6"
+		SignalSubObjs ( 8
+			SignalSubObj ( 0
+				"HEAD0"
+				"Spot"
+				SigSubType ( SIGNAL_HEAD )			    			     		SignalFlags ( DEFAULT )		
+				SigSubSType ( "UKInd" )
+                   )
+			SignalSubObj ( 1
+				"HEAD1"
+				"Indicator 1"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )		
+				SigSubSType ( "UKInd1" )
+                   )
+			SignalSubObj ( 2
+				"HEAD2"
+				"Indicator 2"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )
+				SigSubSType ( "UKInd2" )
+                   )
+			SignalSubObj ( 3
+				"HEAD3"
+				"Indicator 3"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )		
+				SigSubSType ( "UKInd3" )
+                   )
+			SignalSubObj ( 4
+				"HEAD4"
+				"Indicator 4"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )	
+				SigSubSType ( "UKInd4" )
+                   )
+			SignalSubObj ( 5
+				"HEAD5"
+				"Indicator 5"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )	
+				SigSubSType ( "UKInd5" )
+                   )
+			SignalSubObj ( 6
+				"HEAD6"
+				"Indicator 6"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )	
+				SigSubSType ( "UKInd6" )
+                 )
+                 SignalSubObj ( 7
+				"Head7"
+				"StopArm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )
+				SigSubSType ( "SRstop" )
+                   )
+             )
+       )
+SignalShape (
+		"SrJct-BSBSMSD.s"
+		"SRJct-BranchStop /BranchStop /MainstopDist"
+		SignalSubObjs ( 4
+			SignalSubObj ( 0
+				"HEAD1"
+				"Mainline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"MainlineDist arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "SRDistStop" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Branch stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "SRStopBranch" )
+			)
+			SignalSubObj ( 3
+				"HEAD4"
+				"LeftBranch stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "SRStopBranch" )
+			)
+		)
+	)
+SignalShape (
+		"SRJct-MSDSSD.s"
+		"SRJct-MSDSSD"
+		SignalSubObjs ( 5
+			SignalSubObj ( 0
+				"HEAD1"
+				"Mainline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"MainlineDist arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "SRDistStop" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Branch stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "SRStopBranch" )
+			)
+			SignalSubObj ( 3
+				"HEAD4"
+				"LeftBranch stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "SRStopBranch" )
+			)
+			SignalSubObj ( 4
+				"HEAD5"
+				"BranchDist arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "SRDistBranch" )
+			)
+		)
+	)
+       SignalShape (
+		"3SigInd.s"
+		"Bournemouth West ArrivalSignal"
+		SignalSubObjs ( 12
+			SignalSubObj ( 0
+				"HEAD1"
+				"Home Arm"
+				SigSubType ( SIGNAL_HEAD )
+			SignalFlags ( DEFAULT JN_LINK )
+			SigSubSType ( "SRStop" )
+			)
+                   SignalSubObj ( 1
+				"HEAD2"
+				"Calling on Arm"
+				SigSubType ( SIGNAL_HEAD )
+			SignalFlags ( DEFAULT  )
+			SigSubSType ( "Callon_or" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Left Shunt Arm"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( DEFAULT JN_LINK )
+				SigSubSType ( "SRStopBranch" )
+                   )
+			SignalSubObj ( 3
+				"HEAD4"
+				"Right Shunt Arm "
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( DEFAULT JN_LINK )
+				SigSubSType ( "SRStopBranch" )
+                   )
+			SignalSubObj ( 4
+				"HEAD9"
+				"Indicator Body"
+                         SignalFlags ( OPTIONAL )
+                   )
+			SignalSubObj ( 5
+				"HEAD10"
+				"Indicator Door Flap"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL )			    			     			SignalFlags ( DEFAULT )	
+				SigSubSType ( "UKInd" )
+                   )
+			SignalSubObj ( 6
+				"HEAD11"
+				"No1 Road Indicator"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )
+				SigSubSType ( "UKInd1" )
+                   )
+			SignalSubObj ( 7
+				"HEAD12"
+				"No 2 Road Indicator"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )		     			     				
+				SigSubSType ( "UKInd2" )
+                   )
+			SignalSubObj ( 8
+				"HEAD13"
+				"No 3 Road Indicator"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )		     			     				
+				SigSubSType ( "UKInd3" )
+                   )
+			SignalSubObj ( 9
+				"HEAD14"
+				"No 4 Road Indicator"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )		     			     				
+				SigSubSType ( "UKInd4" )
+                   )
+			SignalSubObj ( 10
+				"HEAD15"
+				"No 5 Road Indicator"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )			     
+				SigSubSType ( "UKInd5" )
+                   )
+			SignalSubObj ( 11
+				"HEAD16"
+				"No 6 Road Indicator"
+				SigSubType ( SIGNAL_HEAD )
+			      SignalFlags ( OPTIONAL JN_LINK )		
+				SigSubSType ( "UKInd6" )
+			
+                   )
+             )
+       )
+SignalShape (
+		"LSWRMSDBSDcoact.s"
+		"LSWRMainStopDistBranchStopDistCoact"
+		SignalSubObjs ( 6
+			SignalSubObj ( 0
+				"HEAD1"
+				"MainStop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "LSWRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"MainDistant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )
+				SigSubSType ( "LSWRDistStop" )
+				)
+			SignalSubObj ( 2
+				"HEAD3"
+				"BranchStop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "LSWRStopBranch" )
+
+			)
+				SignalSubObj ( 3
+				"HEAD4"
+				"BranchDistant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK
+ )		
+				SigSubSType ( "LSWRDistStop" )
+
+			)
+				SignalSubObj ( 4
+				"HEAD5"
+				"MainCoact arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )			
+				SigSubSType ( "LSWRStop" )
+			)
+				SignalSubObj ( 5
+				"HEAD6"
+				"BranchCoact arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )			
+				SigSubSType ( "LSWRStopBranch" )
+		)
+
+	)
+)
+SignalShape (
+		"SrJct-BSDMSDBSBS.s"
+		"SrJct-BSDMSDBSBS"
+		SignalSubObjs ( 6
+			SignalSubObj ( 0
+				"HEAD1"
+				"Mainline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"MainlineDist arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "SRDistStop" )
+			)
+			SignalSubObj ( 2
+				"HEAD3"
+				"Branch stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "SRStopBranch" )
+			)
+			SignalSubObj ( 3
+				"HEAD4"
+				"RightBranch stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "SRStopBranch" )
+			)
+			SignalSubObj ( 4
+				"HEAD5"
+				"BranchStop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "SRStop" )
+			)
+			SignalSubObj ( 5
+				"HEAD6"
+				"Branch Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )		
+				SigSubSType ( "SRDistBranch" )
+			)
+
+		)
+	)
+SignalShape (
+		"SRGrdSig_callon.s"
+		"SR Ground Signal callon"
+		SignalSubObjs ( 1
+			SignalSubObj ( 0
+				"HEAD1"
+				"Shunt Disc"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "SRGrdSig_callon" )
+			)
+		)
+	)
+
+
+SignalShape (
+		"GWRGrdsig.s"
+		"GWR Ground Signal"
+		SignalSubObjs ( 1
+			SignalSubObj ( 0
+				"HEAD1"
+				"Shunt Disc"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )			
+				SigSubSType ( "GWRGrdsig" )
+			)
+		)
+	)
+	SignalShape (
+		"GWR4ftStop.s"
+		"GWR 4ft Stop"
+		SignalSubObjs ( 1
+			SignalSubObj ( 0
+				"HEAD1"
+				"Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "GWRStop" )
+			)
+		)
+	)
+
+	SignalShape (
+		"GWR5ftStop.s"
+		"GWR 5ft Stop"
+		SignalSubObjs ( 1
+			SignalSubObj ( 0
+				"HEAD1"
+				"Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "GWRStop" )
+			)
+		)
+	)
+
+	SignalShape (
+		"GWR5ftStopDist.s"
+		"GWR 5ft Stop + Dist"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "GWRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Distant arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "GWRDistStop" )
+			)
+		)
+	)
+SignalShape (
+		"GWR5ftJct-BS-MS.s"
+		"GWR 5ft Jct BStop / MStop"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Mainline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "GWRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Branchline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "GWRStopBranch" )
+			)
+			
+		)
+	)
+
+	SignalShape (
+		"GWR5ftJct-MS-BS.s"
+		"GWR 5ft Jct MStop / BStop"
+		SignalSubObjs ( 2
+			SignalSubObj ( 0
+				"HEAD1"
+				"Mainline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "GWRStop" )
+			)
+			SignalSubObj ( 1
+				"HEAD2"
+				"Branchline Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT JN_LINK )				
+				SigSubSType ( "GWRStopBranch" )
+			)
+		)
+	)
+SignalShape (
+		"GWR5ftDist.s"
+		"GWR 5ft Distant"
+		SignalSubObjs ( 1
+			SignalSubObj ( 0
+				"HEAD1"
+				"Distance arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags( DEFAULT OPTIONAL )
+				SigSubSType ( "GWRDist" )
+			)
+		)
+	)
+SignalShape (
+		"GWR4ftDist.s"
+		"GWR 4ft Distant"
+		SignalSubObjs ( 1
+			SignalSubObj ( 0
+				"HEAD1"
+				"Distance arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags( DEFAULT OPTIONAL )
+				SigSubSType ( "GWRDist" )
+			)
+		)
+	)
+
+
+SignalShape (
+		"GWRSiding.s"
+		"GWR Siding"
+		SignalSubObjs ( 1
+			SignalSubObj ( 0
+				"HEAD1"
+				"Stop arm"
+				SigSubType ( SIGNAL_HEAD )
+				SignalFlags ( DEFAULT )				
+				SigSubSType ( "GWRStop" )
+			)
+		)
+	)
+
+	
+
+SignalShape (
+		"Shunt_Spec.s"
+		"FALSE SIGNAL for Shunting"
+		SignalSubObjs ( 1
+			SignalSubObj ( 0
+				"HEAD1"
+				"Post"
+				SigSubType ( SIGNAL_HEAD )
+				SigSubSType ( "Shunt_Spec" )
+                 )
+            )
+      )
+)
+ScriptFiles (
+	ScriptFile ( sigscr.dat )
+)
