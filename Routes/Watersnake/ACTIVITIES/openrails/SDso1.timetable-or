@@ -1,0 +1,211 @@
+	#comment	#comment	2200SheffieldLM5	#comment	#Comment	#comment	#Comment	#comment	#Comment	#comment	#Comment	#comment	#Comment	#comment	#Comment	ObsBath	ObsTemplecombe	ObsBmth
+#comment	Sdso	Midland Services		Bath		Radstock		Templecombe		Branksome		Bournemouth		Other Services				observer 71B
+#comment			So2200SheffieldLM5															
+#path			SDSO2200SheffieldLM5													RL_ObsBath	RL_ObsTemplecombe	RL_BmthObs
+#consist			LM544839Le + 58_Sheffield_2200FO_Bournemouth													SO_3FT47190	chd_2P_40563CW_LE	RL_M730060LE
+#start			02:20:00													02:28$create=00:02	10:08$create=00:02	09:35$create=00:04
+#speedmph																		
+#note																		
+#direction																		
+																		
+BasingstokeMain																		
+BasingstokeLocal																		
+BasingstokeYard																		
+Basingstoke Loco70D																		
+Micheldever																		
+MicheldeverYard																		
+WinchesterCity																		
+WinchesterGds																		
+Shawford																		
+ShawfordGds																		
+ElghGds																		
+Allbrook																		
+ElghEastYard																		
+ElghTipton	$hold																	
+EastleighYard	$forcehold																	
+EastleighLoco71A																		
+EastleighCarriage	$forcehold 																	
+EastleighLoop	$forcehold																	
+Eastleigh	$forcehold																	
+ChandlersFord																		
+ChandlersFordGds																		
+RomseyUp																		
+RomseyDn																		
+RomseyYard																		
+RomseyGds																		
+Swaythling																		
+SwaythlingGds																		
+StDenys																		
+BevoisPark	$hold																	
+BevoisReception																		
+NorthamYard																		
+NorthamReception																		
+SouthamptonCentral																		
+SouthamptonCLocal																		
+SouthamptonSiding																		
+Millbrook																		
+MillbrookGds																		
+Redbridge																		
+RedbridgeYard																		
+Totton																		
+TottonGds																		
+TottonGdsLoop																		
+LyndhurstRdGds																		
+LyndhurstRoad																		
+BeaulieuRdGds																		
+BeaulieuRoad																		
+Brockenhurst																		
+BrockenhurstGoods																		
+BrockGdsloop																		
+BrockSiding																		
+BrockYard																		
+BrockRec																		
+LymingtonTown																		
+LymingtonTownGds																		
+LymingtonPier																		
+LymingtonPierGds																		
+Sway																		
+SwayGds																		
+NewMilton																		
+NewMiltonGds																		
+HintonAdmiral																		
+HintonAdmiralGds																		
+Christchurch																		
+XchurchYard																		
+Pokesdown	$hold																	
+Boscombe																		
+BoscombeGds																		
+BournemouthCentral																		
+BournemouthCentral1	$hold																	
+BournemouthCentral2	$hold																	
+BournemouthCentralYard																		
+BmthLoco71B																		
+BournemouthCentralGoods																		
+BournemouthCentralGoodsW																		
+BournemouthWest 	$hold$terminal																	
+BmthWCarriage	$terminal																	
+BournemouthWestYard																		
+BranksomeYard																		
+Branksome																		
+BrnkLoco																		
+Parkstone																		
+ParkstoneGds																		
+Poole																		
+PooleYard																		
+PooleUpReception																		
+PooleQuay																		
+HamworthyJct																		
+HamworthyJctYard																		
+HamworthyGds																		
+Holmsley																		
+HolmsleyGds																		
+Ringwood																		
+RingwoodGds																		
+AshleyHeathHalt																		
+WestMoors																		
+WestMoorsGds																		
+Uddens																		
+WimborneDown																		
+Wimborne																		
+WimborneYard																		
+Broadstone																		
+BroadstoneGds																		
+Creekmoor																		
+CreekmoorSidings																		
+HoltonHeath																		
+HoltonHeathRNCF																		
+SandfordSiding																		
+Wareham																		
+WarehamBay																		
+WarehamGoods																		
+WarehamYard																		
+Wool																		
+WoolGoods																		
+Moreton																		
+MoretonGoods																		
+DorchesterDown																		
+DorchesterUp																		
+DorchesterYard																		
+DorchesterGds																		
+DorchesterLoco	$terminal																	
+Upwey																		
+Weymouth	$terminal																	
+WeymouthYard																		
+WeymouthCarriage																		
+WeymouthMPD																		
+Northam																		
+SouthamptonTerminus	$hold$terminal																	
+SouthamptonYard																		
+SouthamptonEdocks																		
+SouthamptonWdocks																		
+SotonTermGoods																		
+SotonLoco																		
+SotonChapelGoods																		
+CorfeMullenJct																		
+BaileyGate																		
+BaileyGateGds																		
+Blandford																		
+BlandfordGds																		
+Shillingstone																		
+ShillingstoneGds																		
+SturminsterNewton																		
+SturminsterNewtonGds																		
+Stalbridge																		
+StalbridgeGds																		
+Henstridge																		
+Templecombe																		
+TemplecombeGds																		
+TemplecombeJct																		
+TemplecombeLoco71H																		
+Wincanton																		
+WincantonGds																		
+Cole																		
+ColeGds																		
+EvercreechJct																		
+EvercreechJctYard																		
+EvercreechJctGds																		
+EvercreechNew																		
+EvercreechNewGds																		
+SheptonMallet																		
+SheptonMalletGds																		
+Masbury																		
+Binegar																		
+BinegarGds																		
+Chilcompton																		
+ChilcomptonGds																		
+MidsomerNorton																		
+MidsomerNortonGds																		
+Radstock																		
+RadstockGds																		
+ShoscombeSinglehillHalt																		
+Wellow																		
+WellowGds																		
+Midford																		
+BathGreenPark	$terminal																	
+BathGreenParkYard																		
+Bathloco71G																		
+BathMidlandYard																		
+Furzebrook																		
+CorfeCastle																		
+CorfeGds																		
+Swanage																		
+SwanageYard																		
+Marchwood																		
+MarchwoodWD																		
+Hythe																		
+HytheGds																		
+Fawley																		
+FawleyEssoLoading																		
+FawleyCadland																		
+FawleyISR																		
+WinchesterChesil																		
+WorthyDown																		
+Siding																		
+DockSiding																		
+Loop																		
+LocoServicing																		
+Colliery																		
+MineralLoading																		
+#dispose																$static	$static	$static
+#comment																		
+#Briefing	SDso1 is for players. It splits the empty trains into SdsoSTATIC . Sdso is  somerset dorset  Saturday only trains 															Observer train  <br> press 8 and navigate page up to get a good view <br> speed time with +   <br> ctrl  9 for timetable viewer	Observer train  <br> press 8 and navigate page up to get a good view <br> speed time with +   <br> ctrl  9 for timetable viewer	Observer train  <br> press 8 and navigate page up to get a good view <br> speed time with +   <br> ctrl  9 for timetable viewer

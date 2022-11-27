@@ -1,0 +1,33 @@
+Version 1.1
+
+Improvement to ai sounds.
+My thanks to Martin Pope for improvements to the .eng file sounds and testing by Jim Ashman.
+
+Inclusion of 5Xp cab permission of Lew Price.
+These changes should not impact the running of the 15 activities for the S & D created by me, and uploaded the same time as the S & D route. 
+*****************************************************
+
+BR ex LMS 5MT Class 4-6-0 steam locomotive
+
+3D Model built from drawings and textured by Dave Robinson
+
+Sounds By Stuart Williamson 
+
+
+-----------------------------------------------------------------------------
+The 3D model has been built using TrainSim Modeller
+
+These are re-numbers of the original model, 45110, built by Dave Robinson. My thanks go to him for allowing re-skins.
+
+The loco,s are 44839,44917 and 45440. All were based at Bath Green Park MPD, or one of its sub sheds at some time in the 1950,s until closure of the line.
+
+The cabview is  Lew Prices,JubcabV2 cabview ( File ID 6952 ) from uktrainsim.This will need to be downloaded and installed into the 'Bath_ExLMS_Black5' folder.
+
+You must have Stuart Williamson 2Cyl sounds File ID 2910 installed in your common.sound folder. 
+
+please refer to the original read-me on how to use the lamps and restrictions on use etc.
+
+INSTALLATION:
+Unzip the file to somewhere safe. Copy the folder.............Bath_ExLMS_Black5................... into your trainset folder.Allow to over write if requested.
+Clive Heard (casperdog)
+Dec 2010

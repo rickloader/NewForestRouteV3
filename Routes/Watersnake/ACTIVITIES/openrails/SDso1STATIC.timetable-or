@@ -1,0 +1,181 @@
+	#comment	#comment	940EGScombelwrEcreechJct71H50
+#comment	SDso1STATIC	Static Empty trains	RL_940EGSTcombelwrEcreechJct71H50
+#comment			Tcombe lwr 2 test
+#path			RL_940EGSTcombelwrEcreechJct71H50
+#consist			RL_unfittedMT
+#start			$static
+#speedmph			
+#note			
+#direction			
+			
+BasingstokeMain			
+BasingstokeLocal			
+BasingstokeYard			
+Basingstoke Loco70D			
+Micheldever			
+MicheldeverYard			
+WinchesterCity			
+WinchesterGds			
+Shawford			
+ShawfordGds			
+ElghGds			
+Allbrook			
+ElghEastYard			
+ElghTipton	$hold		
+EastleighYard	$forcehold		
+EastleighLoco71A			
+EastleighCarriage	$forcehold 		
+EastleighLoop	$forcehold		
+Eastleigh	$forcehold		
+ChandlersFord			
+ChandlersFordGds			
+RomseyUp			
+RomseyDn			
+RomseyYard			
+RomseyGds			
+Swaythling			
+SwaythlingGds			
+StDenys			
+BevoisPark	$hold		
+BevoisReception			
+NorthamYard			
+NorthamReception			
+SouthamptonCentral			
+SouthamptonCLocal			
+SouthamptonSiding			
+Millbrook			
+MillbrookGds			
+Redbridge			
+RedbridgeYard			
+Totton			
+TottonGds			
+TottonGdsLoop			
+LyndhurstRdGds			
+LyndhurstRoad			
+BeaulieuRdGds			
+BeaulieuRoad			
+Brockenhurst			
+BrockenhurstGoods			
+BrockGdsloop			
+BrockSiding			
+BrockYard			
+BrockRec			
+LymingtonTown			
+LymingtonTownGds			
+LymingtonPier			
+LymingtonPierGds			
+Sway			
+SwayGds			
+NewMilton			
+NewMiltonGds			
+HintonAdmiral			
+HintonAdmiralGds			
+Christchurch			
+XchurchYard			
+Pokesdown	$hold		
+Boscombe			
+BoscombeGds			
+BournemouthCentral			
+BournemouthCentral1	$hold		
+BournemouthCentral2	$hold		
+BournemouthCentralYard			
+BmthLoco71B			
+BournemouthCentralGoods			
+BournemouthCentralGoodsW			
+BournemouthWest 	$hold$terminal		
+BmthWCarriage	$terminal		
+BournemouthWestYard			
+BranksomeYard			
+Branksome			
+BrnkLoco			
+Parkstone			
+ParkstoneGds			
+Poole			
+PooleYard			
+PooleUpReception			
+PooleQuay			
+HamworthyJct			
+HamworthyJctYard			
+HamworthyGds			
+Holmsley			
+HolmsleyGds			
+Ringwood			
+RingwoodGds			
+AshleyHeathHalt			
+WestMoors			
+WestMoorsGds			
+Uddens			
+WimborneDown			
+Wimborne			
+WimborneYard			
+Broadstone			
+BroadstoneGds			
+Creekmoor			
+CreekmoorSidings			
+HoltonHeath			
+HoltonHeathRNCF			
+SandfordSiding			
+Wareham			
+WarehamBay			
+WarehamGoods			
+WarehamYard			
+Wool			
+WoolGoods			
+Moreton			
+MoretonGoods			
+DorchesterDown			
+DorchesterUp			
+DorchesterYard			
+DorchesterGds			
+DorchesterLoco	$terminal		
+Upwey			
+Weymouth	$terminal		
+WeymouthYard			
+WeymouthCarriage			
+WeymouthMPD			
+Northam			
+SouthamptonTerminus	$hold$terminal		
+SouthamptonYard			
+SouthamptonEdocks			
+SouthamptonWdocks			
+SotonTermGoods			
+SotonLoco			
+SotonChapelGoods			
+CorfeMullenJct			
+BaileyGate			
+BaileyGateGds			
+Blandford			
+BlandfordGds			
+Shillingstone			
+ShillingstoneGds			
+SturminsterNewton			
+SturminsterNewtonGds			
+Stalbridge			
+StalbridgeGds			
+Henstridge			
+Templecombe			
+TemplecombeGds			
+TemplecombeJct			
+TemplecombeLoco71H			
+Furzebrook			
+CorfeCastle			
+CorfeGds			
+Swanage			
+SwanageYard			
+Marchwood			
+MarchwoodWD			
+Hythe			
+HytheGds			
+Fawley			
+FawleyEssoLoading			
+FawleyCadland			
+FawleyISR			
+WinchesterChesil			
+WorthyDown			
+Siding			
+DockSiding			
+Loop			
+LocoServicing			
+#dispose			
+#comment			
+#Briefing	SDso1STATIC has only static or empty trains. NOT FOR PLAYERS		
