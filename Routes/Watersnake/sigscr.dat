@@ -198,7 +198,7 @@ SCRIPT SRStop
 	{
 		state = SIGASP_STOP;
 	}
-        if (enabled && route_set() && TrainHasCallOn_Restricted() && block_state() == BLOCK_OCCUPIED )
+      else if (enabled && route_set() && TrainHasCallOn_Restricted() && block_state() == BLOCK_OCCUPIED )
            
                         // clear on CallOn
 	{ 
