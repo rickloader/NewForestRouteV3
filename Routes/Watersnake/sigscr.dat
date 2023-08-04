@@ -31,38 +31,41 @@ SCRIPT BannerRepeaterHome
 SCRIPT MR_Semaphore_Shunt_Disc
 
 // MR/LMS Semaphore Shunt Disc
-extern float    block_state();
+	extern float    block_state();
         extern float    route_set();
         extern float    def_draw_state();
         extern float    state;
         extern float    draw_state;
         extern float    enabled;
-		extern float    TrainHasCallOn_Restricted();  
+	extern float    TrainHasCallOn_Restricted();  
 
-		if (!enabled ||								
-// Not enabled/cleared to show natural state?
-		block_state() != BLOCK_CLEAR ||		
-// Block ahead not clear?
-		!route_set())							
-// Switch not set as per link?
+	if (!enabled ||								
+                // Not enabled/cleared to show natural state?
+	block_state() == BLOCK_JN_OBSTRUCTED ||		
+                // Block ahead obstructed
+	!route_set())							
+                // Switch not set as per link?
 	{
 		state = SIGASP_STOP;
 	}
-        if (enabled && route_set() && TrainHasCallOn_Restricted() && block_state() == BLOCK_OCCUPIED )
-           
-                        // clear on CallOn
-	{ 
+        else if (block_state() == BLOCK_OCCUPIED )
+                // Block occupied - default state is stop but test for callon
+	{
+		state = SIGASP_STOP;
+		if (TrainHasCallOn_Restricted())
+		{
                         state = SIGASP_RESTRICTING;
-      }                  
-                else if (block_state == BLOCK_CLEAR)
-                        // normal clear
+		}
+	}
+	else
+                // normal clear
 	{
                         state = SIGASP_CLEAR_2;
-                                        
         }
 
 // Get draw state
         draw_state = def_draw_state(state);
+
 ///////////////////////////////////////////////////////////////////////////////
 SCRIPT BannerRepeaterDistant
 
@@ -104,75 +107,79 @@ SCRIPT BannerRepeaterDistant
 SCRIPT SRGrdSig
 
 // Callon Shunt
-extern float    block_state();
+	extern float    block_state();
         extern float    route_set();
         extern float    def_draw_state();
         extern float    state;
         extern float    draw_state;
         extern float    enabled;
-		extern float    TrainHasCallOn_Restricted();  
+	extern float    TrainHasCallOn_Restricted();  
 
-		if (!enabled ||								
-// Not enabled/cleared to show natural state?
-		block_state() != BLOCK_CLEAR ||		
-// Block ahead not clear?
-		!route_set())							
-// Switch not set as per link?
+	if (!enabled ||								
+                // Not enabled/cleared to show natural state?
+	block_state() == BLOCK_JN_OBSTRUCTED ||		
+                // Block ahead obstructed
+	!route_set())							
+                // Switch not set as per link?
 	{
 		state = SIGASP_STOP;
 	}
-        if (enabled && route_set() && TrainHasCallOn_Restricted() && block_state() == BLOCK_OCCUPIED )
-           
-                        // clear on CallOn
-	{ 
+        else if (block_state() == BLOCK_OCCUPIED )
+                // Block occupied - default state is stop but test for callon
+	{
+		state = SIGASP_STOP;
+		if (TrainHasCallOn_Restricted())
+		{
                         state = SIGASP_RESTRICTING;
-      }                  
-                else if (block_state == BLOCK_CLEAR)
-                        // normal clear
+		}
+	}
+	else
+                // normal clear
 	{
                         state = SIGASP_CLEAR_2;
-                                        
         }
 
 // Get draw state
         draw_state = def_draw_state(state);
+
 ///////////////////////////////////////////////////////////////////////////////
 SCRIPT SRCallon
 
 // Callon Shunt
-extern float    block_state();
+	extern float    block_state();
         extern float    route_set();
         extern float    def_draw_state();
         extern float    state;
         extern float    draw_state;
         extern float    enabled;
-		extern float    TrainHasCallOn_Restricted();  
+	extern float    TrainHasCallOn_Restricted();  
 
-		if (!enabled ||								
-// Not enabled/cleared to show natural state?
-		block_state() != BLOCK_CLEAR ||		
-// Block ahead not clear?
-		!route_set())							
-// Switch not set as per link?
+	if (!enabled ||								
+                // Not enabled/cleared to show natural state?
+	block_state() == BLOCK_JN_OBSTRUCTED ||		
+                // Block ahead obstructed
+	!route_set())							
+                // Switch not set as per link?
 	{
-		draw_state = 0;
+		state = SIGASP_STOP;
 	}
-        if (enabled && route_set() && TrainHasCallOn_Restricted() && block_state() == BLOCK_OCCUPIED )
-           
-                        // clear on CallOn
-	{ 
+        else if (block_state() == BLOCK_OCCUPIED )
+                // Block occupied - default state is stop but test for callon
+	{
+		state = SIGASP_STOP;
+		if (TrainHasCallOn_Restricted())
+		{
                         state = SIGASP_RESTRICTING;
-      }                  
-                else if (block_state == BLOCK_CLEAR)
-                        // normal clear
+		}
+	}
+	else
+                // normal clear
 	{
                         state = SIGASP_CLEAR_2;
-                                        
         }
 
 // Get draw state
         draw_state = def_draw_state(state);
-
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -187,33 +194,34 @@ SCRIPT SRStop
         extern float    state;
         extern float    draw_state;
         extern float    enabled;
-		extern float    TrainHasCallOn_Restricted();  
+	extern float    TrainHasCallOn_Restricted();  
 
-		if (!enabled ||								
-// Not enabled/cleared to show natural state?
-		block_state() != BLOCK_CLEAR ||		
-// Block ahead not clear?
-		!route_set())							
-// Switch not set as per link?
+	if (!enabled ||								
+                // Not enabled/cleared to show natural state?
+	block_state() == BLOCK_JN_OBSTRUCTED ||		
+                // Block ahead obstructed
+	!route_set())							
+                // Switch not set as per link?
 	{
 		state = SIGASP_STOP;
 	}
-      else if (enabled && route_set() && TrainHasCallOn_Restricted() && block_state() == BLOCK_OCCUPIED )
-           
-                        // clear on CallOn
-	{ 
+        else if (block_state() == BLOCK_OCCUPIED )
+                // Block occupied - default state is stop but test for callon
+	{
+		state = SIGASP_STOP;
+		if (TrainHasCallOn_Restricted())
+		{
                         state = SIGASP_RESTRICTING;
-      }                  
-                else if (block_state == BLOCK_CLEAR)
-                        // normal clear
+		}
+	}
+	else
+                // normal clear
 	{
                         state = SIGASP_CLEAR_2;
-                                        
         }
 
 // Get draw state
         draw_state = def_draw_state(state);
-
 
 ///////////////////////////////////////////////////////////////////////////////
 SCRIPT SRlocalStop
@@ -514,34 +522,36 @@ SCRIPT LSWRStop
 
 // Stop with callon
 
-extern float    block_state();
+	extern float    block_state();
         extern float    route_set();
         extern float    def_draw_state();
         extern float    state;
         extern float    draw_state;
         extern float    enabled;
-		extern float    TrainHasCallOn_Restricted();  
+	extern float    TrainHasCallOn_Restricted();  
 
-		if (!enabled ||								
-// Not enabled/cleared to show natural state?
-		block_state() != BLOCK_CLEAR ||		
-// Block ahead not clear?
-		!route_set())							
-// Switch not set as per link?
+	if (!enabled ||								
+                // Not enabled/cleared to show natural state?
+	block_state() == BLOCK_JN_OBSTRUCTED ||		
+                // Block ahead obstructed
+	!route_set())							
+                // Switch not set as per link?
 	{
 		state = SIGASP_STOP;
 	}
-        if (enabled && route_set() && TrainHasCallOn_Restricted() && block_state() == BLOCK_OCCUPIED )
-           
-                        // clear on CallOn
-	{ 
-                        state = SIGASP_RESTRICTING;
-      }                  
-                else if (block_state == BLOCK_CLEAR)
-                        // normal clear
+        else if (block_state() == BLOCK_OCCUPIED )
+                // Block occupied - default state is stop but test for callon
+	{
+		state = SIGASP_STOP;
+		if (TrainHasCallOn_Restricted())
+		{
+                        state = SIGASP_CLEAR_2;
+		}
+	}
+	else
+                // normal clear
 	{
                         state = SIGASP_CLEAR_2;
-                                        
         }
 
 // Get draw state
@@ -553,34 +563,36 @@ SCRIPT SigSDbacking
 
 // SD backing
 
-extern float    block_state();
+	extern float    block_state();
         extern float    route_set();
         extern float    def_draw_state();
         extern float    state;
         extern float    draw_state;
         extern float    enabled;
-		extern float    TrainHasCallOn_Restricted();  
+	extern float    TrainHasCallOn_Restricted();  
 
-		if (!enabled ||								
-// Not enabled/cleared to show natural state?
-		block_state() != BLOCK_CLEAR ||		
-// Block ahead not clear?
-		!route_set())							
-// Switch not set as per link?
+	if (!enabled ||								
+                // Not enabled/cleared to show natural state?
+	block_state() == BLOCK_JN_OBSTRUCTED ||		
+                // Block ahead obstructed
+	!route_set())							
+                // Switch not set as per link?
 	{
 		state = SIGASP_STOP;
 	}
-        if (enabled && route_set() && TrainHasCallOn_Restricted() && block_state() == BLOCK_OCCUPIED )
-           
-                        // clear on CallOn
-	{ 
+        else if (block_state() == BLOCK_OCCUPIED )
+                // Block occupied - default state is stop but test for callon
+	{
+		state = SIGASP_STOP;
+		if (TrainHasCallOn_Restricted())
+		{
                         state = SIGASP_RESTRICTING;
-      }                  
-                else if (block_state == BLOCK_CLEAR)
-                        // normal clear
+		}
+	}
+	else
+                // normal clear
 	{
                         state = SIGASP_CLEAR_2;
-                                        
         }
 
 // Get draw state
@@ -1010,7 +1022,6 @@ SCRIPT VR_HC1
 //////////////////////////////////////////////////////////////////////////////////////
 SCRIPT VR_HC2
 
-	// Use SIG_EXTERNS 'macro' instead?..
 	extern float	block_state ();
 	extern float	route_set ();
      	extern float	next_sig_lr ();
@@ -1023,17 +1034,24 @@ SCRIPT VR_HC2
 	
 	float			next_state;
 
-	if (!enabled ||
-		block_state() !=# BLOCK_CLEAR ||	
-		!route_set ()) 				
+	if (!enabled ||								
+                // Not enabled/cleared to show natural state?
+	block_state() == BLOCK_JN_OBSTRUCTED ||		
+                // Block ahead obstructed
+	!route_set())							
+                // Switch not set as per link?
 	{
-			state = SIGASP_STOP;
+		state = SIGASP_STOP;
 	}
-else if (block_state == #BLOCK_OCCUPIED && TrainHasCallOn() )
-{
-// clear on occupied track and CallOn allowed
-state  = SIGASP_RESTRICTING;
-}
+        else if (block_state() == BLOCK_OCCUPIED )
+                // Block occupied - default state is stop but test for callon
+	{
+		state = SIGASP_STOP;
+		if (TrainHasCallOn_Restricted())
+		{
+                        state = SIGASP_RESTRICTING;
+		}
+	}
 	else
 	{
 		next_state = next_sig_lr (SIGFN_NORMAL);
@@ -1586,40 +1604,40 @@ SCRIPT VR_HC2b
 SCRIPT GWRGrdSig
 
 // Callon Shunt
-extern float    block_state();
+	extern float    block_state();
         extern float    route_set();
         extern float    def_draw_state();
         extern float    state;
         extern float    draw_state;
         extern float    enabled;
-		extern float    TrainHasCallOn_Restricted();  
+	extern float    TrainHasCallOn_Restricted();  
 
-		if (!enabled ||								
-// Not enabled/cleared to show natural state?
-		block_state() != BLOCK_CLEAR ||		
-// Block ahead not clear?
-		!route_set())							
-// Switch not set as per link?
+	if (!enabled ||								
+                // Not enabled/cleared to show natural state?
+	block_state() == BLOCK_JN_OBSTRUCTED ||		
+                // Block ahead obstructed
+	!route_set())							
+                // Switch not set as per link?
 	{
 		state = SIGASP_STOP;
 	}
-        if (enabled && route_set() && TrainHasCallOn_Restricted() && block_state() == BLOCK_OCCUPIED )
-           
-                        // clear on CallOn
-	{ 
-                        state = SIGASP_RESTRICTING;
-      }                  
-                else if (block_state == BLOCK_CLEAR)
-                        // normal clear
+        else if (block_state() == BLOCK_OCCUPIED )
+                // Block occupied - default state is stop but test for callon
 	{
-                        state = SIGASP_CLEAR_2;
-                                        
+		state = SIGASP_STOP;
+		if (TrainHasCallOn_Restricted())
+		{
+                        state = SIGASP_CLEAR_1;
+		}
+	}
+	else
+                // normal clear
+	{
+                        state = SIGASP_CLEAR_1;
         }
 
 // Get draw state
         draw_state = def_draw_state(state);
-
-
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -1810,46 +1828,45 @@ SCRIPT GWRDummy
 
 // Get draw state
 	draw_state = def_draw_state (state);
+///////////////////////////////////////////////////////////////////////////////
 //Callonstopdist
 SCRIPT Callonstopdist
 
 // Callon Shunt
-extern float    block_state();
+	extern float    block_state();
         extern float    route_set();
         extern float    def_draw_state();
         extern float    state;
         extern float    draw_state;
         extern float    enabled;
-		extern float    TrainHasCallOn_Restricted();  
+	extern float    TrainHasCallOn_Restricted();  
 
-		if (!enabled ||								
-// Not enabled/cleared to show natural state?
-		block_state() != BLOCK_CLEAR ||		
-// Block ahead not clear?
-		!route_set())							
-// Switch not set as per link?
+	if (!enabled ||								
+                // Not enabled/cleared to show natural state?
+	block_state() == BLOCK_JN_OBSTRUCTED ||		
+                // Block ahead obstructed
+	!route_set())							
+                // Switch not set as per link?
 	{
 		state = SIGASP_STOP;
 	}
-        if (enabled && route_set() && TrainHasCallOn_Restricted() && block_state() == BLOCK_OCCUPIED )
-           
-                        // clear on CallOn
-	{ 
-                        state = SIGASP_RESTRICTING;
-      }                  
-                else if (block_state == BLOCK_CLEAR)
-                        // normal clear
+        else if (block_state() == BLOCK_OCCUPIED )
+                // Block occupied - default state is stop but test for callon
 	{
-                        state = SIGASP_CLEAR_2;
-                                        
+		state = SIGASP_STOP;
+		if (TrainHasCallOn_Restricted())
+		{
+                        state = SIGASP_RESTRICTING;
+		}
+	}
+	else
+                // normal clear
+	{
+                        state = SIGASP_RESTRICTING;
         }
 
 // Get draw state
         draw_state = def_draw_state(state);
-
-
-// End of File
-
 
 
 // End of File
