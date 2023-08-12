@@ -20,7 +20,7 @@ SCRIPT BannerRepeaterHome
 	else
 //											Check if 'UQ' display needed
 	{ if (sig_feature (SIGFEAT_USER2))
-		{
+		{	
 		draw_state = 2;
 		}
 	  else
@@ -37,13 +37,13 @@ SCRIPT MR_Semaphore_Shunt_Disc
         extern float    state;
         extern float    draw_state;
         extern float    enabled;
-	extern float    TrainHasCallOn_Restricted();
+	extern float    TrainHasCallOn_Restricted();  
 
-	if (!enabled ||
+	if (!enabled ||								
                 // Not enabled/cleared to show natural state?
-	block_state() == BLOCK_JN_OBSTRUCTED ||
+	block_state() == BLOCK_JN_OBSTRUCTED ||		
                 // Block ahead obstructed
-	!route_set())
+	!route_set())							
                 // Switch not set as per link?
 	{
 		state = SIGASP_STOP;
@@ -95,7 +95,7 @@ SCRIPT BannerRepeaterDistant
 	else
 //											Check if 'UQ' display needed
 	{ if (sig_feature (SIGFEAT_USER2))
-		{
+		{	
 		draw_state = 2;
 		}
 	  else
@@ -113,13 +113,13 @@ SCRIPT SRGrdSig
         extern float    state;
         extern float    draw_state;
         extern float    enabled;
-	extern float    TrainHasCallOn_Restricted();
+	extern float    TrainHasCallOn_Restricted();  
 
-	if (!enabled ||
+	if (!enabled ||								
                 // Not enabled/cleared to show natural state?
-	block_state() == BLOCK_JN_OBSTRUCTED ||
+	block_state() == BLOCK_JN_OBSTRUCTED ||		
                 // Block ahead obstructed
-	!route_set())
+	!route_set())							
                 // Switch not set as per link?
 	{
 		state = SIGASP_STOP;
@@ -152,13 +152,13 @@ SCRIPT SRCallon
         extern float    state;
         extern float    draw_state;
         extern float    enabled;
-	extern float    TrainHasCallOn_Restricted();
+	extern float    TrainHasCallOn_Restricted();  
 
-	if (!enabled ||
+	if (!enabled ||								
                 // Not enabled/cleared to show natural state?
-	block_state() == BLOCK_JN_OBSTRUCTED ||
+	block_state() == BLOCK_JN_OBSTRUCTED ||		
                 // Block ahead obstructed
-	!route_set())
+	!route_set())							
                 // Switch not set as per link?
 	{
 		state = SIGASP_STOP;
@@ -194,13 +194,13 @@ SCRIPT SRStop
         extern float    state;
         extern float    draw_state;
         extern float    enabled;
-	extern float    TrainHasCallOn_Restricted();
+	extern float    TrainHasCallOn_Restricted();  
 
-	if (!enabled ||
+	if (!enabled ||								
                 // Not enabled/cleared to show natural state?
-	block_state() == BLOCK_JN_OBSTRUCTED ||
+	block_state() == BLOCK_JN_OBSTRUCTED ||		
                 // Block ahead obstructed
-	!route_set())
+	!route_set())							
                 // Switch not set as per link?
 	{
 		state = SIGASP_STOP;
@@ -404,7 +404,7 @@ SCRIPT SRSiding
 		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
 		!route_set())							// Switch not set as per link?
 	{
-		state = SIGASP_RESTRICTING;
+		state = SIGASP_STOP;
 	}
 	else
 	{
@@ -528,13 +528,13 @@ SCRIPT LSWRStop
         extern float    state;
         extern float    draw_state;
         extern float    enabled;
-	extern float    TrainHasCallOn_Restricted();
+	extern float    TrainHasCallOn_Restricted();  
 
-	if (!enabled ||
+	if (!enabled ||								
                 // Not enabled/cleared to show natural state?
-	block_state() == BLOCK_JN_OBSTRUCTED ||
+	block_state() == BLOCK_JN_OBSTRUCTED ||		
                 // Block ahead obstructed
-	!route_set())
+	!route_set())							
                 // Switch not set as per link?
 	{
 		state = SIGASP_STOP;
@@ -569,13 +569,13 @@ SCRIPT SigSDbacking
         extern float    state;
         extern float    draw_state;
         extern float    enabled;
-	extern float    TrainHasCallOn_Restricted();
+	extern float    TrainHasCallOn_Restricted();  
 
-	if (!enabled ||
+	if (!enabled ||								
                 // Not enabled/cleared to show natural state?
-	block_state() == BLOCK_JN_OBSTRUCTED ||
+	block_state() == BLOCK_JN_OBSTRUCTED ||		
                 // Block ahead obstructed
-	!route_set())
+	!route_set())							
                 // Switch not set as per link?
 	{
 		state = SIGASP_STOP;
@@ -977,7 +977,7 @@ SCRIPT LampCallon_OR
 	draw_state = def_draw_state (state);
 
 
-
+	
 ///////////////////////////////////////////////////////////////////////////////
 
 SCRIPT VR_HC1
@@ -995,9 +995,9 @@ SCRIPT VR_HC1
 	float			next_state;
 
 	if (!enabled ||
-		block_state() !=# BLOCK_CLEAR ||
+		block_state() !=# BLOCK_CLEAR ||	
 		!route_set ())	// Switch not set as per link?
-
+  
 	{
 		state = SIGASP_STOP;
 	}
@@ -1008,12 +1008,12 @@ SCRIPT VR_HC1
                 next_state ==# SIGASP_APPROACH_1 ||
                 next_state ==# SIGASP_APPROACH_2 ||
                 next_state ==# SIGASP_APPROACH_3 )
-       {
+       {     
             state = SIGASP_STOP;
        }
 	else
 		{
-		       state = SIGASP_CLEAR_2;
+		       state = SIGASP_CLEAR_2;    
             }
         }
 
@@ -1031,14 +1031,14 @@ SCRIPT VR_HC2
 	extern float	draw_state;
 	extern float	enabled;
 	extern float	TrainHasCallon ();
-
+	
 	float			next_state;
 
-	if (!enabled ||
+	if (!enabled ||								
                 // Not enabled/cleared to show natural state?
-	block_state() == BLOCK_JN_OBSTRUCTED ||
+	block_state() == BLOCK_JN_OBSTRUCTED ||		
                 // Block ahead obstructed
-	!route_set())
+	!route_set())							
                 // Switch not set as per link?
 	{
 		state = SIGASP_STOP;
@@ -1054,7 +1054,17 @@ SCRIPT VR_HC2
 	}
 	else
 	{
-		state = SIGASP_RESTRICTING;
+		next_state = next_sig_lr (SIGFN_NORMAL);
+
+		if (next_state ==# SIGASP_CLEAR_1 ||
+                next_state ==# SIGASP_APPROACH_1 )
+		{
+			state = SIGASP_RESTRICTING;
+		}	 
+		else 
+		{
+			state = SIGASP_CLEAR_2;
+		}
 	}
 	draw_state = def_draw_state (state);
 
@@ -1073,13 +1083,13 @@ SCRIPT VR_SPEC
 
 	float			next_state;
 
-	if (!enabled ||
-		block_state() !=# BLOCK_CLEAR ||
-		!route_set ())
-	{
+	if (!enabled ||							
+		block_state() !=# BLOCK_CLEAR ||	
+		!route_set ())						
+	{			
 			state = SIGASP_CLEAR_1;
 	}
-	else
+	else     
 	      {
 		next_state = next_sig_lr (SIGFN_NORMAL);
 
@@ -1091,8 +1101,8 @@ SCRIPT VR_SPEC
        else if (next_state ==# SIGASP_RESTRICTING)
 		 {
 			state = SIGASP_APPROACH_1;
-		 }
-	  else
+		 }	
+	  else        
 		 {
 			state = SIGASP_CLEAR_2;
 		 }
@@ -1371,7 +1381,7 @@ SCRIPT UKInd7
 	if (  !enabled ||								// Not enabled/cleared to show natural state?
 		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
 		!route_set())							// Switch not set as per link?
-
+	
 {
 		draw_state = 0;
 	}
@@ -1452,12 +1462,12 @@ SCRIPT Shunting
 	extern float	state;
 	extern float	draw_state;
 	extern float	enabled;
-
+	
 	float			next_state;
 
 	if (!enabled ||
-		block_state() !=# BLOCK_CLEAR ||
-		!route_set ())
+		block_state() !=# BLOCK_CLEAR ||	
+		!route_set ()) 				
 	{
 			state = SIGASP_APPROACH_2;
 	}
@@ -1469,8 +1479,8 @@ SCRIPT Shunting
                 next_state ==# SIGASP_RESTRICTING)
 		{
 			state = SIGASP_APPROACH_2;
-		}
-		else
+		}	 
+		else 
 		{
 			state = SIGASP_APPROACH_3;
 		}
@@ -1489,12 +1499,12 @@ SCRIPT SHUNT_SPEC
 	extern float	state;
 	extern float	draw_state;
 	extern float	enabled;
-
+	
 	float			next_state;
 
 	if (!enabled ||
-		block_state() !=# BLOCK_CLEAR ||
-		!route_set ())
+		block_state() !=# BLOCK_CLEAR ||	
+		!route_set ()) 				
 	{
 			state = SIGASP_APPROACH_2;
 	}
@@ -1506,8 +1516,8 @@ SCRIPT SHUNT_SPEC
                 next_state ==# SIGASP_RESTRICTING)
 		{
 			state = SIGASP_APPROACH_2;
-		}
-		else
+		}	 
+		else 
 		{
 			state = SIGASP_APPROACH_3;
 		}
@@ -1526,12 +1536,12 @@ SCRIPT VR_HC2a
 	extern float	state;
 	extern float	draw_state;
 	extern float	enabled;
-
+	
 	float			next_state;
 
 	if (!enabled ||
-		block_state() !=# BLOCK_CLEAR ||
-		!route_set ())
+		block_state() !=# BLOCK_CLEAR ||	
+		!route_set ()) 				
 	{
 			state = SIGASP_STOP;
 	}
@@ -1543,8 +1553,8 @@ SCRIPT VR_HC2a
                 next_state ==# SIGASP_APPROACH_1 )
 		{
 			state = SIGASP_RESTRICTING;
-		}
-		else
+		}	 
+		else 
 		{
 			state = SIGASP_CLEAR_2;
 		}
@@ -1562,12 +1572,12 @@ SCRIPT VR_HC2b
 	extern float	state;
 	extern float	draw_state;
 	extern float	enabled;
-
+	
 	float			next_state;
 
 	if (!enabled ||
-		block_state() !=# BLOCK_CLEAR ||
-		!route_set ())
+		block_state() !=# BLOCK_CLEAR ||	
+		!route_set ()) 				
 	{
 			state = SIGASP_STOP;
 	}
@@ -1579,8 +1589,8 @@ SCRIPT VR_HC2b
                 next_state ==# SIGASP_APPROACH_1 )
 		{
 			state = SIGASP_RESTRICTING;
-		}
-		else
+		}	 
+		else 
 		{
 			state = SIGASP_CLEAR_2;
 		}
@@ -1600,13 +1610,13 @@ SCRIPT GWRGrdSig
         extern float    state;
         extern float    draw_state;
         extern float    enabled;
-	extern float    TrainHasCallOn_Restricted();
+	extern float    TrainHasCallOn_Restricted();  
 
-	if (!enabled ||
+	if (!enabled ||								
                 // Not enabled/cleared to show natural state?
-	block_state() == BLOCK_JN_OBSTRUCTED ||
+	block_state() == BLOCK_JN_OBSTRUCTED ||		
                 // Block ahead obstructed
-	!route_set())
+	!route_set())							
                 // Switch not set as per link?
 	{
 		state = SIGASP_STOP;
@@ -1829,13 +1839,13 @@ SCRIPT Callonstopdist
         extern float    state;
         extern float    draw_state;
         extern float    enabled;
-	extern float    TrainHasCallOn_Restricted();
+	extern float    TrainHasCallOn_Restricted();  
 
-	if (!enabled ||
+	if (!enabled ||								
                 // Not enabled/cleared to show natural state?
-	block_state() == BLOCK_JN_OBSTRUCTED ||
+	block_state() == BLOCK_JN_OBSTRUCTED ||		
                 // Block ahead obstructed
-	!route_set())
+	!route_set())							
                 // Switch not set as per link?
 	{
 		state = SIGASP_STOP;
