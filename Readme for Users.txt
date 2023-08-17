@@ -145,7 +145,7 @@ Special thanks to
 		Richard Stevenson and John Fox -signal Info
 		David Gibbons - texturing and prototype  help.
 		Tim Booth -  UKFS track
-		
+		Geoff Forrest- Calling on /shunt ahead and indicator signals
 		Andrew Moody - prototype info
 		John Yelland, Simon Barnes - custom Signals and signal kits
 		Rob Roeterdink – timetable mode author
