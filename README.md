@@ -3,7 +3,7 @@
 
 ## Scenario
 
-New Forest features the Bournemouth UK railway line in the 1950s and attempts to recreate the 1950s timetable using the Timetable Mode in Open Rails.
+New Forest features the Bournemouth UK railway line in the 1950s and attempts to recreate the 1950s network timetable using the Timetable Mode in Open Rails.
 
 For details of the route, please read [Background.md](Background.md)
 
@@ -11,15 +11,15 @@ The route is a work in progress and some non-fatal errors exist, which will grad
 
 ## Compatibility
 
-This content is compatible with Open Rails v1.4 (and not with MSTS). The content is stand-alone and only needs an Open Rails installation.
+This content is compatible with Open Rails v1.5, 1.4  (and not with MSTS). The content is stand-alone and only needs an Open Rails installation.
+Recent unstable versions of open rails recommended or the ORNYMG branch. Keep separate from any existing MSTS install
+The New Forest route is demanding of computer reources. Use 64bit if available.
 
 ## Installing
 
 **Highly Recommended**: Follow [these instructions](https://www.dropbox.com/s/gh2f2pko4f1houj/Using%20routes%20published%20on%20GitHub%20v2.pdf?dl=0) to benefit from using Git.
 
-or
 
-Quick: [Download the ZIP](https://github.com/rickloader/NewForestRouteV3/archive/refs/heads/main.zip) and unpack it.
 
 ## Legal
 
