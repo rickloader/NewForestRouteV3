@@ -8,6 +8,7 @@ New Forest features the Bournemouth UK railway line in the 1950s and attempts to
 For details of the route, please read [Background.md](Background.md)
 
 The route is a work in progress and some non-fatal errors exist, which will gradually be reduced. Some errors are an MSTS legacy, and must be tolerated.
+Recent expansion covers Woking- Salisbury and much incomplete scenery is to be expected in these areas
 
 ## Compatibility
 
@@ -18,6 +19,8 @@ The New Forest route is demanding of computer reources. Use 64bit if available.
 ## Installing
 
 **Highly Recommended**: Follow [these instructions](https://www.dropbox.com/s/gh2f2pko4f1houj/Using%20routes%20published%20on%20GitHub%20v2.pdf?dl=0) to benefit from using Git.
+Warning. the Route is nearly 20Gb on disk. The photo real ground textures, and the full trainset explain the large size, but I believe users will agree the benefits.
+Some users report problems with the .zip. Best to download via Github desktop. You will also then get the frequent updates
 
 
 
