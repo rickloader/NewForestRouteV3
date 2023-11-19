@@ -1857,6 +1857,160 @@ SCRIPT Callonstopdist
 
 // Get draw state
         draw_state = def_draw_state(state);
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SR_2Aspect
+
+// SR 2Aspect Colour Light (Brighton Line Electrification)
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||		// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT SR_3Aspect
+
+// SR 3Aspect Colour Light Signal (Brighton Line Electrification)
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	next_sig_lr ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	float			next_state;
+
+// If required, show the 'stop' indication.
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||				// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+// Signal head is enabled and the block ahead is clear - update based on state of
+// next signal head.
+	else
+      {
+		next_state = next_sig_lr (SIGFN_NORMAL);
+
+		if (next_state ==# SIGASP_STOP ||
+			next_state ==# SIGASP_STOP_AND_PROCEED ||
+			next_state ==# SIGASP_RESTRICTING)
+		{
+			state = SIGASP_APPROACH_1;
+		}
+		else if (next_state ==# SIGASP_APPROACH_2)
+		{
+			state = SIGASP_CLEAR_2;
+		}
+		else //if (next_state ==# SIGASP_APPROACH_2 ||
+			//	next_state ==# SIGASP_CLEAR_2)
+		{
+			state = SIGASP_CLEAR_2;
+		}
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+////////////////////////////////////////////////////////////////////////////
+SCRIPT SR_4Aspect
+
+// SR 4Aspect Colour Light (Brighton Line Electrification)
+
+extern float	block_state ();
+	extern float	route_set ();
+	extern float	next_sig_lr ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	float			next_state;
+
+// If required, show the 'stop' indication.
+	if (!enabled ||								// Not enabled/cleared to show natural state?
+		block_state() !=# BLOCK_CLEAR ||				// Block ahead not clear?
+		!route_set())							// Switch not set as per link?
+	{
+		state = SIGASP_STOP;
+	}
+// Signal head is enabled and the block ahead is clear - update based on state of
+// next signal head.
+	else
+	{
+		next_state = next_sig_lr (SIGFN_NORMAL);
+
+		if (next_state ==# SIGASP_STOP ||
+			next_state ==# SIGASP_STOP_AND_PROCEED ||
+			next_state ==# SIGASP_RESTRICTING)
+		{
+			state = SIGASP_APPROACH_1;
+		}
+		else if (next_state ==# SIGASP_APPROACH_1)
+		{
+			state = SIGASP_APPROACH_2;
+		}
+		else //if (next_state ==# SIGASP_APPROACH_2 ||
+			//	next_state ==# SIGASP_CLEAR_2)
+		{
+			state = SIGASP_CLEAR_2;
+		}
+	}
+
+// Get draw state
+	draw_state = def_draw_state (state);
+///////////////////////////////////////////////////////////////////////////////
+SCRIPT BR_S_R45F
+
+// BR(S)Right Hand 45deg Feather
+
+	extern float	route_set ();
+	extern float	this_sig_lr ();
+	extern float	draw_state;
+
+// If required, show the 'stop' indication.				(operates on 'AUTO' basis
+	if (next_sig_lr (SIGFN_NORMAL) ==# SIGASP_STOP ||		// Main sig on STOP?
+		!route_set())							// Switch not set as per link?
+	{
+		draw_state = 0;
+	}
+	else
+	{	draw_state = 1;
+	}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+SCRIPT BR_S_L45F
+
+// BR(S)Left Hand 45deg Feather
+
+	extern float	route_set ();
+	extern float	this_sig_lr ();
+	extern float	draw_state;
+
+// If required, show the 'stop' indication.				(operates on 'AUTO' basis
+	if (next_sig_lr (SIGFN_NORMAL) ==# SIGASP_STOP ||		// Main sig on STOP?
+		!route_set())							// Switch not set as per link?
+	{
+		draw_state = 0;
+	}
+	else
+	{	draw_state = 1;
+	}
 
 
 // End of File
