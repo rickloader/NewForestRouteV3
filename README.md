@@ -15,7 +15,7 @@ Recent expansion covers Woking- Salisbury and much incomplete scenery is to be e
 
 ## Compatibility
 
-This content is compatible with Open Rails v1.5, 1.4  (and not with MSTS). The content is stand-alone and only needs an Open Rails installation.
+This content is compatible with Open Rails v1.5, 1.4  (and not with MSTS). The content is stand-alone, complete and only needs an Open Rails installation. A full trainset is included to run the timetable
 Recent unstable versions of open rails recommended or the ORNYMG branch. Keep separate from any existing MSTS install
 The New Forest route is demanding of computer reources. Use 64bit if available.
 
