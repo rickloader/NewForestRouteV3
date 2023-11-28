@@ -3,7 +3,9 @@
 
 ## Scenario
 
-New Forest features the Bournemouth UK railway line in the 1950s and attempts to recreate the 1950s network timetable using the Timetable Mode in Open Rails.
+New Forest V3 features the Bournemouth UK railway line in the 1950s and attempts to recreate the 1950s network timetable using the Timetable Mode in Open Rails. The route is also known as the South Western mainline  
+New Forest route V4 is the current work in progress. It extends from Woking to Salisbury and branches. expect incomplete scenery. In summary V3 " latest down load" is the Bournempoth line. This may be updated to V4 Woking - Salisbury  via github desktop
+Please look at the Wiki "Getting started"
 
 For details of the route, please read [Background.md](Background.md)
 
