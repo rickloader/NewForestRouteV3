@@ -11,6 +11,7 @@ For details of the route, please read [Background.md](Background.md)
 
 The route is a work in progress and some non-fatal errors exist, which will gradually be reduced. Some errors are an MSTS legacy, and must be tolerated.
 Recent expansion covers Woking- Salisbury and much incomplete scenery is to be expected in these areas
+![WatersnakeMap2](https://github.com/rickloader/NewForestRouteV3/assets/57818551/92afc9fc-3b4e-4981-b16c-c29637fb4783)
 
 ## Compatibility
 
