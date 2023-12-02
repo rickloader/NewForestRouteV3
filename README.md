@@ -3,16 +3,19 @@
 
 ## Scenario
 
-New Forest features the Bournemouth UK railway line in the 1950s and attempts to recreate the 1950s network timetable using the Timetable Mode in Open Rails.
+New Forest V3 features the Bournemouth UK railway line in the 1950s and attempts to recreate the 1950s network timetable using the Timetable Mode in Open Rails. The route is also known as the South Western mainline  
+New Forest route V4 is the current work in progress. It extends from Woking to Salisbury and branches. expect incomplete scenery. In summary V3 " latest download" is the Bournemouth line. This may be updated to V4 Woking - Salisbury  via github desktop
+Please look at the Wiki "Getting started"
 
 For details of the route, please read [Background.md](Background.md)
 
 The route is a work in progress and some non-fatal errors exist, which will gradually be reduced. Some errors are an MSTS legacy, and must be tolerated.
 Recent expansion covers Woking- Salisbury and much incomplete scenery is to be expected in these areas
+![WatersnakeMap2](https://github.com/rickloader/NewForestRouteV3/assets/57818551/92afc9fc-3b4e-4981-b16c-c29637fb4783)
 
 ## Compatibility
 
-This content is compatible with Open Rails v1.5, 1.4  (and not with MSTS). The content is stand-alone and only needs an Open Rails installation.
+This content is compatible with Open Rails v1.5, 1.4  (and not with MSTS). The content is stand-alone, complete and only needs an Open Rails installation. A full trainset is included to run the timetable
 Recent unstable versions of open rails recommended or the ORNYMG branch. Keep separate from any existing MSTS install
 The New Forest route is demanding of computer reources. Use 64bit if available.
 
