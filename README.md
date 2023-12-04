@@ -3,7 +3,8 @@
 
 ## Scenario
 
-New Forest features the Bournemouth UK railway line in the 1950s and attempts to recreate the 1950s network timetable using the Timetable Mode in Open Rails.
+New Forest features the Bournemouth UK railway line in the 1950s and attempts to recreate the 1950s network timetable using the Timetable Mode in Open Rails. V3 extends from Basingstoke to Weymouth and current work on V4 expands from Woking to Salisbury. Expect much incomplete scenery. Today the Route is known as the SouthWestern mainline.
+![WatersnakeMap2](https://github.com/rickloader/NewForestRouteV3/assets/57818551/97980b5a-ada8-4a12-b460-e7e97d415820)
 
 For details of the route, please read [Background.md](Background.md)
 
@@ -12,7 +13,7 @@ Recent expansion covers Woking- Salisbury and much incomplete scenery is to be e
 
 ## Compatibility
 
-This content is compatible with Open Rails v1.5, 1.4  (and not with MSTS). The content is stand-alone and only needs an Open Rails installation.
+This content is compatible with Open Rails v1.5, 1.4  (and not with MSTS). The content is stand-alone and only needs an Open Rails installation. 
 Recent unstable versions of open rails recommended or the ORNYMG branch. Keep separate from any existing MSTS install
 The New Forest route is demanding of computer reources. Use 64bit if available.
 
@@ -20,7 +21,8 @@ The New Forest route is demanding of computer reources. Use 64bit if available.
 
 **Highly Recommended**: Follow [these instructions](https://www.dropbox.com/s/gh2f2pko4f1houj/Using%20routes%20published%20on%20GitHub%20v2.pdf?dl=0) to benefit from using Git.
 Warning. the Route is nearly 20Gb on disk. The photo real ground textures, and the full trainset explain the large size, but I believe users will agree the benefits.
-Some users report problems with the .zip. Best to download via Github desktop. You will also then get the frequent updates
+**Do not use the zip**: The large route size will result in an incomplete download . Best to download or clone via Github desktop. You will also then get the frequent updates
+Point open rails at where ever you downloaded the route. Options/content/ installation profile/ add
 
 
 
