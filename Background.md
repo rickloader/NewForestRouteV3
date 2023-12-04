@@ -2,6 +2,7 @@
 
 Thanks for your interest in the NewForest Route or the "Watersnake" V3. 
 The route depicts the Bournemouth line in Hampshire and Dorset, under British Railways Southern Region in the 1950s.
+V4 is in progress and extends the Route to Woking and Salisbury
 
 ## Installation
 
@@ -47,7 +48,7 @@ The route focus is on the timetable mode in Open Rails. The aim is to simulate t
 
 Locomotives follow a complete "Duty". Leaving the loco shed, they pick up stock, run the service, dispose of stock, and finally retire to shed .
 
-Trains follow the  official 1954 Engine Working Notices and the 1958 Carriage Working Notices. Experts will detect some anomalies, but I have made the best of my limited sources. Docks goods traffic is mostly absent – no info.
+Trains follow the  official 1954- 57 Engine Working Notices and the 1958 Carriage Working Notices. Experts will detect some anomalies, but I have made the best of my limited sources. Docks goods traffic is mostly absent – no info.
 
 Trains are designated : time/origin/type/duty/lococlass
 so that a train named "1330wloopass71BMN" means the
@@ -57,7 +58,7 @@ The timetable depicts a mid-week summer day around 1954-1960.
 
 ## Getting started in timetable mode  
 
-1. From the OR menu choose a timetable. Usually the last timetable in the list is the current version, but older ones are included for testing.
+1. From the OR menu choose a timetable. Usually the last timetable in the list is the current version, but older ones are included for testing. Select a "PLAYER" timetable
 2. Choose a train. LE means “ LightEngine” and is usually a good choice.
 3. Don't choose ECS, EGS EVS. These are empty stock and can`t be driven.
 4. General advice. Drive forward towards the siding exit or signals shown in F4 track monitor. If in the dark, bring up the dispatch viewer CTRL+9. If still uncertain, find the train in the included spreadsheet – there may be clues.
@@ -218,7 +219,7 @@ New Forest Route was originally created on a P4 3GHz 1Gb RAM Nvidia 7800 graphic
 - V2 Nov 09 Track improved at Bournemouth and Southampton Docks. Scenery extended to Bournemouth and Westmoors. Additional custom signals added.
 - V2.1 Dec 09 Christchurch signal relocated. Newroads files eliminated.
 - V3 Jul 19. Route extended to Basingstoke, Weymouth and Templecombe.Route optimised for OR timetable mode. Now OR only.
-
+- V4 Nov 23 Route extended to Bath Woking and Salisbury
 ## Personal
 
 In 1958 my mother took a teaching job at Brockenhurst. As a toddler I took the 08:10 train from Christchurch. It was only an M7 tank engine, but that engendered a life long love of trains .
