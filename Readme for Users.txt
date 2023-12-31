@@ -91,14 +91,14 @@ All items in the following  classes
 "greenery", " some terrtex			greenery@seznam.cz, http://sweb.cz/greenery
  Banks &cuttings.              David Gibbons
 "HW scenery and buildings" Horses	 Paul Gausden
- IJtrees&vegetation. Bedford coach 			Ian Jenkins
+ IJtrees&vegetation. Bedford coach  Scenery Items prefixed IJ_			Ian Jenkins
  green shed.SRplatelayerHuts
  ContainertypeBD, mini, Jaguar,Fiat	Ian Morgan		
  signals             		            John Yelland
                                                             Simon Barnes
 Vegetation Items prefixed "MS"		 Michael Sinclair
 Vegetation prefixed MM                           Manuel Marder
-Vegetatio prefixed RMays                        Ron Mays
+Vegetation prefixed RMays                        Ron Mays
 1&3 arch bridge				Paul Mathews
 backdrop suburban			Terry Thornton
 signs variousSR/LSWR, ContainerBDPhonebox	Ian Morgan	
@@ -115,7 +115,7 @@ bedford  mini                                          ian morgan
 Morris	                                                 John Dibben
 austin                                                   Jeff Layfield
 ford pop, consul, trojan vans Foden        Martin Phillips
-Vehicles Prefixed Doc. Trolleybus   Scenery items "Dov"       MartinPhillips
+Vehicles Prefixed Doc. Trolleybus   Scenery items "Doc"       MartinPhillips
 bedford vans                                          Tony Adams
 Bristol Bus                                            Fred Carter
 Morris Minor vans  A40                                 Trevor Burt
@@ -130,6 +130,7 @@ sewage works				Charles Malcolm
 6 coasters in "boats" - Darwin Smith.
 Travelling crane Frank Sandwell
 Refinery - William W. Bieszczak Russel Beer
+Items from the Ref file class "SBarnes" are taken from his sadly incomplete route "London & South Central"
 One or more textures bundled with this project have been created with images from Textures.com. These images may not be redistributed by default. Please visit www.textures.com for more information."
 Vegetation RU Alexey Grebnev Vitaly Alyonkin
  cloud textures Claus Visby Overgaard, Scott
