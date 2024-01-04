@@ -1940,6 +1940,7 @@ extern float	block_state ();
 	extern float	state;
 	extern float	draw_state;
 	extern float	enabled;
+extern float    TrainHasCallOn_Restricted();
 	float			next_state;
 
 // If required, show the 'stop' indication.
@@ -1964,6 +1965,14 @@ extern float	block_state ();
 		else if (next_state ==# SIGASP_APPROACH_1)
 		{
 			state = SIGASP_APPROACH_2;
+		}
+ else if (block_state() == BLOCK_OCCUPIED )
+                // Block occupied - default state is stop but test for callon
+	{
+		state = SIGASP_STOP;
+		if (TrainHasCallOn_Restricted())
+		{
+                        state = SIGASP_RESTRICTING;
 		}
 		else //if (next_state ==# SIGASP_APPROACH_2 ||
 			//	next_state ==# SIGASP_CLEAR_2)
