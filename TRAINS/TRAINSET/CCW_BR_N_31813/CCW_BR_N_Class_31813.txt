@@ -1,0 +1,83 @@
+Model CCW_BR ex-SR “N“ Class 2-6-0 31813
+
+
+
+31405 With a 3500 gallon late Crest Tender and AWS
+
+For use with simulations approx 1957 to withdrawal.
+
+Version 1
+
+Release: - 30th October 2012
+
+Authors: - Michael Young
+
+Email    : - mickrik007@yahoo.co.uk
+
+Thank you for installing this model, which is supplied for your personal use, this models may not be sold or distributed in any way other than as an exclusive freeware download from UKTS. Permissions for inclusion on UKTS community CD/DVD’s are not required and freely given.
+
+I openly encourage the re-skinning of this model and permissions are also not required. Please at least post a screenie on the UKTS forum so there is a record of who has done what to avoid duplications.
+
+Brief Origins
+
+The N Class Moguls
+
+Soon after taking office in 1913 on the South East and Catham Railway. R.E.L.Maunsell recognised a need for a freight locomotive with the capability of hauling heavier block loads between Hither Green & Ashford and was un-decided between an 0-8-0 and a 2-6-0. The 0-8-0 would have given greater adhesion but the 2-6-0 could be easily built from parts used to build the newly designed 2-6-4 River Tank locos and give a greater flexibilty of usage. The Construction of the first locos was delayed by the ongoing World War1 although the first test loco was completed in July 1917 No810. The next of a batch of 15 would not appear untill 1920 after several modifications. The Southern raiway was granted the highest quality of coal during the war years and as this coal ran out, the N's suffered poor running performance with the indifferent coal it now had to use. It was found that the blast pipe arrangement had to be altered before any significant improvement was noticed. After this modification, the N's became one of the    Southerns most successful and long lived classes of locomotive. A total of 80 were built between 1917 and 1934 the last 8 being fitted for left hand drive. The final locomotives withdrawn from service were 1405 and 1408 in June 1966. In practice, they were distibuted over many parts of the Southern System and frequently used on passenger turns though they would struggle to keep to time when hauling expresses.
+
+
+No 31874 has been saved for preservation and based on the Mid Hants Railway (Watercress Line)
+
+http://www.watercressline.co.uk/The-Works/Locos/12
+
+
+This is a high poly count model produced using 3D canvas by Amabilis. 
+
+It may be subject to low frame rates in congested scenarios and activities.
+
+First you must have installed:-
+
+UKTS_2919_UKwhistles1-0 by Stuart Williamson
+UKTS_2910_2cSndSetV1-1 by Stuart Williamson
+UKTS_7759_Crew_Aliases_Library 1
+UKTS_7703_Crew Aliases_Package 1
+
+INSTALLATION
+
+Unzip the downloaded file into a temporary location to reveal the folder "TRAINS". Copy and paste the "TRAINS" folder directly into the "Train Simulator" Folder of your MSTS installation.
+                           
+Please be aware that this model may or may not be compatible with all the rolling stock that you have available. By default it has Chain couplings.
+
+The engfile as prepared by Rick Gibb has operational small ejectors (J key) Dampers (M key). Please make sure that you set them into the correct positions for driving to gain the best driving experience from the model. 
+
+
+HeadCode Discs
+
+When you open the loco up in the sim, there will be no headcode discs on display. 
+
+However. In with the pack is a brief selection of popular headcodes associated with this loco for the  period routes currently available from UKTS.
+
+To change a headcode you will need to open the loco "engfile" and look for the line "Freight Animation" which will look like this :-
+
+FreightAnim ( "..\\common.headcodes\\CCW_U_N\\UN_Fittings_Blank.s" 0 3.0 0.0 )
+
+What you need to do is change the word Blank to the numbers 01,06,11,15 or 19............ like this :-
+
+FreightAnim ( "..\\common.headcodes\\CCW_U_N\\UN_Fittings_06.s" 0 3.0 0.0 )
+
+Please see here for headcodes used by the Southern Region section of British Railways :-
+
+http://www.semgonline.com/headcodes/sheadcodes/04.html
+
+
+WITH THANKS
+
+
+Rick Gibb for  excellent Engfile and Wagfile
+Jim Ashman and Michael Hendle for testing.
+Decapod for his invaluable Canvas 3D tools and advice
+
+© Novembermber 30th 2012 Michael Young (mickrik). Cannock Chase Works. 
+
+Please post any observations, comments, praise, problems and questions to the UKTrainsim forum pages.
+
+Mickrik
