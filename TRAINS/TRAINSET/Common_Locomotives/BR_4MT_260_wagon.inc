@@ -39,6 +39,7 @@ BrakeEquipmentType( "Vacuum_brake, Auxilary_reservoir" )
 BrakeSystemType( Vacuum_single_pipe )
 MaxBrakeForce( 115kN ) Comment ( * braked approx 75% of mass on driving wheels, coefficient of friction 0.3 *)
 
+ORTSNumberBrakeCylinders ( 1 )
 ORTSBrakeCylinderSize ( 6in ) Comment ( Locomotive has steam brake  )
 ORTSAuxilaryResCapacity ( 0.90ft^3 ) Comment ( Vacuum reservoir used for control of steam brake )
 
@@ -84,5 +85,12 @@ HeatingHoseFX(
 Comment ( ********************** Miscellaneous Information *********************
                       Included in this section - Name, Sounds, etc
          *********************************************************************** )
- 
+
 Sound ( "..\\..\\Common.Sound\\LMS-Crab\\BR-Standard_eng.sms" )
+ORTS3DCab(
+		ORTS3DCabFile ( ..\\..\\Common.cab\\3D_4MT_Riddles\\4MT_260cab.s ) 
+		ORTS3DCabHeadPos ( -0.975 3.1 -4.8 )
+		RotationLimit ( 10 90 90 )
+		StartDirection ( 10 0 0 )
+			) 
+
