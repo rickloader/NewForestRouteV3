@@ -90,3 +90,9 @@ Comment ( ********************** Miscellaneous Information *********************
          *********************************************************************** )
  
 Sound ( "..\\..\\Common.Sound\\LMS-Crab\\BR-Standard_eng.sms" )
+ORTS3DCab(
+		ORTS3DCabFile ( ..\\..\\Common.cab\\3D_4MT_Riddles\\5MT_460cab.s ) 
+		ORTS3DCabHeadPos ( -0.975 3.1 -5.5 )
+		RotationLimit ( 10 90 90 )
+		StartDirection ( 10 0 0 )
+			) 
