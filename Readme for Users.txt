@@ -8,7 +8,7 @@ Installation
  	A complete trainset isIncluded for testing the timetable. . DO NOT SHARE THIS as copyright remains with the model authors.
 The route folder “watersnake” and Global may be shared
 	Updates
-Newforestminiroute is a work in progress. Updates are maintained on GitHub. Email me for details. rickloader@hotmail.com .
+Newforestminiroute is a work in progress. Updates are maintained on GitHub. Email me for details. rickloader at hotmail.com .
 
 The Route described
 
@@ -88,7 +88,7 @@ Known Problems
 
 		Copyright rests with the authors of the following  models (see route ref file). My thanks to the Authors for providing them.
 All items in the following  classes
-"greenery", " some terrtex			greenery@seznam.cz, http://sweb.cz/greenery
+"greenery", " some terrtex			greenery at seznam.cz, http://sweb.cz/greenery
  Banks &cuttings.              David Gibbons
 "HW scenery and buildings" Horses	 Paul Gausden
  IJtrees&vegetation. Bedford coach  Scenery Items prefixed IJ_			Ian Jenkins
@@ -171,5 +171,5 @@ Personal
 	Newforest route shows the system at its height. In the 1960s the traditional railway was swept away. Local goods yards were closed. Steam abolished 1967. In 1964 the Old Road closed, followed by closure of Bournemouth West and Southampton Terminus. The Somerset & Dorset succumbed in 1966. On the positive side, electrification to Weymouth provides a fast frequent service, and is heavily patronised. The Swanage Branch survives in preservation,
 	 It is hoped that New Forest Route will give some insight into the 1950s railway scene.
 	Contact
-		rickloader@hotmail.com  UKTS ID, Elvas Tower  rickloader
+		rickloader at hotmail.com  UKTS ID, Elvas Tower  rickloader
 Best wishes Rick		Richard Loader July19
